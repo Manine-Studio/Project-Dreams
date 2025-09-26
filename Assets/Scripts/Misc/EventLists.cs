@@ -42,4 +42,33 @@
         /// </summary>
         public const string HIDE_CHOICE = "HIDE_CHOICE";
     }
+
+    public static class InteractEventList
+    {
+        /// <summary>
+        /// params type: IObjectInteractable
+        /// </summary>
+        public const string CHECK_PRE_CONDITION = "CHECK_PRE_CONDITION";
+
+        /// <summary>
+        /// params type: none
+        /// </summary>
+        public const string REFRESH_INTERACTABLE_PRE_CONDITION = "REFRESH_INTERACTABLE_PRE_CONDITION";
+
+        /// <summary>
+        /// params type: none
+        /// </summary>
+        public const string ON_CONDITION_CHANGE = "ON_CONDITION_CHANGE";
+
+        /// <summary>
+        /// params type: List(DiaryUiItemData)
+        /// </summary>
+        public const string ON_DIARY_CHANGE = "ON_DIARY_CHANGE";
+
+        /// <summary>
+        /// params type ItemSlot
+        /// </summary>
+        public const string ON_ITEMSLOT_PRESSED = "ON_ITEMSLOT_PRESSED";
+
+    }
 }
