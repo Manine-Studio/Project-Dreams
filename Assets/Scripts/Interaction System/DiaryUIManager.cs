@@ -21,9 +21,9 @@ namespace InteractionSystem
         private List<DiaryUiItemData> _xCharactersList = new();
         private List<DiaryUiItemData> _xLocationsList = new();
 
-        private int _iPageIndex = 0;
+        private int _iCurrentPageIndex = 0;
 
-        private bool _bHasLoaded;
+        //private bool _bHasLoaded;
 
         private OBJECT_TYPE _xCurrentUIType = OBJECT_TYPE.Item;
 
@@ -41,107 +41,13 @@ namespace InteractionSystem
             GameManager.Instance.XInteractableEventBus.Unregister(InteractEventList.ON_ITEMSLOT_PRESSED, OnItemSlotPressed);
         }
 
-        private void UpdateDiary(params object[] param)
-        {
-            List<DiaryUiItemData> paramMap = (List<DiaryUiItemData>)param[0];
-
-            foreach (var paramItem in paramMap)
-            {
-                switch ((int)paramItem.xType)
-                {
-                    case 1:
-                        InsideGivenListCheck(paramItem, ref _xItemsList);
-                        LoadUI(ref _xItemsList);
-                        break;
-
-                    case 2:
-                        InsideGivenListCheck(paramItem, ref _xCharactersList);
-                        LoadUI(ref _xCharactersList);
-                        break;
-
-                    case 3:
-                        InsideGivenListCheck(paramItem, ref _xLocationsList);
-                        LoadUI(ref _xLocationsList);
-                        break;
-
-                    default:
-                        Debug.LogError($"the item {paramItem.xModel.sName} does not have a type");
-                        break;
-                }
-            }
-
-            void InsideGivenListCheck(DiaryUiItemData paramItem, ref List<DiaryUiItemData> list)
-            {
-                for (int i = 0; i < list.Count; i++)
-                {
-                    if (paramItem.xCondition != list[i].xCondition)
-                        continue;
-                    if (paramItem.xType != list[i].xType)
-                        continue;
-
-                    list[i] = paramItem;
-                    return;
-                }
-                list.Add(paramItem);
-                return;
-            }
-        }
-
-        private void LoadUI(ref List<DiaryUiItemData> list)
-        {
-            var currentPage = (xItemSlots.Length - 1) * _iPageIndex;
-
-            #region |loop the pages|
-            if (currentPage >= list.Count)
-            {
-                _iPageIndex = 0;
-                currentPage = (xItemSlots.Length - 1) * _iPageIndex;
-            }
-
-            else if (currentPage < 0)
-            {
-                _iPageIndex = list.Count / xItemSlots.Length;
-                currentPage = (xItemSlots.Length - 1) * _iPageIndex;
-            }
-            #endregion |loop the pages|
-
-            int itemSlotIndex = 0;
-
-            for (int i = currentPage; i < list.Count; i++)
-            {
-                if (i >= list.Count)
-                    break;
-
-                ItemModel listItem = list[i].xModel;
-
-                // change the icons of the items
-                xItemSlots[itemSlotIndex].xIcon.sprite = listItem.xObjectIcon;
-                xItemSlots[itemSlotIndex].xName.text = listItem.sName;
-                xItemSlots[itemSlotIndex].xItemImage = listItem.xObjectImage;
-                xItemSlots[i].sDescription = listItem.sDescription;
-
-                itemSlotIndex++;
-            }
-
-            _bHasLoaded = true;
-
-            if (itemSlotIndex >= xItemSlots.Length)
-                return;
-
-            for (int i = itemSlotIndex; i < xItemSlots.Length; i++)
-            {
-                xItemSlots[i].xIcon.sprite = xItemSlotDefaultSprite;
-                xItemSlots[i].xName.text = "";
-            }
-        }
-
         public void OpenUI()
         {
-            if (_bHasLoaded)
-            {
-                DiaryUiPannel.SetActive(true);
-                return;
-            }
+            //if (_bHasLoaded)
+            //{
+            //    DiaryUiPannel.SetActive(true);
+            //    return;
+            //}
 
             switch ((int)_xCurrentUIType)
             {
@@ -170,20 +76,120 @@ namespace InteractionSystem
             DiaryUiPannel.SetActive(false);
         }
 
+        private void UpdateDiary(params object[] param)
+        {
+            List<DiaryUiItemData> paramMap = (List<DiaryUiItemData>)param[0];
+
+            foreach (var paramItem in paramMap)
+            {
+                switch ((int)paramItem.xType)
+                {
+                    case 1:
+                        CheckDuplicateInsideList(paramItem, ref _xItemsList);
+                        //LoadUI(ref _xItemsList);
+                        break;
+
+                    case 2:
+                        CheckDuplicateInsideList(paramItem, ref _xCharactersList);
+                        //LoadUI(ref _xCharactersList);
+                        break;
+
+                    case 3:
+                        CheckDuplicateInsideList(paramItem, ref _xLocationsList);
+                        //LoadUI(ref _xLocationsList);
+                        break;
+
+                    default:
+                        Debug.LogError($"the item {paramItem.xModel.sName} does not have a type");
+                        break;
+                }
+            }
+
+            void CheckDuplicateInsideList(DiaryUiItemData paramItem, ref List<DiaryUiItemData> list)
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (paramItem.xCondition != list[i].xCondition)
+                        continue;
+                    if (paramItem.xType != list[i].xType)
+                        continue;
+
+                    list[i] = paramItem;
+                    return;
+                }
+                list.Add(paramItem);
+                return;
+            }
+        }
+
+        private void LoadUI(ref List<DiaryUiItemData> list)
+        {
+            // basicly the first index in the list that apears in the slots 
+            // ex: slots.lengh = 2 list.count = 6, if pageIndex = 2 then we need the item in the list[4] slot 
+            var firstIndexOnPage = xItemSlots.Length * _iCurrentPageIndex; 
+
+            #region |loop the pages|
+            if (firstIndexOnPage >= list.Count)
+            {
+                _iCurrentPageIndex = 0;
+                firstIndexOnPage = xItemSlots.Length * _iCurrentPageIndex; 
+            }
+
+            else if (firstIndexOnPage < 0)
+            {
+                _iCurrentPageIndex = list.Count / xItemSlots.Length;
+                firstIndexOnPage = xItemSlots.Length * _iCurrentPageIndex;
+            }
+            
+            #endregion |loop the pages|
+
+
+            int itemSlotIndex = 0;
+
+            for (int i = firstIndexOnPage; i < list.Count; i++)
+            {
+                if (i >= list.Count || itemSlotIndex >= xItemSlots.Length)
+                    break;
+
+                ItemModel listItem = list[i].xModel;
+
+                // change the icons of the items
+                xItemSlots[itemSlotIndex].xIcon.sprite = listItem.xObjectIcon;
+                xItemSlots[itemSlotIndex].xName.text = listItem.sName;
+                xItemSlots[itemSlotIndex].xItemImage = listItem.xObjectImage;
+                xItemSlots[itemSlotIndex].sDescription = listItem.sDescription;
+
+                itemSlotIndex++;
+            }
+
+            if (itemSlotIndex >= xItemSlots.Length)
+                return;
+
+            for (int i = itemSlotIndex; i < xItemSlots.Length; i++)
+            {
+                xItemSlots[i].xIcon.sprite = xItemSlotDefaultSprite;
+                xItemSlots[i].xName.text = "";
+                xItemSlots[i].xItemImage = null;
+                xItemSlots[i].sDescription = "";
+            }
+        }
+
         /// <summary>
         /// changes the item loaded
         /// </summary>
         /// <param name="pageTurnDirection">-1 = previous page | 1 = next page </param>
         public void ChangePage(int pageTurnDirection)
         {
-            _iPageIndex += pageTurnDirection;
+            _iCurrentPageIndex += pageTurnDirection;
+
+            
             LoadUI(ref _xItemsList);
         }
 
         public void ChangeType(OBJECT_TYPE type)
         {
             _xCurrentUIType = type;
-            _iPageIndex = 0;
+            _iCurrentPageIndex = 0;
             LoadUI(ref _xItemsList);
         }
 
