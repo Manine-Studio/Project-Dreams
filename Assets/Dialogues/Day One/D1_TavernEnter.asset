@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: D1_TavernEnter
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 
+      _values: 
+    _DialogueCSV: {fileID: 4900000, guid: 001e125cb20eaf6418f6febb8b4db8f5, type: 3}
+    _DialogueParts:
+    - _sName: ' '
+      _Sentences:
+      - _sSentence: "<i><color=blue>[La taverna era un luogo dalle fondamenta antiche,
+          palesemente riconoscibili nonostante le recenti rinnovamenti estetici.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Mi era stato indicato come luogo in cui avrei
+          passato le mie notti in attesa della conclusione del caso. Nonch\xE9 unico
+          luogo di pernottamento per gli ospiti della citt\xE0.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Lei \xE8 il Detective Bakon\xE9, giusto?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Sono davvero cos\xEC facile da riconoscere?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "L'ho vista questa mattina al Tempio, in compagnia di Rhina\u2026
+          Non hanno fatto passare nessun altro oltre a lei, e mi era stato detto
+          di aspettarla questa sera.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Piacere di conoscerla, Detective. Sono Lynn, la proprietaria
+          della locanda di Sleeper's Burrow.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Il piacere \xE8 mio, Lynn. Detective Bakon\xE9, al suo servizio.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "In effetti non ho visto altri ospiti qui intorno, mi sembra
+          di capire che non avr\xF2 molta compagnia, almeno per oggi.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ac3a4bae3d9826c40aca2b80ec1b8ccf, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Temo che la sua unica compagnia sar\xF2 io. Tutti gli altri
+          ospiti hanno deciso di andarsene una volta scoperto del furto...\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Mi dica Detective, com'\xE8 la situazione? C'\xE8 qualche speranza
+          di ritrovare il Cuscino della Dea?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Non si preoccupi, mia cara. Se pu\xF2 essere recuperato, mi
+          assicurer\xF2 di ritrovarlo in men che non si dica.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 3de80d0f2706b9946b448e8d756f7481, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Mi assicurer\xF2 che la sua taverna possa tornare in affari
+          quanto prima!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 3e84d37329670354f878d9e242e710a9, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 93c381d42aff4d04a8def0c70c7d7322, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "La ringrazio Detective! Ma mi creda, per quanto ci tenga alla
+          mia attivit\xE0 sono pi\xF9 preoccupata per la nostra reliquia sacra.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 3e84d37329670354f878d9e242e710a9, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 3de80d0f2706b9946b448e8d756f7481, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "\xC8 addirittura pi\xF9 preoccupata per il Cuscino che per la
+          sua taverna?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Non fraintenda, Detective. Questa taverna \xE8 la cosa a cui
+          pi\xF9 tengo al mondo.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Ma il Cuscino della Dea \xE8 sacro. Non solo fa parte della
+          nostra cultura da sempre, ma \xE8 l'unica reliquia che la Dea ci ha lasciato!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Lei non \xE8 un credente, vero signor Bakon\xE9?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "No, non posso dire di essere particolarmente avvezzo alla fede.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Si vede!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Non se la prenda, ma solo se avesse affidato la sua intera vita
+          a una divinit\xE0 potrebbe capire cosa vuol dire per noi perdere il nostro
+          amato cuscino.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Sa cosa, signora Lynn? Penso proprio lei abbia ragione.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 93c381d42aff4d04a8def0c70c7d7322, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "La ringrazio, Detective! Anche se, nonostante la mia et\xE0,
+          devo ammettere di essere ancora nubile! \"\"Signorina\"\" andr\xE0 benissimo.\"\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  TextDialogueChoiceA: 
+  DialogueChoiceA: {fileID: 0}
+  TextDialogueChoiceB: 
+  DialogueChoiceB: {fileID: 0}
+  TextDialogueChoiceC: 
+  DialogueChoiceC: {fileID: 0}
