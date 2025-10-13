@@ -7,7 +7,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 namespace InteractionSystem
 {
-    [RequireComponent(typeof(SpriteRenderer), typeof(EventTrigger), typeof(BoxCollider2D))]
+    [RequireComponent(typeof(SpriteRenderer), typeof(EventTrigger))]
     public class InteractableObject : MonoBehaviour
     {
 

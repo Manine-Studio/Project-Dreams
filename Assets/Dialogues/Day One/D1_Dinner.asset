@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: D1_Dinner
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 
+      _values: 
+    _DialogueCSV: {fileID: 4900000, guid: fa11a4f6387b9774d8a42ecf4997e67c, type: 3}
+    _DialogueParts:
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Cosa ne pensa, Detective? Le piace la nostra zuppa tradizionale?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Devo ammettere che aveva ragione, il sapore \xE8 davvero unico!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Le spezie si sposano alla perfezione con la carne, quando mi
+          ha elencato gli ingredienti non mi aspettavo una resa cos\xEC eccellente.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "\xC8 una ricetta speciale! Qui in citt\xE0 tutti gli anziani
+          la tramandano ai pi\xF9 giovani da generazioni.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Mia madre, pace all'anima sua, diceva sempre che questa zuppa
+          \xE8 usata da tutta la citt\xE0 ma che la prima ad averla cucinata \xE8
+          stata una nostra trisavola.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Era una donna molto orgogliosa, sa? Nonostante tutto quello
+          che ha vissuto, lei e mio padre non si sono mai arresi.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Era chiaro che si riferisse alla guerra. Sleeper's
+          Burrow si trova particolarmente vicina al confine, \xE8 difficile anche
+          solo concepire ci\xF2 che hanno dovuto passare per chiunque non abbia vissuto
+          la tortura di vivere di fianco ai campi di battaglia.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Ho pensato fosse meglio non rivangare troppo
+          il passato, non volevo dare una nota amara a una cena gi\xE0 cos\xEC saporita.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Lynn, qual \xE8 il vostro punto di vista su quanto accaduto
+          quest'oggi?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "\xC8 una tragedia! Abbiamo perso una reliquia sacra, non so
+          come Uldon si regga ancora in piedi\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Quando l'ho scoperto, ho temuto che gli fosse venuto un infarto\u2026
+          Sa, \xE8 sempre stato cagionevole di salute e sicuramente la scomparsa
+          non ha fatto altro che peggiorare le cose.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Ha menzionato prima il fatto che anche i suoi clienti sono andati
+          via, dopo aver scoperto quanto successo?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "S\xEC, di solito le persone che si fermano a dormire sono fedeli
+          che vengono in citt\xE0 per vedere il Cuscino della Dea. Alcuni sono andati
+          via perch\xE9 non possono vederlo, ma altri sono stati genuinamente spaventati
+          dall'accaduto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Pensavano che potesse succedere qualcosa anche a loro?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Esatto. Una persona che osa rubare il Cuscino della Dea non
+          pu\xF2 essere qualcuno di raccomandabile, anche io ho avuto paura che qualche
+          estraneo pericoloso potesse entrare nella Locanda per tutto il giorno\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Non si preoccupi, mia cara. Adesso sono qui io, dubito che il
+          colpevole abbia desiderio di incontrarmi.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Vero anche questo, spero che basti a scoraggarlo\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Nasconde reliquie sacre, in questa Locanda?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Non che io sappia!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Allora non credo correremo alcun pericolo, miss Lynn.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  TextDialogueChoiceA: 
+  DialogueChoiceA: {fileID: 0}
+  TextDialogueChoiceB: 
+  DialogueChoiceB: {fileID: 0}
+  TextDialogueChoiceC: 
+  DialogueChoiceC: {fileID: 0}

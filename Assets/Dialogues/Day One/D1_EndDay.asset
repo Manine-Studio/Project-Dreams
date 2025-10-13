@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: D1_EndDay
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 
+      _values: 
+    _DialogueCSV: {fileID: 4900000, guid: d8bcb1195d1ac714ab316d5ecf03c472, type: 3}
+    _DialogueParts:
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "La ringrazio per la cortesia e per il tempo concessomi, signorina
+          Lynn, ma soprattutto per quel delizioso manicaretto che mi ha offerto per
+          cena!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Sapevo che avrebbe apprezzato la nostra specialit\xE0! Domani
+          sera le far\xF2 provare un'altra ricetta a cui sto lavorando da un po'!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Sar\xE0 un piacere, per me. Sono certo che apprezzer\xF2.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Le auguro la buonanotte, adesso. \xC8 stata una giornata lunga,
+          penso che andr\xF2 a dormire.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Ma certo! La sua stanza \xE8 l'ultima nel corridoio in fondo
+          a destra. Le ho riservato la migliore della locanda, ma se preferisce averne
+          un'altra si senta libero di scegliere quella che vuole.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Tanto sono tutte vuote...\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Sono sicuro che quella che mi ha preparato andr\xE0 benissimo.
+          A domani, signorina Lynn.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  TextDialogueChoiceA: 
+  DialogueChoiceA: {fileID: 0}
+  TextDialogueChoiceB: 
+  DialogueChoiceB: {fileID: 0}
+  TextDialogueChoiceC: 
+  DialogueChoiceC: {fileID: 0}

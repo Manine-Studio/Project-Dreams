@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: D1_AboutKerith
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 
+      _values: 
+    _DialogueCSV: {fileID: 4900000, guid: ca206842067323d4e87f7ade6547efe2, type: 3}
+    _DialogueParts:
+    - _sName: ' '
+      _Sentences:
+      - _sSentence: "<i><color=blue>[Kerith, il giovane medico, mi era parso sin
+          da subito molto legato sia a Rhina che a Uldon. Poteva chiaramente essere
+          una figura chiave, in questa storia.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Ha gi\xE0 conosciuto Kerith? \xC8 un cos\xEC bravo ragazzo,
+          vero?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Temo che la nostra conoscenza sia ancora troppo superficiale
+          per poter giudicare, ma sembrava effettivamente molto preoccupato per l'accaduto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Ci conosciamo sin da quando eravamo bambini, sono abbastanza
+          sicura che fosse pi\xF9 preoccupato per Uldon e Rhina piuttosto che per
+          il Cuscino!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Non \xE8 un individuo religioso, deduco?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Lo era, prima dell'<color=red>incidente</color>\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "<color=red>L'incidente</color>?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "S\xEC, qualche anno fa\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "No, lasci perdere. \xC8 una faccenda personale, non sarebbe
+          giusto sbandierare ai quattro venti la sua storia senza il suo permesso.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Sin da subito fui incuriosito: Lynn non sembrava
+          certo il tipo di persona da farsi remore per un paio di gossip, il suo
+          essere cos\xEC restia attir\xF2 rapidamente la mia attenzione.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ac3a4bae3d9826c40aca2b80ec1b8ccf, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Nonostante ci\xF2, ritenni d'uopo evitare ulteriori
+          indagini sull'argomento, almeno per quella sera.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ac3a4bae3d9826c40aca2b80ec1b8ccf, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Non si preoccupi, \xE8 naturale preoccuparsi dei propri amici.
+          Se non pensa sia il caso di parlarne, non voglio forzarla.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: cc526b02715621345815e37d73f6d537, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "La ringrazio Detective. Spero possa capire, nonostante siano
+          passati anni \xE8 ancora un argomento pungente per Kerith.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Pu\xF2 provare a parlarne con lui, magari \xE8 disposto a raccontarle
+          l'accaduto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Lynn
+      _Sentences:
+      - _sSentence: "Non dica che sono stata io a menzionare la cosa, per\xF2!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  TextDialogueChoiceA: 
+  DialogueChoiceA: {fileID: 0}
+  TextDialogueChoiceB: 
+  DialogueChoiceB: {fileID: 0}
+  TextDialogueChoiceC: 
+  DialogueChoiceC: {fileID: 0}
