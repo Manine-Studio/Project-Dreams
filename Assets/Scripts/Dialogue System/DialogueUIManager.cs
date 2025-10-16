@@ -86,16 +86,14 @@ public class DialogueUIManager : MonoBehaviour
     /// <param name="param">Array containing dialogues and their labels.</param>
     private void FillChoiceBox(object[] param)
     {
-        List<DialogueSO[]> listDialogues = (List<DialogueSO[]>)param[0];
-        DialogueSO[] dialogues = listDialogues[0];
-        List<string[]> listLabels = (List<string[]>)param[1];
-        string[] labels = listLabels[0];
+        List<List<Choice>> listDialogues = (List<List<Choice>>)param[0];
+        List<Choice> dialogues = listDialogues[0];
         
-        for (int i = 0; i < dialogues.Length; i++)
+        for (int i = 0; i < dialogues.Count; i++)
         {
             GameObject tmp = Instantiate(_ChoicePrefab, _ChoicesBox.transform);
-            tmp.GetComponent<DialogueTrigger>().XDefaultDialogue = dialogues[i];
-            tmp.GetComponentInChildren<TMP_Text>().text = labels[i];
+            tmp.GetComponent<DialogueTrigger>().XDefaultDialogue = dialogues[i].ChoiceDialogueSO;
+            tmp.GetComponentInChildren<TMP_Text>().text = dialogues[i].ChoiceLabel;
         }
     }
     

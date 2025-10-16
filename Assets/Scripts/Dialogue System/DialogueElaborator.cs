@@ -97,12 +97,10 @@ public class DialogueElaborator : MonoBehaviour
             {
                 if (_Dialogue.HasChoices)
                 {
-                    System.Collections.Generic.List<DialogueSO[]> listDialogues = new List<DialogueSO[]>();
+                    System.Collections.Generic.List<List<Choice>> listDialogues = new List<List<Choice>>();
                     listDialogues.Add(_Dialogue.DialogueChoices);
-                    System.Collections.Generic.List<string[]> listLabels = new List<string[]>();
-                    listLabels.Add(_Dialogue.LabelsDialogueChoices);
                     EndDialogue();
-                    GameManager.Instance.XDialogueEventBus.TriggerEvent("START_CHOICE", listDialogues, listLabels);
+                    GameManager.Instance.XDialogueEventBus.TriggerEvent("START_CHOICE", listDialogues);
                 }
                 else
                 {
