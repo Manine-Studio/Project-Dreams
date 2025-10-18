@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fff455dedac458b9cdde1b8f953769d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xDialogues: []
+  _xDialogues:
+  - {fileID: 11400000, guid: 3f4262ad9e9ee1f4bbb97987c2e381cb, type: 2}
 --- !u!114 &4782575201250976657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ce89cda25f4954380781a3cb11918c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fTimerDuration: 1
 --- !u!1 &6251921867083593977
 GameObject:
   m_ObjectHideFlags: 0

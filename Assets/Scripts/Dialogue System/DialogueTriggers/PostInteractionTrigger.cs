@@ -8,6 +8,7 @@ using UnityEngine;
 public class PostInteractionTrigger : MonoBehaviour
 {
     private DialogueTriggerBase _xDialogueTrigger;
+    [SerializeField] private float _fTimerDuration;
     
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,13 @@ public class PostInteractionTrigger : MonoBehaviour
         }
 
         if (dialogue == null) return;
+
+        StartCoroutine(TimerDialogue(dialogue));
+    }
+
+    public IEnumerator TimerDialogue(DialogueSO dialogue)
+    {
+        yield return new WaitForSeconds(_fTimerDuration);
         _xDialogueTrigger.StartDialogue(dialogue);
     }
 }
