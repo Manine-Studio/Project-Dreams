@@ -37,7 +37,7 @@ public class DialogueElaborator : MonoBehaviour
         
         if (!_bIsRunning)
         {
-            GameManager.Instance.XDialogueEventBus.TriggerEvent("START_DIALOGUE");
+            GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_DIALOGUE);
 
             _bIsRunning = true;
 
@@ -63,7 +63,7 @@ public class DialogueElaborator : MonoBehaviour
     /// </summary>
     public void StartMonologue()
     {
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_NAME", _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_NAME, _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
 
         ClearCurrent();
 
@@ -102,11 +102,12 @@ public class DialogueElaborator : MonoBehaviour
                     System.Collections.Generic.List<string[]> listLabels = new List<string[]>();
                     listLabels.Add(_Dialogue.LabelsDialogueChoices);
                     EndDialogue();
-                    GameManager.Instance.XDialogueEventBus.TriggerEvent("START_CHOICE", listDialogues, listLabels);
+                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_CHOICE, listDialogues, listLabels);
                 }
                 else
                 {
                     EndDialogue();
+                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHECK_POST_INTERACTION);
                 }
                 return;
             }
@@ -128,9 +129,9 @@ public class DialogueElaborator : MonoBehaviour
         List<Sprite[]> list = new List<Sprite[]>();
         list.Add(image);
 
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", "");
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", sentence);
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_IMAGE", list);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, "");
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, sentence);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_IMAGE, list);
     }
 
     /// <summary>
@@ -143,9 +144,8 @@ public class DialogueElaborator : MonoBehaviour
         _CurrentMonologueIndex = 0;
         _Dialogue = null;
 
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("END_DIALOGUE");
-
-
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.END_DIALOGUE);
+        
         _bIsRunning = false;
     }
 

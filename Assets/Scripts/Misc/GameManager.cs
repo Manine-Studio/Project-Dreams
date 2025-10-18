@@ -11,7 +11,6 @@ public class GameManager : Singleton<GameManager>
     private EventManager _xInteractableEventBus;
     public EventManager XDialogueEventBus { get => _xDialogueEventBus; }
     public EventManager XInteractableEventBus { get => _xInteractableEventBus; }
-
     protected override void Awake()
     {
         _xDialogueEventBus = new EventManager();
