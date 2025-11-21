@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace InteractionSystem
+namespace HUDSystem.DiarySystem
 {
     [System.Serializable()]
     public class ConditionalItemDataMap : SerializableDictionaryBase<int, ItemModel> { }
@@ -21,9 +20,9 @@ namespace InteractionSystem
     {
         public Conditions xCondition;
         public ItemModel xModel;
-        public OBJECT_TYPE xType;
+        public ObjectTypeEnum xType;
 
-        public DiaryUiItemData(Conditions condition, ItemModel model, OBJECT_TYPE type)
+        public DiaryUiItemData(Conditions condition, ItemModel model, ObjectTypeEnum type)
         {
             this.xCondition = condition;
             this.xModel = model;

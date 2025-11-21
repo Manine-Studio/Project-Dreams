@@ -1,11 +1,10 @@
-using Misc;
 using System.Collections.Generic;
+using Misc;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-namespace InteractionSystem
+namespace HUDSystem.DiarySystem
 {
     public class DiaryUIManager : MonoBehaviour
     {
@@ -25,7 +24,7 @@ namespace InteractionSystem
 
         private bool _bHasLoaded;
 
-        private OBJECT_TYPE _xCurrentUIType = OBJECT_TYPE.Item;
+        private ObjectTypeEnum _xCurrentUIType = ObjectTypeEnum.Item;
 
 
         private void OnEnable()
@@ -180,7 +179,7 @@ namespace InteractionSystem
             LoadUI(ref _xItemsList);
         }
 
-        public void ChangeType(OBJECT_TYPE type)
+        public void ChangeType(ObjectTypeEnum type)
         {
             _xCurrentUIType = type;
             _iPageIndex = 0;

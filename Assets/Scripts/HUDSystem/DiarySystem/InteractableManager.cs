@@ -1,7 +1,7 @@
 using Misc;
 using UnityEngine;
 
-namespace InteractionSystem
+namespace HUDSystem.DiarySystem
 {
     public class InteractableManager : MonoBehaviour
     {

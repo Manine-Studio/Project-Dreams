@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using HUDSystem.DiarySystem;
 using UnityEditor;
 using UnityEditor.Search;
 using UnityEngine;

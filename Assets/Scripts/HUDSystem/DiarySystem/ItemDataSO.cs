@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace InteractionSystem
+namespace HUDSystem.DiarySystem
 {
     [CreateAssetMenu(fileName = "Data", menuName = "Custom Assets/ObjectData"),System.Serializable]
     public class ItemDataSO : ScriptableObject
     {
-        public OBJECT_TYPE xObjectType;
+        public ObjectTypeEnum xObjectType;
         public ConditionalItemDataMap xObjectConditonalData;
 
 #if UNITY_EDITOR

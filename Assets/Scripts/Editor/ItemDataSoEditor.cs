@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using HUDSystem.DiarySystem;
 using UnityEditor;
 using UnityEngine;
 

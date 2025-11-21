@@ -1,10 +1,9 @@
+using System.Collections.Generic;
 using Misc;
 using Progress_System;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-namespace InteractionSystem
+namespace HUDSystem.DiarySystem
 {
     public class DiaryManager : MonoBehaviour
     {
