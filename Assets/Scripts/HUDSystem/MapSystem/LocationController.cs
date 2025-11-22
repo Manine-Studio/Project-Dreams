@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Misc;
 using Progress_System;
 using UnityEngine;
@@ -29,6 +30,7 @@ namespace HUDSystem.MapSystem
             
             _xButton.onClick.AddListener(ChangeScene);
             GameManager.Instance.XMapEventBus.Register(MapEventList.CHECK_LOCATION, CheckConditions);
+            GameManager.Instance.XMapEventBus.TriggerEvent(MapEventList.CHECK_LOCATION);
         }
 
         private void CheckConditions(object[] param)
