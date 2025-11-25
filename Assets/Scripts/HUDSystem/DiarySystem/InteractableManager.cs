@@ -19,7 +19,5 @@ namespace HUDSystem.DiarySystem
         {
             GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
         }
-        
     }
 }
-

@@ -556,14 +556,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8461324971219657369, guid: 484cf08604dcfa449b3464600aa75bfd, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461324971219657369, guid: 484cf08604dcfa449b3464600aa75bfd, type: 3}
-      propertyPath: m_Color.r
-      value: 0.048704147
-      objectReference: {fileID: 0}
     - target: {fileID: 8975813839361432540, guid: 484cf08604dcfa449b3464600aa75bfd, type: 3}
       propertyPath: m_Name
       value: MapBtnCondition
@@ -571,36 +563,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8975813839361432540, guid: 484cf08604dcfa449b3464600aa75bfd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 363010309}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 484cf08604dcfa449b3464600aa75bfd, type: 3}
 --- !u!224 &363010307 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3703394084851235078, guid: 484cf08604dcfa449b3464600aa75bfd, type: 3}
   m_PrefabInstance: {fileID: 363010306}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &363010308 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8975813839361432540, guid: 484cf08604dcfa449b3464600aa75bfd, type: 3}
-  m_PrefabInstance: {fileID: 363010306}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &363010309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363010308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3243a3bb976db248a4650ef9ee300a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _PreConditions:
-    _keys: 
-    _values: 
 --- !u!4 &781859046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7889374094352806779, guid: bdd719beb237ebd42ac03877ad845fed, type: 3}

@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 378627868941906373}
   - component: {fileID: 8461324971219657369}
   - component: {fileID: 4196753682232395238}
+  - component: {fileID: 3025946826261092485}
   m_Layer: 5
   m_Name: MapBtnCondition
   m_TagString: Untagged
@@ -194,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.048704147, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -267,3 +268,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3025946826261092485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8975813839361432540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3243a3bb976db248a4650ef9ee300a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _PreConditionsUnlock:
+    _keys: 
+    _values: 
+  _PreConditionsLock:
+    _keys: 
+    _values: 
+  _bDefaultStatus: 0
+  _xEnableMaterial: {fileID: 0}
+  _xDisbleMaterial: {fileID: 0}
