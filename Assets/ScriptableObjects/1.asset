@@ -52,7 +52,7 @@ MonoBehaviour:
     _PostConditions:
       _keys: 0200000000000000
       _values: 0300000001000000
-  hasChoices: 1
+  hasChoices: 0
   TextDialogueChoiceA: pippo
   DialogueChoiceA: {fileID: 11400000}
   TextDialogueChoiceB: pluto

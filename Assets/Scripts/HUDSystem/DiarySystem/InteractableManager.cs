@@ -1,7 +1,7 @@
 using Misc;
 using UnityEngine;
 
-namespace InteractionSystem
+namespace HUDSystem.DiarySystem
 {
     public class InteractableManager : MonoBehaviour
     {
@@ -19,7 +19,5 @@ namespace InteractionSystem
         {
             GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
         }
-        
     }
 }
-
