@@ -1,7 +1,4 @@
 using Misc;
-using Progress_System;
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -11,25 +8,18 @@ delegate void FunctionParameter();
 
 public class CursorChangerOnHover : MonoBehaviour
 {
-#if UNITY_EDITOR
-    [Tooltip("point to a CursorType with the given Condition and Id")]
-   public List<IdkThinkTomorrow> xConditionToCursorTypeList; // only here so it can be serialized
-#endif
+    [SerializeField, Tooltip("use the name of the object/charachter_SceneName \nEx: eleanor_TestScene")]
+    string isDoneKey;
+    [SerializeField] bool IsImportant;
+    bool isDone = false;
+    bool isCharachter = false;
 
-    Dictionary<KeyValuePair<Conditions, int>, CURSORTYPES> xConditionToCursorTypeMap = new();
 
     private EventTrigger _xEventTrigger;
     private Entry _xEntry = new();
 
-    CURSORTYPES _xCurrentType = CURSORTYPES.none;
-
     private void Awake()
     {
-        foreach(var conditionToCursorType in xConditionToCursorTypeList)
-        {
-            xConditionToCursorTypeMap.Add(new(conditionToCursorType.Condition, conditionToCursorType.ConditionId), conditionToCursorType.CursorType);
-        }
-
         _xEventTrigger = GetComponent<EventTrigger>();
 
         // start listening for EventTrigger's PointerEnter
@@ -38,34 +28,27 @@ public class CursorChangerOnHover : MonoBehaviour
         // start listening for EventTrigger's PointerExit
         AddFunctionToEventTrigger(EventTriggerType.PointerExit, (eventData) => { ChangeCursorBackToNormal(); });
 
-        GameManager.Instance.XInteractableEventBus.Register(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION, ChangeType);
-        ChangeType();
+        // start listening for EventTrigger's PointerClick
+        AddFunctionToEventTrigger(EventTriggerType.PointerClick, (eventData) => { ChangeCursorToIsDone(); });
+
+        if (PlayerPrefs.GetInt(isDoneKey) == 0)
+            isDone = false;
+        else
+            isDone = true;
+
+        if(TryGetComponent<DialogueTrigger>(out _))
+        isCharachter= true;
+        else
+            isCharachter = false;
+        
     }
 
-   
-    private void ChangeType(params object[] obj)
+    private void OnDisable()
     {
-        ChangeType();
-        ChangeCursor();
-    }
-
-    /// <summary>
-    /// cheks if a condition the player has is inside the ConditionToCursorTypeMap and if so it stores the CursorType in currentType
-    /// </summary>
-    private void ChangeType()
-    {
-
-        Condition actualConditions = ConditionsUtils.GetConditions();
-
-        foreach (KeyValuePair<Conditions, int> condition in actualConditions)
-        {
-            if (!xConditionToCursorTypeMap.TryGetValue(condition, out var type))
-                continue;
-
-            _xCurrentType = type;
-            
-            return;
-        }
+        if (isDone)
+            PlayerPrefs.SetInt(isDoneKey, 1);
+        else
+            PlayerPrefs.SetInt(isDoneKey, 0);
     }
 
     private void AddFunctionToEventTrigger(EventTriggerType triggerType, UnityAction<BaseEventData> function)
@@ -81,22 +64,27 @@ public class CursorChangerOnHover : MonoBehaviour
         GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.ON_CURSOR_CHANGED, CURSORTYPES.none);
     }
 
-    public void ChangeCursor()
+    private void ChangeCursor()
     {
-        GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.ON_CURSOR_CHANGED, _xCurrentType);
+        if (isDone)
+            GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.ON_CURSOR_CHANGED, CURSORTYPES.Done);
+        else if (isCharachter)
+            GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.ON_CURSOR_CHANGED, CURSORTYPES.Character);
+        else if (IsImportant)
+            GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.ON_CURSOR_CHANGED, CURSORTYPES.Important);
+        else
+            GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.ON_CURSOR_CHANGED, CURSORTYPES.Unimportant);
+    }
+
+    private void ChangeCursorToIsDone(params object[] param)
+    {
+        if (isDone)
+            return;
+
+        isDone = true;
+        ChangeCursor();
+        // register 
     }
 }
 
-#if UNITY_EDITOR
-[System.Serializable]
-public struct IdkThinkTomorrow //TODO: think of a name 
-{
-    [Tooltip("Condition enum")]
-    public Conditions Condition;
-    [Tooltip("the id of the condition")]
-    public int ConditionId;
 
-    [Tooltip("Cursor type at the given condition and id \nex: knife 10 == CursorType = Important")]
-    public CURSORTYPES CursorType;
-}
-#endif
