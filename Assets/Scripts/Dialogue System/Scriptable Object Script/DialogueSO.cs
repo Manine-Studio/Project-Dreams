@@ -13,12 +13,7 @@ public class DialogueSO : ScriptableObject
     public Dialogue Dialogue;
     public bool hasChoices = false;
 
-    [ConditionalHide("hasChoices")] public string TextDialogueChoiceA;
-    [ConditionalHide("hasChoices")] public DialogueSO DialogueChoiceA;
-    [ConditionalHide("hasChoices")] public string TextDialogueChoiceB;
-    [ConditionalHide("hasChoices")] public DialogueSO DialogueChoiceB;
-    [ConditionalHide("hasChoices")] public string TextDialogueChoiceC;
-    [ConditionalHide("hasChoices")] public DialogueSO DialogueChoiceC;
+    [ConditionalHide("hasChoices")] public List<Choice> Choices;
 
     /// <summary>
     /// Ensures that data in the Dialogue object remains consistent and initializes necessary fields.
@@ -30,13 +25,7 @@ public class DialogueSO : ScriptableObject
 
         // Sync choices with the Dialogue object.
         Dialogue.HasChoices = hasChoices;
-
-        Dialogue.LabelsDialogueChoices[0] = TextDialogueChoiceA;
-        Dialogue.DialogueChoices[0] = DialogueChoiceA;
-        Dialogue.LabelsDialogueChoices[1] = TextDialogueChoiceB;
-        Dialogue.DialogueChoices[1] = DialogueChoiceB;
-        Dialogue.LabelsDialogueChoices[2] = TextDialogueChoiceC;
-        Dialogue.DialogueChoices[2] = DialogueChoiceC;
+        Dialogue.DialogueChoices = Choices;
 
         // Ensure that each Sentence's `_sImage` array has exactly 6 elements.
         foreach (var part in Dialogue.DialogueParts)
