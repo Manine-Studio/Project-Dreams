@@ -97,12 +97,10 @@ public class DialogueElaborator : MonoBehaviour
             {
                 if (_Dialogue.HasChoices)
                 {
-                    System.Collections.Generic.List<DialogueSO[]> listDialogues = new List<DialogueSO[]>();
+                    System.Collections.Generic.List<List<Choice>> listDialogues = new List<List<Choice>>();
                     listDialogues.Add(_Dialogue.DialogueChoices);
-                    System.Collections.Generic.List<string[]> listLabels = new List<string[]>();
-                    listLabels.Add(_Dialogue.LabelsDialogueChoices);
                     EndDialogue();
-                    GameManager.Instance.XDialogueEventBus.TriggerEvent("START_CHOICE", listDialogues, listLabels);
+                    GameManager.Instance.XDialogueEventBus.TriggerEvent("START_CHOICE", listDialogues);
                 }
                 else
                 {
@@ -139,12 +137,12 @@ public class DialogueElaborator : MonoBehaviour
     private void EndDialogue()
     {
         ConditionsUtils.ApplyCondition(_Dialogue.PostConditions);
-
+        
         _CurrentMonologueIndex = 0;
         _Dialogue = null;
 
         GameManager.Instance.XDialogueEventBus.TriggerEvent("END_DIALOGUE");
-
+        GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
 
         _bIsRunning = false;
     }

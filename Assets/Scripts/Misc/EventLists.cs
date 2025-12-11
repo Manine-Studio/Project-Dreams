@@ -70,5 +70,23 @@
         /// </summary>
         public const string ON_ITEMSLOT_PRESSED = "ON_ITEMSLOT_PRESSED";
 
+        /// <summary>
+        /// params type: CURSORTYPES 
+        /// </summary>
+        public const string ON_CURSOR_CHANGED = "ON_CURSOR_CHANGED";
+
+    }
+    
+    public static class MapEventList
+    {
+        /// <summary>
+        /// params type: none
+        /// </summary>
+        public const string OPEN_MAP = "OPEN_MAP";
+        
+        /// <summary>
+        /// params type: none
+        /// </summary>
+        public const string CHECK_LOCATION = "CHECK_LOCATION";
     }
 }
