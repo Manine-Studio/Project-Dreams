@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Misc;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueUIManager : MonoBehaviour
@@ -100,7 +101,7 @@ public class DialogueUIManager : MonoBehaviour
     /// <summary>
     /// Hides all dialogue-related UI elements.
     /// </summary>
-    /// <param name="param">Optional parameter (not used).</param>
+    /// <param name="param">dialogue</param>
     private void HideDialogue(object[] param)
     {
         _ContinueBtn.gameObject.SetActive(false);
@@ -111,6 +112,12 @@ public class DialogueUIManager : MonoBehaviour
         _Name.text = "";
         _ListOfCharacters.gameObject.SetActive(false);
         _ChoicesBox.SetActive(false);
+
+        Dialogue dialogue = (Dialogue) param[0];
+        if(dialogue != null && dialogue.HasSceneChange && !string.IsNullOrEmpty(dialogue.TargetSceneName))
+        {
+            SceneManager.LoadScene(dialogue.TargetSceneName);
+        }
     }
 
     /// <summary>

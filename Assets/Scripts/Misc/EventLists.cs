@@ -18,7 +18,7 @@
         public const string CHANGE_IMAGE = "CHANGE_IMAGE";
         
         /// <summary>
-        /// params type: none
+        /// params type: Dialogue
         /// </summary>
         public const string END_DIALOGUE = "END_DIALOGUE";
         

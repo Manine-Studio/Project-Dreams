@@ -139,9 +139,9 @@ public class DialogueElaborator : MonoBehaviour
         ConditionsUtils.ApplyCondition(_Dialogue.PostConditions);
         
         _CurrentMonologueIndex = 0;
-        _Dialogue = null;
 
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("END_DIALOGUE");
+        GameManager.Instance.XDialogueEventBus.TriggerEvent("END_DIALOGUE", _Dialogue);
+        _Dialogue = null;
         GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
 
         _bIsRunning = false;
