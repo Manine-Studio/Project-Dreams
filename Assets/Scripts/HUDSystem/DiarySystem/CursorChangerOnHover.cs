@@ -11,8 +11,8 @@ public class CursorChangerOnHover : MonoBehaviour
     [SerializeField, Tooltip("use the name of the object/charachter_SceneName \nEx: eleanor_TestScene")]
     string isDoneKey;
     [SerializeField] bool IsImportant;
+    [SerializeField] bool isCharachter = false;
     bool isDone = false;
-    bool isCharachter = false;
 
 
     private EventTrigger _xEventTrigger;
@@ -35,11 +35,6 @@ public class CursorChangerOnHover : MonoBehaviour
             isDone = false;
         else
             isDone = true;
-
-        if(TryGetComponent<DialogueTrigger>(out _))
-        isCharachter= true;
-        else
-            isCharachter = false;
         
     }
 
