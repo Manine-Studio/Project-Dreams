@@ -70,6 +70,11 @@
         /// </summary>
         public const string ON_ITEMSLOT_PRESSED = "ON_ITEMSLOT_PRESSED";
 
+        /// <summary>
+        /// params type: CURSORTYPES 
+        /// </summary>
+        public const string ON_CURSOR_CHANGED = "ON_CURSOR_CHANGED";
+
     }
     
     public static class MapEventList

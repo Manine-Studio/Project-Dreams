@@ -52,5 +52,10 @@ namespace Progress_System
                 }
             }
         }
+
+        public static Condition GetConditions()
+        {
+            return Resources.LoadAll<ActualDialogueCondition>("DialogueSystemInternalUse")[0].MConditions;
+        }
     }
 }
