@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 
-      _values: 
+      _keys: 03000000
+      _values: 01000000
     _DialogueCSV: {fileID: 4900000, guid: 29ef05d8bd71f954eb5a12c42061179a, type: 3}
     _DialogueParts:
     - _sName: Kerith
@@ -33,9 +33,6 @@ MonoBehaviour:
       _keys: 
       _values: 
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 
