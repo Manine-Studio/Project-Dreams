@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml;
 using Misc;
 using Progress_System;
@@ -33,13 +34,15 @@ public class DialogueElaborator : MonoBehaviour
     public void StartDialogue(object[] param)
     {
         List<Dialogue> dialogueList = (List<Dialogue>)param[0];
-        Dialogue defaultDialogue = (Dialogue)param[1];
-        
-        if (!_bIsRunning)
+        Dialogue defaultDialogue = null ;
+        if(param.Length > 1)
         {
-            GameManager.Instance.XDialogueEventBus.TriggerEvent("START_DIALOGUE");
-
-            _bIsRunning = true;
+            defaultDialogue = (Dialogue)param[1];
+        }
+        
+        if (!_bIsRunning && (defaultDialogue != null || (dialogueList != null && dialogueList.Count > 0 )))
+        {
+           
 
             //checking which dialogue from the list is the one who respects the preconditions
             for(int i = 0; i < dialogueList.Count; i++)
@@ -52,9 +55,16 @@ public class DialogueElaborator : MonoBehaviour
             }
 
             if (_Dialogue == null)
+            {
                 _Dialogue = defaultDialogue;
+            }
+            if (_Dialogue != null)
+            {
+                GameManager.Instance.XDialogueEventBus.TriggerEvent("START_DIALOGUE");
 
-            StartMonologue();
+                _bIsRunning = true;
+                StartMonologue();
+            }
         }
     }
 
@@ -63,18 +73,21 @@ public class DialogueElaborator : MonoBehaviour
     /// </summary>
     public void StartMonologue()
     {
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_NAME", _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
-
-        ClearCurrent();
-
-        AddToCurrent(null, null);
-
-        foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
+        if (_Dialogue != null)
         {
-            AddToCurrent(sentence.SSentence, sentence.SImage);
-        }
+            GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_NAME", _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
 
-        DisplayNextSentence();
+            ClearCurrent();
+
+            AddToCurrent(null, null);
+
+            foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
+            {
+                AddToCurrent(sentence.SSentence, sentence.SImage);
+            }
+
+            DisplayNextSentence();
+        }
     }
 
     /// <summary>

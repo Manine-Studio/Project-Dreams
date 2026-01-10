@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDefaultDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 94bbabaaee27a3440b3d9a36d55ef468, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.size
       value: 1
