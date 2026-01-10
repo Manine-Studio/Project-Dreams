@@ -21,6 +21,9 @@ public class Dialogue
     private bool _HasChoices;
     private List<Choice> _DialogueChoices = new List<Choice>();
 
+    //Boolean needed to show and set the name of the scene in which the dialogue will change at the end
+    private bool _HasSceneChange;
+    private String _TargetSceneName;
 
     public List<Monologue> DialogueParts { get => _DialogueParts; } 
     public bool HasChoices { get => _HasChoices;  set => _HasChoices = value; }
@@ -28,6 +31,8 @@ public class Dialogue
     public Condition PreConditions { get => _PreConditions; }
     public Condition PostConditions { get => _PostConditions; }
     public TextAsset DialogueCSV { get => _DialogueCSV; set => _DialogueCSV = value; }
+    public bool HasSceneChange { get => _HasSceneChange; set => _HasSceneChange = value; }
+    public String TargetSceneName { get => _TargetSceneName; set => _TargetSceneName = value; }
 }
 
 [System.Serializable]

@@ -15,6 +15,10 @@ public class DialogueSO : ScriptableObject
 
     [ConditionalHide("hasChoices")] public List<Choice> Choices;
 
+    public bool hasSceneChange = false;
+
+    [ConditionalHide("hasSceneChange")] public String targetSceneName;
+
     /// <summary>
     /// Ensures that data in the Dialogue object remains consistent and initializes necessary fields.
     /// </summary>
@@ -26,6 +30,10 @@ public class DialogueSO : ScriptableObject
         // Sync choices with the Dialogue object.
         Dialogue.HasChoices = hasChoices;
         Dialogue.DialogueChoices = Choices;
+
+        // Sync the sceneChange with the Dialogue object
+        Dialogue.HasSceneChange = hasSceneChange;
+        Dialogue.TargetSceneName = targetSceneName;
 
         // Ensure that each Sentence's `_sImage` array has exactly 6 elements.
         foreach (var part in Dialogue.DialogueParts)

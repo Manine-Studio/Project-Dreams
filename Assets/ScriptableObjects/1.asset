@@ -53,9 +53,6 @@ MonoBehaviour:
       _keys: 0200000000000000
       _values: 0300000001000000
   hasChoices: 0
-  TextDialogueChoiceA: pippo
-  DialogueChoiceA: {fileID: 11400000}
-  TextDialogueChoiceB: pluto
-  DialogueChoiceB: {fileID: 11400000, guid: dd049444e7e76a54d9e713c3394748d0, type: 2}
-  TextDialogueChoiceC: paperino
-  DialogueChoiceC: {fileID: 11400000, guid: 88564a6c0dd990847930475ff382866e, type: 2}
+  Choices: []
+  hasSceneChange: 1
+  targetSceneName: SampleScene

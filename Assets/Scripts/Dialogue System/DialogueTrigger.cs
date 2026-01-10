@@ -33,12 +33,14 @@ public class DialogueTrigger : MonoBehaviour
             dialogueList.Add(_xDialogues[i].Dialogue);
         }
 
-        if (dialogueList.Count == 0)
+
+        Dialogue defaultDialogue = _xDefaultDialogue != null ? _xDefaultDialogue.Dialogue : null;
+        if (dialogueList.Count == 0 && defaultDialogue!= null)
         {
-            dialogueList.Add(_xDefaultDialogue.Dialogue);
+            dialogueList.Add(defaultDialogue);
         }
 
         // Pass the dialogues to the DialogueElaborator for processing
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_DIALOGUE_ELAB, dialogueList, _xDefaultDialogue.Dialogue);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_DIALOGUE_ELAB, dialogueList, defaultDialogue);
     }
 }
