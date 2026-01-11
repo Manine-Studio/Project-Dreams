@@ -6,7 +6,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 namespace HUDSystem.DiarySystem
 {
-    [RequireComponent(typeof(SpriteRenderer), typeof(EventTrigger), typeof(BoxCollider2D))]
+    [RequireComponent(typeof(SpriteRenderer), typeof(EventTrigger))]
     public class InteractableObject : MonoBehaviour
     {
         [SerializeField] private Condition _xPreConditions;

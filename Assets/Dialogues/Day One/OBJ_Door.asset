@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: OBJ_Door
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 
+      _values: 
+    _DialogueCSV: {fileID: 4900000, guid: a6d087c2acb60074a9572de0302948a4, type: 3}
+    _DialogueParts:
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Questa sembra essere l'unico accesso al Tempio. Un Portale rosso
+          vivido, davvero piacevole a livello estetico devo dire.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Mi chiedo quante persone siano entrate e uscite da qui, il giorno
+          del furto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  TextDialogueChoiceA: 
+  DialogueChoiceA: {fileID: 0}
+  TextDialogueChoiceB: 
+  DialogueChoiceB: {fileID: 0}
+  TextDialogueChoiceC: 
+  DialogueChoiceC: {fileID: 0}

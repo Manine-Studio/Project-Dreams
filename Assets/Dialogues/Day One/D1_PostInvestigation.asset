@@ -1,0 +1,669 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: D1_PostInvestigation
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 
+      _values: 
+    _DialogueCSV: {fileID: 4900000, guid: 0fa2956796a46114996339d3933ec123, type: 3}
+    _DialogueParts:
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Questo luogo non ha nessun sistema di sicurezza\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ac3a4bae3d9826c40aca2b80ec1b8ccf, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Nessun allarme, nessuna telecamera, neanche un vetro per proteggere
+          il Cuscino sacro\u2026 Peculiare, a dir poco.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ac3a4bae3d9826c40aca2b80ec1b8ccf, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Come procedono le indagini, Detective?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "All'incirca come pensavo. Non mi aspettavo di trovare nulla
+          di rilevante qui in giro, ma \xE8 sempre meglio dare un'occhiata.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "\xC8 importante conoscere gli ambienti inerenti alle investigazioni,
+          prima di lavorare sul resto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Certo\u2026 Mi faccia sapere se posso esserle utile in qualche
+          modo.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Mi chiedevo\u2026 Quale pensa possa essere il motivo dietro
+          il furto? Qualche movente le sovviene?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Vede Detective, la verit\xE0 \xE8 che non ne ho idea! Nessun
+          vero devoto alla Dea ruberebbe mai il Cuscino, non solo perch\xE9 \xE8
+          un crimine ma anche perch\xE9 contravviene a qualsiasi dogma!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Non posso neanche ipotizzare che qualcuno l'abbia rubato per
+          rivenderlo\u2026 Un oggetto del genere non avrebbe un valore economico
+          cos\xEC elevato da giustificarne il furto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Lei ne \xE8 convinto? Mi sarei aspettato un certo livello di
+          potenziale magico, da un oggetto come quello.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Chiedo perdono se le mie parole l'hanno offesa, non volevo certamente
+          mancare di rispetto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "No, capisco il suo punto di vista. In realt\xE0, per scrupolo,
+          qualche tempo addietro ho chiesto un\u2026 Consulto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Un consulto di che tipo?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Da parte di un esperto. In oggetti magici.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Beh mi sembra un punto decisamente rilevante! Cosa avete scoperto?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: a6cda00f38a1d104897163f3896ff042, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: eee0b9d7406b53641b7a5e67f1ee37b3, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: a6cda00f38a1d104897163f3896ff042, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Il monaco aveva appena confermato I miei sospetti:
+          l'oggetto che stavo cercando non era altro che una buffonata pubblicitaria
+          creata secoli orsono per accaparrarsi qualche visitatore in pi\xF9.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: eee0b9d7406b53641b7a5e67f1ee37b3, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Gli anni passano, le persone continuano a credere
+          a questa diceria e alla fine si inizia a trattarlo come un culto vero e
+          proprio.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: eee0b9d7406b53641b7a5e67f1ee37b3, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Il Monaco, per\xF2, aveva ragione. Per organizzare
+          un furto cos\xEC ben studiato sarebbe stato necessario un intero gruppo
+          di esperti, gente che si muove solo per grossi colpi.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: eee0b9d7406b53641b7a5e67f1ee37b3, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Non vi era alcun motivo di sospettare un particolare
+          valore nell'artefatto, chiunque si fosse informato sul Cuscino avrebbe
+          presto scoperto della perizia di Skitt.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: eee0b9d7406b53641b7a5e67f1ee37b3, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Comunque sia, guardiamo il lato positivo: \xE8 un'informazione
+          importante per escludere un possibile movente.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: eee0b9d7406b53641b7a5e67f1ee37b3, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Se lo dice lei, Detective\u2026\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: a6cda00f38a1d104897163f3896ff042, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "La ringrazio per la sua disponibilit\xE0, buon uomo. Penso che
+          per oggi non ci sia altro da fare.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Si figuri, ma la prego si sbrighi a ritrovare il Cuscino. Posso
+          fare altro per aiutarla?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Devo chiederle il favore di non uscire dal Tempio, almeno fino
+          a domattina.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Io\u2026 Cosa?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 252c47cfe36e4a14c8b28d50880fcc75, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Sospetta per caso di me, Detective?!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 252c47cfe36e4a14c8b28d50880fcc75, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Oh no, per carit\xE0, non fraintenda amico mio! \xC8 ancora
+          troppo presto per poter formulare ipotesi di questo tipo.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Ho solo bisogno che lei rimanga qui e tenga un occhio vigile
+          per avvisarmi nel caso noti qualcosa di strano. Passer\xF2 di nuovo domani
+          in mattinata, per aggiornarla come sta proseguendo l'investigazione.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Oh, va bene. Cercher\xF2 di fare attenzione.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Un'ultima domanda, prima che io vada. Mi ha un po' sorpreso
+          l'assenza di sistemi di sicurezza, per un oggetto di tale importanza. Mi
+          sono perso qualcosa?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "No, Detective. Vede, i dettami della Dea sono molto chiari:
+          l'accoglienza per noi \xE8 sacra, far sentire a proprio agio gli ospiti
+          \xE8 l'obbligo fondamentale di ogni credente.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Questo si applica a ogni ambito dell'accoglienza. Nascondere
+          il Cuscino dietro una teca, o costringere i nostri ospiti a lunghi controlli
+          e trafile per poter pregare all'Altare sarebbe quantomeno poco corretto,
+          se non addirittura un peccato.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Quindi non vi \xE8 modo di capire chi sia entrato in questo
+          Tempio e quando.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "In realt\xE0, un modo ci sarebbe.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Ricorda il consulto di cui le parlavo prima? Possiamo dire che
+          non \xE8 stato del tutto inutile.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Il cancello d'ingresso, a quanto pare, \xE8 stato forgiato con
+          un unico blocco di pietra magica. Nessuno ha idea di chi lo abbia installato,
+          \xE8 l\xEC da tempo immemore ormai, ma abbiamo recentemente scoperto come
+          funziona.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "\xC8 pi\xF9 facile da mostrare che da spiegare. Guardi.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Il monaco aveva estratto da una tasca una piccola
+          pietra rossa, di un colore molto simile a quello del cancello seppure leggermente
+          pi\xF9 sbiadito.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "<i><color=blue>[Avvicinandolo a me, il piccolo ciottolo si era
+          illuminato per un breve istante.]</color></i>\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Con un frammento del cancello \xE8 possibile sapere quando una
+          persona \xE8 entrata l'ultima volta nel Tempio. Il suo ingresso, ad esempio,
+          \xE8 avvenuto poco meno di un'ora fa.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Ecco, lo prenda, servir\xE0 sicuramente pi\xF9 a lei che a me.
+          Pi\xF9 tempo passa e meno il resoconto \xE8 preciso, ma dovrebbe essere
+          in grado di capire abbastanza facilmente se qualcuno \xE8 entrato nel Tempio
+          negli ultimi dieci giorni circa.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Questa \xE8 davvero una sorpresa\u2026 Un oggetto magico in
+          grado di funzionare per decadi, se non secoli. Penso sia la prima volta
+          che vedo qualcosa del genere.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "L'esperto a cui ho chiesto ha detto che la carica magica ha
+          continuato a svanire lentamente nel corso del tempo, ma dovrebbe comunque
+          resistere ben oltre i nostri figli e i nostri nipoti.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Spero possa esserle d'aiuto. Se dovesse interessarle, la persona
+          con cui ho parlato abita nei sobborghi del villaggio. Il suo nome \xE8
+          Skitt, sono sicuro che lo incontrer\xE0 presto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Questo posto \xE8 gi\xE0 pieno di sorprese, devo dire. Grazie
+          ancora per le informazioni, e mi raccomando tenga un occhio aperto finch\xE9
+          non ritorno.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Sar\xE0 fatto.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Per quanto riguarda l'ingresso al Tempio, sarebbe preferibile
+          impedire l'accesso a chiunque finch\xE9 non avremo ritrovato il Cuscino.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Lo immaginavo\u2026 Non che ci sia granch\xE9 da vedere, senza
+          la nostra reliquia sacra.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "Bakon\xE9"
+      _Sentences:
+      - _sSentence: "Le auguro una buona serata, mio caro. Stia bene, e stia vigile.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: Uldon
+      _Sentences:
+      - _sSentence: "Anche a lei, Detective!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  TextDialogueChoiceA: 
+  DialogueChoiceA: {fileID: 0}
+  TextDialogueChoiceB: 
+  DialogueChoiceB: {fileID: 0}
+  TextDialogueChoiceC: 
+  DialogueChoiceC: {fileID: 0}
