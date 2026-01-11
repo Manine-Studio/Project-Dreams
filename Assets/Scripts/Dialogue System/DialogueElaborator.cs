@@ -82,7 +82,6 @@ public class DialogueElaborator : MonoBehaviour
 
         AddToCurrent(null, null);
 
-        foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
         if (_Dialogue != null)
         {
             GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_NAME", _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
