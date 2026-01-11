@@ -122,7 +122,7 @@ public class DialogueElaborator : MonoBehaviour
                     System.Collections.Generic.List<List<Choice>> listDialogues = new List<List<Choice>>();
                     listDialogues.Add(_Dialogue.DialogueChoices);
                     EndDialogue();
-                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_CHOICE, listDialogues, listLabels);
+                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_CHOICE, listDialogues);
                 }
                 else
                 {
