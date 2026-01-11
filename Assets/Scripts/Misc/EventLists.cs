@@ -41,6 +41,11 @@
         /// params type: none
         /// </summary>
         public const string HIDE_CHOICE = "HIDE_CHOICE";
+        
+        /// <summary>
+        /// params type: none
+        /// </summary>
+        public const string CHECK_POST_INTERACTION = "CHECK_POST_INTERACTION";
     }
 
     public static class InteractEventList
