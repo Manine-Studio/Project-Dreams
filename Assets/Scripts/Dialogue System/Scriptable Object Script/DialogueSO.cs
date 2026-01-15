@@ -19,6 +19,12 @@ public class DialogueSO : ScriptableObject
 
     [ConditionalHide("hasSceneChange")] public String targetSceneName;
 
+    public void ResetParts()
+    {
+        Dialogue.DialogueParts.Clear();
+        Dialogue.DialogueCSV = null;
+    }
+    
     /// <summary>
     /// Ensures that data in the Dialogue object remains consistent and initializes necessary fields.
     /// </summary>
