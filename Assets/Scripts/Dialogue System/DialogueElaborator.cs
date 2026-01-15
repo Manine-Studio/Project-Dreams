@@ -63,7 +63,7 @@ public class DialogueElaborator : MonoBehaviour
             }
             if (_Dialogue != null)
             {
-                GameManager.Instance.XDialogueEventBus.TriggerEvent("START_DIALOGUE");
+                GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_DIALOGUE);
 
                 _bIsRunning = true;
                 StartMonologue();
@@ -79,7 +79,7 @@ public class DialogueElaborator : MonoBehaviour
         if (_Dialogue != null)
         {
 
-            GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_NAME", _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
+            GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_NAME, _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
 
             ClearCurrent();
 
@@ -117,11 +117,12 @@ public class DialogueElaborator : MonoBehaviour
                         System.Collections.Generic.List<List<Choice>> listDialogues = new List<List<Choice>>();
                         listDialogues.Add(_Dialogue.DialogueChoices);
                         EndDialogue();
-                        GameManager.Instance.XDialogueEventBus.TriggerEvent("START_CHOICE", listDialogues);
+                        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_CHOICE, listDialogues);
                     }
                     else
                     {
                         EndDialogue();
+                        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHECK_POST_INTERACTION);
                     }
                 }
                 return;
@@ -162,10 +163,11 @@ public class DialogueElaborator : MonoBehaviour
         _CurrentMonologueIndex = 0;
         _CurrentSentenceIndex = 0;
 
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("END_DIALOGUE", _Dialogue);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.END_DIALOGUE, _Dialogue);
         _Dialogue = null;
         GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
 
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.END_DIALOGUE);
         _bIsRunning = false;
     }
 
