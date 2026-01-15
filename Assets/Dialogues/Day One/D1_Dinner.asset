@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 
-      _values: 
-    _DialogueCSV: {fileID: 4900000, guid: fa11a4f6387b9774d8a42ecf4997e67c, type: 3}
+      _keys: 03000000
+      _values: 01000000
+    _DialogueCSV: {fileID: 4900000, guid: f99c65aecb84fa049b02979a5f97367f, type: 3}
     _DialogueParts:
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Cosa ne pensa, Detective? Le piace la nostra zuppa tradizionale?\r"
+      - _sSentence: "Quindi, cosa ne pensa, Detective? Le piace la nostra zuppa tradizionale?\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -29,7 +29,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Devo ammettere che aveva ragione, il sapore \xE8 davvero unico!\r"
         _sAudio: {fileID: 0}
@@ -40,9 +40,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Le spezie si sposano alla perfezione con la carne, quando mi
+      - _sSentence: "Le spezie si sposano alla perfezione con la carne; quando mi
           ha elencato gli ingredienti non mi aspettavo una resa cos\xEC eccellente.\r"
         _sAudio: {fileID: 0}
         _sImage:
@@ -52,7 +52,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "\xC8 una ricetta speciale! Qui in citt\xE0 tutti gli anziani
           la tramandano ai pi\xF9 giovani da generazioni.\r"
@@ -64,11 +64,11 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Mia madre, pace all'anima sua, diceva sempre che questa zuppa
-          \xE8 usata da tutta la citt\xE0 ma che la prima ad averla cucinata \xE8
-          stata una nostra trisavola.\r"
+      - _sSentence: "Mia madre \u2014 pace all'anima sua \u2014 diceva sempre che
+          questa zuppa \xE8 usata da tutta la citt\xE0, ma che la prima ad averla
+          cucinata \xE8 stata una nostra trisavola.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -77,7 +77,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Era una donna molto orgogliosa, sa? Nonostante tutto quello
           che ha vissuto, lei e mio padre non si sono mai arresi.\r"
@@ -89,10 +89,12 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-      - _sSentence: "<i><color=blue>[Era chiaro che si riferisse alla guerra. Sleeper's
-          Burrow si trova particolarmente vicina al confine, \xE8 difficile anche
-          solo concepire ci\xF2 che hanno dovuto passare per chiunque non abbia vissuto
-          la tortura di vivere di fianco ai campi di battaglia.]</color></i>\r"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
+      _Sentences:
+      - _sSentence: "<i><color=#34689c>[Era chiaro che si riferisse alla guerra.
+          Sleeper's Burrow si trova particolarmente vicina al confine; per chiunque
+          non abbia vissuto di fianco ai campi di battaglia, \xE8 difficile concepire
+          ci\xF2 che hanno dovuto passare.]</color></i>\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -101,7 +103,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-      - _sSentence: "<i><color=blue>[Ho pensato fosse meglio non rivangare troppo
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
+      _Sentences:
+      - _sSentence: "<i><color=#34689c>[Ho pensato fosse meglio non rivangare troppo
           il passato, non volevo dare una nota amara a una cena gi\xE0 cos\xEC saporita.]</color></i>\r"
         _sAudio: {fileID: 0}
         _sImage:
@@ -111,10 +115,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Lynn, qual \xE8 il vostro punto di vista su quanto accaduto
-          quest'oggi?\r"
+      - _sSentence: "Signorina Lynn, qual \xE8 il vostro punto di vista su quanto
+          accaduto quest'oggi?\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -123,10 +127,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "\xC8 una tragedia! Abbiamo perso una reliquia sacra, non so
-          come Uldon si regga ancora in piedi\r"
+          come Uldon si regga ancora in piedi!\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -135,7 +139,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Quando l'ho scoperto, ho temuto che gli fosse venuto un infarto\u2026
           Sa, \xE8 sempre stato cagionevole di salute e sicuramente la scomparsa
@@ -148,10 +152,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Ha menzionato prima il fatto che anche i suoi clienti sono andati
-          via, dopo aver scoperto quanto successo?\r"
+      - _sSentence: "Prima ha menzionato il fatto che i suoi clienti hanno disdetto,
+          dopo aver scoperto quanto successo?\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -160,12 +164,12 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "S\xEC, di solito le persone che si fermano a dormire sono fedeli
-          che vengono in citt\xE0 per vedere il Cuscino della Dea. Alcuni sono andati
-          via perch\xE9 non possono vederlo, ma altri sono stati genuinamente spaventati
-          dall'accaduto.\r"
+          che vengono in citt\xE0 per vedere il Cuscino della Dea. Alcuni hanno disdetto
+          proprio perch\xE9 non possono vederlo, ma altri sono stati genuinamente
+          spaventati dall'accaduto.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -174,7 +178,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Pensavano che potesse succedere qualcosa anche a loro?\r"
         _sAudio: {fileID: 0}
@@ -185,7 +189,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Esatto. Una persona che osa rubare il Cuscino della Dea non
           pu\xF2 essere qualcuno di raccomandabile, anche io ho avuto paura che qualche
@@ -198,7 +202,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Non si preoccupi, mia cara. Adesso sono qui io, dubito che il
           colpevole abbia desiderio di incontrarmi.\r"
@@ -210,9 +214,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Vero anche questo, spero che basti a scoraggarlo\u2026\r"
+      - _sSentence: "Anche questo \xE8 vero, spero che basti a scoraggarlo\u2026\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -221,9 +225,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Nasconde reliquie sacre, in questa Locanda?\r"
+      - _sSentence: "Le \xE8 mai capitato di nascondere reliquie sacre, in questa
+          Locanda?\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -232,7 +237,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Non che io sappia!\r"
         _sAudio: {fileID: 0}
@@ -243,9 +248,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Allora non credo correremo alcun pericolo, miss Lynn.\r"
+      - _sSentence: Allora non credo correremo alcun pericolo, signorina Lynn.
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -258,9 +263,6 @@ MonoBehaviour:
       _keys: 
       _values: 
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

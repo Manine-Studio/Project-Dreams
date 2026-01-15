@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: D1_Post-Dinner
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 03000000
+      _values: 01000000
+    _DialogueCSV: {fileID: 4900000, guid: 5de81fb2737068f42871584b1ddf2eda, type: 3}
+    _DialogueParts:
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
+      _Sentences:
+      - _sSentence: "Lei \xE8 nata e cresciuta qui, giusto?\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: <color=#e8dd10>Lynn</color>
+      _Sentences:
+      - _sSentence: "Io e i miei genitori, e i loro genitori prima ancora!\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: <color=#e8dd10>Lynn</color>
+      _Sentences:
+      - _sSentence: "La nostra famiglia risiede a Sleeper's Burrow praticamente da
+          sempre.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
+      _Sentences:
+      - _sSentence: "Posso farle qualche domanda sugli abitanti del luogo? Immagino
+          li conosca piuttosto bene.\r"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: <color=#e8dd10>Lynn</color>
+      _Sentences:
+      - _sSentence: "Ma certo! Non trover\xE0 anima viva pi\xF9 esperta di me sulle
+          persone di questa citt\xE0!"
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

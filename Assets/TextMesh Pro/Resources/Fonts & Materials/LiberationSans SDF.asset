@@ -28,11 +28,12 @@ Material:
     m_Floats:
     - _FaceDilate: 0.182
     - _OutlineSoftness: 0
-    - _OutlineWidth: 0.151
+    - _OutlineWidth: 0.1
+    - _ScaleRatioA: 0.9
     - _ScaleRatioB: 1
     - _ScaleRatioC: 0.56745
     m_Colors:
-    - _OutlineColor: {r: 0.5566038, g: 0.07088822, b: 0.07088822, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &11400000
 MonoBehaviour:
