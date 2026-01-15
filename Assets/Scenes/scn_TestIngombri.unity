@@ -389,7 +389,7 @@ Transform:
   m_GameObject: {fileID: 262247603}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: -18.31}
+  m_LocalPosition: {x: 1, y: 1, z: -16.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -710,6 +710,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1175194223310896452, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175194223310896452, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175194223310896452, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 320
+      objectReference: {fileID: 0}
     - target: {fileID: 3445267752922527730, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
@@ -793,6 +805,54 @@ PrefabInstance:
     - target: {fileID: 4425579581573812140, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264897363348469708, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264897363348469708, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264897363348469708, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273423951047149553, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273423951047149553, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273423951047149553, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039184115727593606, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039184115727593606, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039184115727593606, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240972183337440164, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240972183337440164, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240972183337440164, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 320
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
