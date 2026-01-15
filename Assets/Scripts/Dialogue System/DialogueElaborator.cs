@@ -16,13 +16,14 @@ public class DialogueElaborator : MonoBehaviour
     private List<string> _sCurrentText;
     private List<Sprite[]> _xCurrentImage;
     private int _CurrentMonologueIndex;
+    private int _CurrentSentenceIndex;
 
     // Use this for initialization
     private void Start()
     {
         _sCurrentText = new List<string>();
         _xCurrentImage = new List<Sprite[]>();
-        
+
         GameManager.Instance.XDialogueEventBus.Register(DialogueEventList.START_DIALOGUE_ELAB, StartDialogue);
     }
 
@@ -34,26 +35,25 @@ public class DialogueElaborator : MonoBehaviour
     public void StartDialogue(object[] param)
     {
         List<Dialogue> dialogueList = (List<Dialogue>)param[0];
-        Dialogue defaultDialogue = null ;
-        if(param.Length > 1)
+        Dialogue defaultDialogue = null;
+        if (param.Length > 1)
         {
             defaultDialogue = (Dialogue)param[1];
         }
-        
-        if (!_bIsRunning && (defaultDialogue != null || (dialogueList != null && dialogueList.Count > 0 )))
+
+        if (!_bIsRunning)
         {
-           
-            GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_DIALOGUE);
 
-            _bIsRunning = true;
-
-            //checking which dialogue from the list is the one who respects the preconditions
-            for(int i = 0; i < dialogueList.Count; i++)
+            if (dialogueList != null && dialogueList.Count > 0)
             {
-                if (ConditionsUtils.CheckConditions(dialogueList[i].PreConditions))
+                //checking which dialogue from the list is the one who respects the preconditions
+                for (int i = 0; i < dialogueList.Count; i++)
                 {
-                    _Dialogue = dialogueList[i];
-                    break;
+                    if (ConditionsUtils.CheckConditions(dialogueList[i].PreConditions))
+                    {
+                        _Dialogue = dialogueList[i];
+                        break;
+                    }
                 }
             }
 
@@ -76,19 +76,14 @@ public class DialogueElaborator : MonoBehaviour
     /// </summary>
     public void StartMonologue()
     {
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_NAME, _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
-
-        ClearCurrent();
-
-        AddToCurrent(null, null);
-
         if (_Dialogue != null)
         {
+
             GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_NAME", _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
 
             ClearCurrent();
 
-            AddToCurrent(null, null);
+            //AddToCurrent(null, null);
 
             foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
             {
@@ -104,36 +99,39 @@ public class DialogueElaborator : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        //Remove the previous sentence from current
-        RemoveFromCurrent();
-
-        if (_sCurrentText.Count == 0)
+        if (_sCurrentText != null && _Dialogue != null && _Dialogue.DialogueParts != null && _Dialogue.DialogueParts.Count > 0)
         {
-            //If the list is empty, it means that is needed to go on the next monologue or that the dialogue is ended
-            if (_CurrentMonologueIndex < _Dialogue.DialogueParts.Count - 1)
+            //If i reached the last sentence of the current monologue
+            if (_CurrentSentenceIndex == _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences.Count)
             {
-                _CurrentMonologueIndex++;
-                StartMonologue();
-            }
-            else
-            {
-                if (_Dialogue.HasChoices)
+                // if the current monologue wasn't the last,  start the next monologue
+                if (_CurrentMonologueIndex < _Dialogue.DialogueParts.Count - 1)
                 {
-                    System.Collections.Generic.List<List<Choice>> listDialogues = new List<List<Choice>>();
-                    listDialogues.Add(_Dialogue.DialogueChoices);
-                    EndDialogue();
-                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_CHOICE, listDialogues);
+                    _CurrentMonologueIndex++;
+                    StartMonologue();
                 }
                 else
                 {
-                    EndDialogue();
-                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHECK_POST_INTERACTION);
+                    if (_Dialogue.HasChoices)
+                    {
+                        System.Collections.Generic.List<List<Choice>> listDialogues = new List<List<Choice>>();
+                        listDialogues.Add(_Dialogue.DialogueChoices);
+                        EndDialogue();
+                        GameManager.Instance.XDialogueEventBus.TriggerEvent("START_CHOICE", listDialogues);
+                    }
+                    else
+                    {
+                        EndDialogue();
+                    }
                 }
                 return;
             }
+
+            TypeSentence();
+            _CurrentSentenceIndex++;
         }
 
-        TypeSentence();
+
     }
 
     /// <summary>
@@ -149,9 +147,9 @@ public class DialogueElaborator : MonoBehaviour
         List<Sprite[]> list = new List<Sprite[]>();
         list.Add(image);
 
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, "");
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, sentence);
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_IMAGE, list);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", "");
+        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", sentence);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_IMAGE", list);
     }
 
     /// <summary>
@@ -160,16 +158,14 @@ public class DialogueElaborator : MonoBehaviour
     private void EndDialogue()
     {
         ConditionsUtils.ApplyCondition(_Dialogue.PostConditions);
-        
+
         _CurrentMonologueIndex = 0;
+        _CurrentSentenceIndex = 0;
 
         GameManager.Instance.XDialogueEventBus.TriggerEvent("END_DIALOGUE", _Dialogue);
         _Dialogue = null;
         GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
 
-
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.END_DIALOGUE);
-        
         _bIsRunning = false;
     }
 
@@ -178,6 +174,7 @@ public class DialogueElaborator : MonoBehaviour
     private void ClearCurrent()
     {
         _sCurrentText.Clear();
+        _CurrentSentenceIndex = 0;
         _xCurrentImage.Clear();
     }
 
@@ -187,16 +184,11 @@ public class DialogueElaborator : MonoBehaviour
         _xCurrentImage.Add(image);
     }
 
-    private void RemoveFromCurrent()
-    {
-        _sCurrentText.RemoveAt(0);
-        _xCurrentImage.RemoveAt(0);
-    }
 
     private void GetFromCurrent(out string text, out Sprite[] sprite)
     {
-        text = _sCurrentText[0];
-        sprite = _xCurrentImage[0];
+        text = _sCurrentText[_CurrentSentenceIndex];
+        sprite = _xCurrentImage[_CurrentSentenceIndex];
     }
 
     #endregion
