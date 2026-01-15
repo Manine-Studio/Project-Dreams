@@ -40,7 +40,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -52,7 +52,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -65,7 +65,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -76,7 +76,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -87,7 +87,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -98,7 +98,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -109,7 +109,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -121,7 +121,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -134,7 +134,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -146,7 +146,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -158,7 +158,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -170,7 +170,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -182,7 +182,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -193,13 +193,19 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:
-      _keys: 
-      _values: 
+      _keys: 05000000
+      _values: 01000000
   hasChoices: 0
-  Choices: []
+  Choices:
+  - _sLabel: Chiedi di Kerith
+    _xDialogueSO: {fileID: 11400000}
+  - _sLabel: Chiedi di Rhina
+    _xDialogueSO: {fileID: 11400000, guid: 2b8d6399838385d46a91127b32580cc2, type: 2}
+  - _sLabel: Chiedi di Uldon
+    _xDialogueSO: {fileID: 11400000, guid: fbfef9c530b5181438cf98ea41b4b5ba, type: 2}
   hasSceneChange: 0
   targetSceneName: 

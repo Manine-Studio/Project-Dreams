@@ -11,5 +11,6 @@ public enum Conditions
 	DayOne_PortalCheck,
 	DayOne_AltarCheck,
 	DayOne_WallCheck,
-	DayOne_UldonSpoken
+	DayOne_UldonSpoken,
+	DayOne_DinnerDone
 }

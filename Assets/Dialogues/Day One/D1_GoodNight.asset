@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 03000000050000000600000007000000
+      _values: 01000000010000000100000001000000
     _DialogueCSV: {fileID: 4900000, guid: c294c6ab3c0f07a45b8fce9389334e7d, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -28,7 +28,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -40,7 +40,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -51,7 +51,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -63,7 +63,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -76,7 +76,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -87,7 +87,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -99,7 +99,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:

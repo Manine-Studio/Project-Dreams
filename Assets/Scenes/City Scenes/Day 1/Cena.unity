@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103159563327179966, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -554,7 +558,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ddfa869f6d70eb488ab6fe39df2f86f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13fd52cf0ec6e7c41937427e0bcc4ca3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -588,18 +592,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 359967396134208167, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
-      propertyPath: _xDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 359967396134208167, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
-      propertyPath: _xDialogues.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: e418c13fc302f064ca78f8653918b9e4, type: 2}
-    - target: {fileID: 359967396134208167, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
-      propertyPath: _xDialogues.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: fce5592b175fe8e4aa06dacab3c3b57b, type: 2}
     - target: {fileID: 2670140658267282862, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1002.02716
@@ -647,19 +639,7 @@ PrefabInstance:
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDefaultDialogue
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
-      propertyPath: _xDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
-      propertyPath: _xDialogues.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: bae8b007bf2d7e143a8e2ce7bfb2f139, type: 2}
-    - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
-      propertyPath: _xDialogues.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: bd439a96edfd8ba4ca61e55fc0d217d5, type: 2}
+      objectReference: {fileID: 11400000, guid: 381ac95dd8c23ad4e9d66ba317b8fe44, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 030000000c000000
+      _values: 0100000001000000
     _DialogueCSV: {fileID: 4900000, guid: 5de81fb2737068f42871584b1ddf2eda, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -26,7 +26,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: e1a06d667d6d1ca4885d7570f3e4d4cd, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -37,7 +37,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 926e70356b983d141af0027e8a5374ba, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -49,7 +49,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -61,7 +61,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#e8dd10>Lynn</color>
@@ -73,13 +73,19 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:
       _keys: 
       _values: 
-  hasChoices: 0
-  Choices: []
+  hasChoices: 1
+  Choices:
+  - _sLabel: Chiedi di Kerith
+    _xDialogueSO: {fileID: 11400000, guid: 5fb9bcf717fcffe4cb4ebb7897d8a87a, type: 2}
+  - _sLabel: Chiedi di Rhina
+    _xDialogueSO: {fileID: 11400000, guid: 2b8d6399838385d46a91127b32580cc2, type: 2}
+  - _sLabel: Chiedi di Uldon
+    _xDialogueSO: {fileID: 11400000, guid: fbfef9c530b5181438cf98ea41b4b5ba, type: 2}
   hasSceneChange: 0
   targetSceneName: 

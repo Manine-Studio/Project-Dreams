@@ -260,9 +260,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:
-      _keys: 
-      _values: 
+      _keys: 0c000000
+      _values: 01000000
   hasChoices: 0
   Choices: []
-  hasSceneChange: 0
-  targetSceneName: 
+  hasSceneChange: 1
+  targetSceneName: Locanda

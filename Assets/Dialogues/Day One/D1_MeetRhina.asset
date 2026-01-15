@@ -25,7 +25,7 @@ MonoBehaviour:
           accade mai.]</color></i>\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
@@ -37,7 +37,7 @@ MonoBehaviour:
           di cui mi avevano comunicato l\u2019arrivo per questo pomeriggio.\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
@@ -50,7 +50,7 @@ MonoBehaviour:
           mia signora.\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -62,7 +62,7 @@ MonoBehaviour:
           signorinella molto timida \xE8 mia figlia, Eleanor.\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -75,7 +75,7 @@ MonoBehaviour:
           dica!\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
           ancora incerta del fatto che fossi degno di fiducia.]</color></i>\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
           niente\u2026 Giurin giurello!\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: b50ebf37d1d39924583e982cfd119c6f, type: 3}
         - {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
           a nascondersi dietro la mamma]</color></i>\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 5538ac7fae4ec1f4db9f87f6b9910c49, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: ea70596cc511514478660613be05eb33, type: 3}
         - {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
           vero, signor Detective?\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da309b61e8eb7d64e877a8afcfc663bd, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 5cb4e79e72631fd4ea1530e64725de06, type: 3}
         - {fileID: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
           all\u2019opera per risolvere il caso e dimostrare la tua innocenza!\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 5538ac7fae4ec1f4db9f87f6b9910c49, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: ea70596cc511514478660613be05eb33, type: 3}
         - {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
           me la sono sentita di lasciarla da sola.\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -160,7 +160,7 @@ MonoBehaviour:
           benvenuta, se lo desidera. Che ne dite, ci dirigiamo sulla scena del misfatto?\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -175,7 +175,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -239,7 +239,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -253,7 +253,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -265,7 +265,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -279,7 +279,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -290,7 +290,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -301,7 +301,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -313,7 +313,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -324,7 +324,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -336,7 +336,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -349,7 +349,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -362,7 +362,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -375,7 +375,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -388,7 +388,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -401,7 +401,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -412,7 +412,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -423,7 +423,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -434,7 +434,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -447,7 +447,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -460,7 +460,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
@@ -473,7 +473,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
@@ -485,7 +485,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
     _PostConditions:
       _keys: 
