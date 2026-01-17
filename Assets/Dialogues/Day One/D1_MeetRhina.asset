@@ -25,7 +25,7 @@ MonoBehaviour:
           accade mai.]</color></i>\r"
         _sAudio: {fileID: 0}
         _sImage:
-        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}

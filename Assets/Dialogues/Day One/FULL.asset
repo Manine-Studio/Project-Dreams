@@ -23,12 +23,12 @@ MonoBehaviour:
       - _sSentence: TEST INGOMBRI
         _sAudio: {fileID: 0}
         _sImage:
+        - {fileID: 21300000, guid: 3f4d02db42c54774689eb7171511ed93, type: 3}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
-        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 21300000, guid: 6daba94c6fe162c49a6b36c5e43a6d5c, type: 3}
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
-        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
-        - {fileID: 21300000, guid: 6e3b74b2481e1c2428a703b2837329f7, type: 3}
-        - {fileID: 21300000, guid: 6bee733369f5fe5458312581916ed882, type: 3}
+        - {fileID: 21300000, guid: 032212dd8ff06644daff5f5b4a943ff2, type: 3}
+        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
     _PostConditions:
       _keys: 
       _values: 
