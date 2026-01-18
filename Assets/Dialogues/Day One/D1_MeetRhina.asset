@@ -493,4 +493,4 @@ MonoBehaviour:
   hasChoices: 0
   Choices: []
   hasSceneChange: 1
-  targetSceneName: Tempio_Ingresso
+  targetSceneName: TempioIngresso

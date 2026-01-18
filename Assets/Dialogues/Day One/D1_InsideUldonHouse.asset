@@ -564,4 +564,4 @@ MonoBehaviour:
   hasChoices: 0
   Choices: []
   hasSceneChange: 1
-  targetSceneName: Tempio_Esterno
+  targetSceneName: TempioEsterno

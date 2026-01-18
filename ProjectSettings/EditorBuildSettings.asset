@@ -18,13 +18,13 @@ EditorBuildSettings:
     path: Assets/Scenes/City Scenes/Day 1/Piazza.unity
     guid: ba2d84f895678184eb677c09ec498083
   - enabled: 1
-    path: Assets/Scenes/City Scenes/Day 1/Tempio_Ingresso.unity
+    path: Assets/Scenes/City Scenes/Day 1/TempioIngresso.unity
     guid: b459695951f80164383f3a8a00846ef8
   - enabled: 1
-    path: Assets/Scenes/City Scenes/Day 1/Tempio_Esterno.unity
+    path: Assets/Scenes/City Scenes/Day 1/TempioEsterno.unity
     guid: de676fa13ffdb2647aa3ddb8555b3dec
   - enabled: 1
-    path: Assets/Scenes/City Scenes/Day 1/Tempio_Interno.unity
+    path: Assets/Scenes/City Scenes/Day 1/TempioInterno.unity
     guid: b37dfa9140c854249b0f7606df980ab5
   - enabled: 1
     path: Assets/Scenes/City Scenes/Day 1/Locanda.unity
