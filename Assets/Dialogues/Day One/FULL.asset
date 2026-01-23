@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: FULL
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 
+      _values: 
+    _DialogueCSV: {fileID: 4900000, guid: 72de81d35f7bc1046baac0bbb9e3d24c, type: 3}
+    _DialogueParts:
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
+      _Sentences:
+      - _sSentence: TEST INGOMBRI
+        _sAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 3f4d02db42c54774689eb7171511ed93, type: 3}
+        - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
+        - {fileID: 21300000, guid: 6daba94c6fe162c49a6b36c5e43a6d5c, type: 3}
+        - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
+        - {fileID: 21300000, guid: 032212dd8ff06644daff5f5b4a943ff2, type: 3}
+        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
+    _PostConditions:
+      _keys: 
+      _values: 
+  hasChoices: 0
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

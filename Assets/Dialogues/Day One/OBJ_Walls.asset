@@ -18,7 +18,7 @@ MonoBehaviour:
       _values: 
     _DialogueCSV: {fileID: 4900000, guid: f5095e1d361413a4f8ff0b014d0f2b46, type: 3}
     _DialogueParts:
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Le mura circondano l'intero Tempio.\r"
         _sAudio: {fileID: 0}
@@ -29,10 +29,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "A occhio, sono alte almeno tre metri. Difficile scavalcarle
-          senza attrezzatura specifica.\r"
+      - _sSentence: "A occhio, sono alte almeno tre metri. Difficile scavalcare senza
+          attrezzatura specifica.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Non sono presenti crepe, sembrano molto ben tenute.\r"
         _sAudio: {fileID: 0}
@@ -52,9 +52,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Forse un passaggio segreto\u2026\r"
+      - _sSentence: "Forse\u2026 Un passaggio segreto\u2026\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "\u2026\r"
         _sAudio: {fileID: 0}
@@ -74,9 +74,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "No. Immagino dovr\xF2 impegnarmi pi\xF9 di cos\xEC.\r"
+      - _sSentence: "No. Immagino dovr\xF2 impegnarmi pi\xF9 di cos\xEC."
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -86,12 +86,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:
-      _keys: 
-      _values: 
+      _keys: 0a000000
+      _values: 01000000
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

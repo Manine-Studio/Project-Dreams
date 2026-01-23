@@ -18,9 +18,9 @@ MonoBehaviour:
       _values: 
     _DialogueCSV: {fileID: 4900000, guid: 0b8f2163dcb53804c84008ce37ad24af, type: 3}
     _DialogueParts:
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Che meraviglioso albero di glicine\u2026\r"
+      - _sSentence: "Che maestoso esemplare di\u2026\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -29,10 +29,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "A giudicare dalle dimensioni veglia su questo Tempio da tempo
-          immemore, resistendo pazientemente al Sole accecante e alla neve imperterrita.\r"
+      - _sSentence: "\u2026\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -41,10 +40,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Ironico che sia proprio un albero di glicine a proteggere l'altare
-          del Cuscino della Dea. Mi chiedo se sia stata una scelta precipua.\r"
+      - _sSentence: "Non credo di aver mai visto un albero del genere\u2026"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -57,9 +55,6 @@ MonoBehaviour:
       _keys: 
       _values: 
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

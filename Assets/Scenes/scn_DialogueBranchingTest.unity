@@ -280,7 +280,7 @@ PrefabInstance:
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 8510c4506c5eb6e4cb0717e6ad368d19, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

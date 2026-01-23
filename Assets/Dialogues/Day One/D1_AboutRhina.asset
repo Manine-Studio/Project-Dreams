@@ -14,24 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 
-      _values: 
-    _DialogueCSV: {fileID: 4900000, guid: eb52d7c9da6bfed4085e5f25be44d9b1, type: 3}
+      _keys: 03000000
+      _values: 01000000
+    _DialogueCSV: {fileID: 4900000, guid: 21f67d0b607e3de45a545eba3b9b528b, type: 3}
     _DialogueParts:
-    - _sName: ' '
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "<i><color=blue>[Rhina \xE8 il capovillaggio e sembrava avere
+      - _sSentence: "<i><color=#34689c>[Rhina \xE8 il capovillaggio e sembrava avere
           un rapporto piuttosto conflittuale con Uldon. Era importante saperne di
           pi\xF9.]</color></i>\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
-        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
-        - {fileID: 0}
-        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Oh, Rhina e io siamo amiche sin da bambine!\r"
         _sAudio: {fileID: 0}
@@ -39,47 +39,48 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Siamo andati a scuola insieme, \xE8 sempre stata una persona
-          straordinaria. Sempre pronta a difendere i pi\xF9 deboli e aiutare il prossimo.\r"
+      - _sSentence: "Siamo andate a scuola insieme, \xE8 sempre stata una persona
+          straordinaria\u2026 Sempre pronta a difendere i pi\xF9 deboli e aiutare
+          il prossimo.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Anche se c'\xE8 da ammettere che era spesso una testa calda.
           Un bel po' di volte ha rischiato di finire a menare le mani con qualche
-          professore. Credo che sia anche perch\xE9 \xE8 molto forte, fisicamente.\r"
+          professore. Credo che sia anche perch\xE9 \xE8 molto forte fisicamente.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Diceva sempre che \"\"se hai la fortuna di avere dei muscoli
-          cos\xEC, \xE8 da stupidi non usarli\"\".\"\r"
+      - _sSentence: "Diceva sempre che \"se hai la fortuna di avere dei muscoli cos\xEC,
+          \xE8 da stupidi non usarli\".\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "\xC8 sempre stata un'appassionata di fitness?\r"
         _sAudio: {fileID: 0}
@@ -87,10 +88,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: ac3a4bae3d9826c40aca2b80ec1b8ccf, type: 3}
+        - {fileID: 21300000, guid: e1a06d667d6d1ca4885d7570f3e4d4cd, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Oh no, non l'ho mai vista andare in palestra in vita sua! \xC8
           la sua Dote!\r"
@@ -99,32 +100,24 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Madame Rhina ha una Dote del genere e ha comunque scelto di
-          diventare Sindaca?\r"
+          diventare sindaca?\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
+        - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-      - _sSentence: "<i><color=blue>[Nascere con una Dote significa avere gi\xE0
-          la strada spianata, avere un talento e un potenziale fuori dalla norma.]</color></i>\r"
-        _sAudio: {fileID: 0}
-        _sImage:
-        - {fileID: 0}
-        - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
-        - {fileID: 0}
-        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
-        - {fileID: 0}
-        - {fileID: 0}
-      - _sSentence: "<i><color=blue>[\xC8 raro che qualcuno scelga un lavoro che
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
+      _Sentences:
+      - _sSentence: "<i><color=#34689c>[\xC8 raro che qualcuno scelga un lavoro che
           non coinvolge almeno in parte la propria Dote, molti lo considerano uno
           spreco a tutti gli effetti.]</color></i>\r"
         _sAudio: {fileID: 0}
@@ -132,10 +125,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 03261201c88622d46ba43ed2e62281fb, type: 3}
+        - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Lo so, anche noi siamo cresciuti convinti che un giorno avrebbe
           scelto un lavoro che le permettesse di sfruttare a pieno la sua forza fisica.\r"
@@ -144,33 +137,33 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Anche perch\xE9, come le dicevo, \xE8 sempre stata un po'...
+      - _sSentence: "Anche perch\xE9, come le dicevo, \xE8 sempre stata un po'\u2026
           Aggressiva.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Ma poi, presumo, \xE8 successo qualcosa.\r"
+      - _sSentence: "Ma poi, presumo, \xE8 cambiato qualcosa.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 1e7e6134406d0e14793838499133f76f, type: 3}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "In realt\xE0 non saprei dirle se c'\xE8 stato un momento preciso
           in cui Rhina \xE8 diventata diversa. Penso sia stato un cambiamento graduale.\r"
@@ -179,68 +172,72 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 3541a09f31c3d5b46882ccbf600c2bfa, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Essere sempre vista come la ragazza forte ma stupida \xE8 stato
-          duro per lei. A un certo punto ha semplicemente detto \"\"Basta, ho deciso
-          che le persone mi rispetteranno per il mio cervello, non per I miei muscoli!\"\"\"\r"
+      - _sSentence: "Essere sempre vista come <i>la ragazza forte ma stupida</i>
+          \xE8 stato duro per lei. A un certo punto ha semplicemente detto: \"Basta,
+          ho deciso che le persone mi rispetteranno per il mio cervello, non per
+          i miei muscoli!\"\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 3541a09f31c3d5b46882ccbf600c2bfa, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Da quel momento in poi si \xE8 impegnata al massimo per diventare
           una persona diversa. Ha lavorato duramente, non solo per ottenere buoni
           voti ed entrare in un'universit\xE0 prestigiosa, ma anche per migliorare
-          a livello caratteriale!\r"
+          se stessa!\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 935cbd5ee5d91a6498f7bec71ff4218d, type: 3}
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "So che stamattina c'\xE8 stato un po' di attrito fra lei e Uldon,
-          e forse avr\xE0 pensato che Rhina ha esagerato a perdere la pazienza cos\xEC\u2026
-          Ma mi creda, se la conoscesse da quanto la conosco io sarebbe sorpreso
-          da quanto abbia gestito bene la situazione!\r"
+          e forse avr\xE0 pensato che Rhina abbia esagerato a perdere la pazienza
+          cos\xEC\u2026 Ma mi creda, se la conoscesse quanto la conosco io, sarebbe
+          sorpreso da quanto si sia trattenuta.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: Lynn
+    - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
-      - _sSentence: "Almeno per i suoi standard!\r"
+      - _sSentence: Almeno per i suoi standard.
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: e5780b3a533cad8438f9c55ff206eef0, type: 3}
+        - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:
-      _keys: 
-      _values: 
+      _keys: 06000000
+      _values: 01000000
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices:
+  - _sLabel: Chiedi di Kerith
+    _xDialogueSO: {fileID: 11400000, guid: 5fb9bcf717fcffe4cb4ebb7897d8a87a, type: 2}
+  - _sLabel: Chiedi di Rhina
+    _xDialogueSO: {fileID: 11400000}
+  - _sLabel: Chiedi di Uldon
+    _xDialogueSO: {fileID: 11400000, guid: fbfef9c530b5181438cf98ea41b4b5ba, type: 2}
+  hasSceneChange: 0
+  targetSceneName: 

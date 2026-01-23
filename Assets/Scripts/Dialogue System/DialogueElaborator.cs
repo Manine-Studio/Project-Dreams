@@ -148,9 +148,9 @@ public class DialogueElaborator : MonoBehaviour
         List<Sprite[]> list = new List<Sprite[]>();
         list.Add(image);
 
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, "");
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, sentence);
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_IMAGE, list);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", "");
+        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", sentence);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_IMAGE", list);
     }
 
     /// <summary>

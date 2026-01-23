@@ -18,10 +18,10 @@ MonoBehaviour:
       _values: 
     _DialogueCSV: {fileID: 4900000, guid: 9633577cbfaaa91409f730f6b7f11d98, type: 3}
     _DialogueParts:
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "L'altare su cui si trovava il Cuscino, presumo. Che meravigliosa
-          scultura, \xE8 davvero stupefacente.\r"
+      - _sSentence: "L\u2019altare su cui giaceva il Cuscino, presumo. Che meravigliosa
+          opera, \xE8 davvero stupefacente.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -30,9 +30,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Sar\xE0 meglio dare un'occhiata pi\xF9 da vicino\u2026\r"
+      - _sSentence: "Sar\xE0 meglio dare un\u2019occhiata pi\xF9 da vicino\u2026\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "\u2026\r"
         _sAudio: {fileID: 0}
@@ -52,21 +52,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "\xC8 davvero pulito, per essere un oggetto tenuto in un giardino.
-          \xC8 chiaro che viene curato maniacalmente.\r"
-        _sAudio: {fileID: 0}
-        _sImage:
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-    - _sName: "Bakon\xE9"
-      _Sentences:
-      - _sSentence: "Non ci sono impronte, tuttavia. Niente di rilevante.\r"
+      - _sSentence: "Sorprendentemente pulito, per essere un oggetto tenuto in un
+          giardino. \xC8 chiaro che viene curato maniacalmente."
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -76,12 +65,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:
-      _keys: 
-      _values: 
+      _keys: 09000000
+      _values: 01000000
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

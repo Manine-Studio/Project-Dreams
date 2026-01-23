@@ -18,7 +18,7 @@ MonoBehaviour:
       _values: 
     _DialogueCSV: {fileID: 4900000, guid: 8bc4b02a0f9834749b47bed610807a55, type: 3}
     _DialogueParts:
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "La dimora di Uldon. \xC8 una casetta abbastanza grande, per
           un monaco che vive da solo.\r"
@@ -30,10 +30,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Iniziano a notarsi gli anni che pesano sulla struttura, per
-          quanto tenuta a dovere.\r"
+      - _sSentence: Iniziano a notarsi gli anni che pesano sulla struttura, per quanto
+          tenuta a dovere.
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -46,9 +46,6 @@ MonoBehaviour:
       _keys: 
       _values: 
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

@@ -11,4 +11,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/City Scenes/Day 1/Start.unity
+    guid: 73c9c53ca1ba03f48836cf9caa82a0a0
+  - enabled: 1
+    path: Assets/Scenes/City Scenes/Day 1/Piazza.unity
+    guid: ba2d84f895678184eb677c09ec498083
+  - enabled: 1
+    path: Assets/Scenes/City Scenes/Day 1/TempioIngresso.unity
+    guid: b459695951f80164383f3a8a00846ef8
+  - enabled: 1
+    path: Assets/Scenes/City Scenes/Day 1/TempioEsterno.unity
+    guid: de676fa13ffdb2647aa3ddb8555b3dec
+  - enabled: 1
+    path: Assets/Scenes/City Scenes/Day 1/TempioInterno.unity
+    guid: b37dfa9140c854249b0f7606df980ab5
+  - enabled: 1
+    path: Assets/Scenes/City Scenes/Day 1/Locanda.unity
+    guid: 282a89a30a5c51a40ad48c1e86805fa9
+  - enabled: 1
+    path: Assets/Scenes/City Scenes/Day 1/Cena.unity
+    guid: c687efd2519166446924635b6484609c
   m_configObjects: {}

@@ -18,9 +18,9 @@ MonoBehaviour:
       _values: 
     _DialogueCSV: {fileID: 4900000, guid: afa58b74f6738824b9efe2e1617a913f, type: 3}
     _DialogueParts:
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Una bellissima fontana. L'acqua sembra limpida e pulita.\r"
+      - _sSentence: Una bellissima fontana. L'acqua sembra limpida e pulita.
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -33,9 +33,6 @@ MonoBehaviour:
       _keys: 
       _values: 
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

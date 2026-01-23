@@ -18,10 +18,10 @@ MonoBehaviour:
       _values: 
     _DialogueCSV: {fileID: 4900000, guid: a6d087c2acb60074a9572de0302948a4, type: 3}
     _DialogueParts:
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Questa sembra essere l'unico accesso al Tempio. Un Portale rosso
-          vivido, davvero piacevole a livello estetico devo dire.\r"
+      - _sSentence: "Questo sembra essere l\u2019unico accesso al Tempio. Un Portale
+          rosso vivido, davvero piacevole a livello estetico, devo dire.\r"
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -30,10 +30,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "Bakon\xE9"
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Mi chiedo quante persone siano entrate e uscite da qui, il giorno
-          del furto.\r"
+      - _sSentence: Mi chiedo quante anime siano entrate e uscite da qui, il giorno
+          del furto
         _sAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
@@ -43,12 +43,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
     _PostConditions:
-      _keys: 
-      _values: 
+      _keys: 08000000
+      _values: 01000000
   hasChoices: 0
-  TextDialogueChoiceA: 
-  DialogueChoiceA: {fileID: 0}
-  TextDialogueChoiceB: 
-  DialogueChoiceB: {fileID: 0}
-  TextDialogueChoiceC: 
-  DialogueChoiceC: {fileID: 0}
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 
