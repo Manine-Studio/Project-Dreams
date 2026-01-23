@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3829938319187895053}
   - component: {fileID: 2599760283608007746}
   - component: {fileID: 192124270009830906}
+  - component: {fileID: 8357447416232043999}
   m_Layer: 5
   m_Name: ChoicePrefab
   m_TagString: Untagged
@@ -137,7 +138,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _xDialogues: []
   _xDefaultDialogue: {fileID: 0}
-  _xDialogueElaborator: {fileID: 0}
 --- !u!114 &192124270009830906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +150,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9158387f59b44989f5aaebfb6875d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &8357447416232043999
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598939149574507943}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 7
+  m_TargetDisplay: 0
 --- !u!1 &5855850012244237047
 GameObject:
   m_ObjectHideFlags: 0
