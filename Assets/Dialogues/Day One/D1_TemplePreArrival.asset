@@ -40,7 +40,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 6bee733369f5fe5458312581916ed882, type: 3}
+        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
     - _sName: Voce dalla Folla
       _Sentences:
       - _sSentence: "Sul serio? Non posso crederci\u2026 Chi farebbe mai una cosa
@@ -52,7 +52,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 6bee733369f5fe5458312581916ed882, type: 3}
+        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
     - _sName: Voce dalla Folla
       _Sentences:
       - _sSentence: "Ma chi pu\xF2 essere cos\xEC stolto? La Dea lo maledir\xE0!\r"
@@ -63,7 +63,7 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 6bee733369f5fe5458312581916ed882, type: 3}
+        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
     - _sName: ???
       _Sentences:
       - _sSentence: "Incredibile\u2026 Sai cos'\xE8, questa?\r"

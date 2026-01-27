@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/scn_DialogueBranchingTest.unity
-    guid: 1c9526cf783c4e947b0d91af9bda7a71
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Scenes/City Scenes/Day 1/Start.unity
     guid: 73c9c53ca1ba03f48836cf9caa82a0a0
   - enabled: 1

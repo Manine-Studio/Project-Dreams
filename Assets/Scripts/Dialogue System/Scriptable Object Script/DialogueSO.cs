@@ -7,6 +7,16 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
+public class ConditionalHideAttribute : PropertyAttribute
+{
+    public string ConditionField; 
+    
+    public ConditionalHideAttribute(string conditionField)
+    {
+        ConditionField = conditionField;
+    }
+}
+
 [CreateAssetMenu(menuName = "Custom Assets/Dialogue")]
 public class DialogueSO : ScriptableObject
 {

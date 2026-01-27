@@ -115,14 +115,14 @@ public class DialogueUIManager : MonoBehaviour
         _Name.text = "";
         _ListOfCharacters.gameObject.SetActive(false);
         _ChoicesBox.SetActive(false);
-        if (param != null && param.Length > 0)
-        {
-            Dialogue dialogue = (Dialogue)param[0];
-            if (dialogue != null && dialogue.HasSceneChange && !string.IsNullOrEmpty(dialogue.TargetSceneName))
-            {
-                SceneManager.LoadScene(dialogue.TargetSceneName);
-            }
-        }
+        
+        // if (param == null || param.Length <= 0) return;
+        //
+        // Dialogue dialogue = (Dialogue)param[0];
+        // if (dialogue != null && dialogue.HasSceneChange && !string.IsNullOrEmpty(dialogue.TargetSceneName))
+        // {
+        //     SceneManager.LoadScene(dialogue.TargetSceneName);
+        // }
     }
 
     /// <summary>

@@ -7,6 +7,7 @@ using Misc;
 using Progress_System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueElaborator : MonoBehaviour
 {
@@ -164,11 +165,16 @@ public class DialogueElaborator : MonoBehaviour
         _CurrentSentenceIndex = 0;
 
         GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.END_DIALOGUE, _Dialogue);
-        _Dialogue = null;
         GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
 
         GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.END_DIALOGUE);
+        
         _bIsRunning = false;
+        if (_Dialogue != null && _Dialogue.HasSceneChange && !string.IsNullOrEmpty(_Dialogue.TargetSceneName))
+        {
+            SceneManager.LoadScene(_Dialogue.TargetSceneName);
+        }
+        _Dialogue = null;
     }
 
     #region current
