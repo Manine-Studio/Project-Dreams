@@ -26,10 +26,12 @@ public class DialogueTrigger : DialogueTriggerBase
             dialogueList.Add(_xDialogues[i].Dialogue);
         }
 
+        Dialogue defaultDialogue = null;
 
-        Dialogue defaultDialogue = _xDefaultDialogue != null ? _xDefaultDialogue.Dialogue : null;
-        if (dialogueList.Count == 0 && defaultDialogue!= null)
+        if (dialogueList.Count == 0 && _xDefaultDialogue.Dialogue != null)
         {
+
+            defaultDialogue = _xDefaultDialogue.Dialogue;
             dialogueList.Add(defaultDialogue);
         }
 

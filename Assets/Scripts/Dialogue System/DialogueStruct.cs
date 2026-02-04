@@ -18,12 +18,12 @@ public class Dialogue
     [SerializeField] private Condition _PostConditions;
 
     //Boolean needed to show multiple choices after the dialogue end
-    private bool _HasChoices;
-    private List<Choice> _DialogueChoices = new List<Choice>();
+    [SerializeField] private bool _HasChoices;
+    [SerializeField] private List<Choice> _DialogueChoices = new List<Choice>();
 
     //Boolean needed to show and set the name of the scene in which the dialogue will change at the end
-    private bool _HasSceneChange;
-    private String _TargetSceneName;
+    [SerializeField] private bool _HasSceneChange;
+    [SerializeField] private String _TargetSceneName;
 
     public List<Monologue> DialogueParts { get => _DialogueParts; } 
     public bool HasChoices { get => _HasChoices;  set => _HasChoices = value; }

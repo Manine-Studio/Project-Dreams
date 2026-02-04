@@ -775,8 +775,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: First Project Manine Studio
-  metroPackageVersion: 
+  metroPackageName: FirstProjectManineStudio
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -784,7 +784,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: First Project Manine Studio
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: First Project Manine Studio
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

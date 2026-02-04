@@ -7,15 +7,6 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ConditionalHideAttribute : PropertyAttribute
-{
-    public string ConditionField; 
-    
-    public ConditionalHideAttribute(string conditionField)
-    {
-        ConditionField = conditionField;
-    }
-}
 
 [CreateAssetMenu(menuName = "Custom Assets/Dialogue")]
 public class DialogueSO : ScriptableObject
@@ -41,7 +32,7 @@ public class DialogueSO : ScriptableObject
     private void OnValidate()
     {
         // Ensure the Dialogue contains parts; initialize if empty.
-        if (Dialogue.DialogueParts.Count == 0) TextElabrotation();
+        if (Dialogue.DialogueParts.Count == 0) TextElaboration();
 
         // Sync choices with the Dialogue object.
         Dialogue.HasChoices = hasChoices;
@@ -68,7 +59,7 @@ public class DialogueSO : ScriptableObject
     /// <summary>
     /// Converts text from a CSV file into Dialogue data.
     /// </summary>
-    private void TextElabrotation()
+    private void TextElaboration()
     {
         if (Dialogue.DialogueCSV == null) return;
 
