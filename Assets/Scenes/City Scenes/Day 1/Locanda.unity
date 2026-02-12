@@ -655,11 +655,11 @@ PrefabInstance:
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: bae8b007bf2d7e143a8e2ce7bfb2f139, type: 2}
+      objectReference: {fileID: 11400000, guid: bd439a96edfd8ba4ca61e55fc0d217d5, type: 2}
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: bd439a96edfd8ba4ca61e55fc0d217d5, type: 2}
+      objectReference: {fileID: 11400000, guid: bae8b007bf2d7e143a8e2ce7bfb2f139, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

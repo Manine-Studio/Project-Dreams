@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: a74fc93fd92686243bedccbc5afef679, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -275,6 +275,16 @@ MonoBehaviour:
     _PostConditions:
       _keys: 07000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices:
+    - _sLabel: Chiedi di Kerith
+      _xDialogueSO: {fileID: 11400000, guid: 5fb9bcf717fcffe4cb4ebb7897d8a87a, type: 2}
+    - _sLabel: Chiedi di Rhina
+      _xDialogueSO: {fileID: 11400000, guid: 2b8d6399838385d46a91127b32580cc2, type: 2}
+    - _sLabel: Chiedi di Uldon
+      _xDialogueSO: {fileID: 11400000}
+    _HasSceneChange: 0
+    _TargetSceneName: 
   hasChoices: 0
   Choices:
   - _sLabel: Chiedi di Kerith

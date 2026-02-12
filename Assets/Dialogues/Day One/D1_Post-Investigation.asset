@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 0300000008000000090000000a0000000b000000
-      _values: 0100000001000000010000000100000001000000
+      _keys: 08000000090000000a0000000b000000
+      _values: 01000000010000000100000001000000
     _DialogueCSV: {fileID: 4900000, guid: 850173a83f0ef0c46a3c939d457506f6, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -688,6 +688,10 @@ MonoBehaviour:
     _PostConditions:
       _keys: 
       _values: 
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 1
+    _TargetSceneName: Locanda
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

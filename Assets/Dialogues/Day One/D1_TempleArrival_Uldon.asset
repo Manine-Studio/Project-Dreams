@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: 7100344eaa1731b419535e5055db1f4a, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -58,6 +58,10 @@ MonoBehaviour:
     _PostConditions:
       _keys: 04000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 0
+    _TargetSceneName: 
   hasChoices: 0
   Choices: []
   hasSceneChange: 0

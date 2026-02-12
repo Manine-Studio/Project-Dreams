@@ -1166,11 +1166,11 @@ PrefabInstance:
     - target: {fileID: 359967396134208167, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 78ce0785c1aa983489f51ee83d18cabb, type: 2}
+      objectReference: {fileID: 11400000, guid: 8568013d1fe450f47a46d8c6e0a6b18c, type: 2}
     - target: {fileID: 359967396134208167, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 8568013d1fe450f47a46d8c6e0a6b18c, type: 2}
+      objectReference: {fileID: 11400000, guid: 78ce0785c1aa983489f51ee83d18cabb, type: 2}
     - target: {fileID: 2670140658267282862, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1002.02716
@@ -1217,10 +1217,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
       propertyPath: _xDialogues.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a13f429820440b4d960c849eab1ab35, type: 2}
+    - target: {fileID: 8985688237078965880, guid: f1598819467346f4081b38a3fec1bbe7, type: 3}
+      propertyPath: _xDialogues.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 8aa3994906e4fd445b2ca76bf4a1f4f4, type: 2}
     m_RemovedComponents: []

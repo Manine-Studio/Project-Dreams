@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 030000000b000000
-      _values: 0100000000000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: 84070235a19255a49b72bcc4bacfe7d6, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -192,6 +192,14 @@ MonoBehaviour:
     _PostConditions:
       _keys: 
       _values: 
+    _HasChoices: 1
+    _DialogueChoices:
+    - _sLabel: Stop Rhina
+      _xDialogueSO: {fileID: 11400000, guid: d3528139f907b534fb83c1a2f6e5a308, type: 2}
+    - _sLabel: Let her talk
+      _xDialogueSO: {fileID: 11400000, guid: 933fd2e9cd99c8b4ea9406d764173ceb, type: 2}
+    _HasSceneChange: 0
+    _TargetSceneName: 
   hasChoices: 1
   Choices:
   - _sLabel: Stop Rhina

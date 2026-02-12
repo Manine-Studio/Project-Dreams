@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: 1d1ae97e2a7383f419ee014d18b80a38, type: 3}
     _DialogueParts:
     - _sName: <color=#6b676b>Uldon</color>
@@ -561,6 +561,10 @@ MonoBehaviour:
     _PostConditions:
       _keys: 0b000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 1
+    _TargetSceneName: TempioEsterno
   hasChoices: 0
   Choices: []
   hasSceneChange: 1
