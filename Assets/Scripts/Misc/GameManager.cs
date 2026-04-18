@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Framework.Generics.Pattern.SingletonPattern;
 using Misc;
+using Progress_System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -20,5 +22,8 @@ public class GameManager : Singleton<GameManager>
         _xInteractableEventBus = new EventManager();
         _xMapEventBus = new EventManager();
         base.Awake();
+        SceneManager.activeSceneChanged += (sender, args) => {
+                ConditionsUtils.SaveConditionToFile(null, SceneManager.GetActiveScene().buildIndex);
+            };
     }
 }
