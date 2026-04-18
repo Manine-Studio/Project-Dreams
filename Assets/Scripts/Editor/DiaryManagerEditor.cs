@@ -8,7 +8,7 @@ using UnityEngine;
 namespace InteractionSystem
 {
     [CustomEditor(typeof(DiaryManager))]
-    public class DiaryManagerEditor : Editor
+    public class DiaryManagerEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {

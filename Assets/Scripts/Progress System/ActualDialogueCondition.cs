@@ -11,5 +11,4 @@ namespace Progress_System
             MConditions = ConditionsUtils.GetConditions();
         }
     }
-
 }

@@ -8,12 +8,6 @@ namespace Progress_System
     [System.Serializable()]
     public class Condition : SerializableDictionaryBase<Conditions, int> { }
 
-    public class SavedFile
-    {
-        public int iCurrentScene = 0;
-        public Condition xActualConditionMap;
-    }
-
     public static class ConditionsUtils
     {
         private static string _sFileName = "ActualDialogConditions.txt";
@@ -106,10 +100,18 @@ namespace Progress_System
             string path = Path.Combine(Application.persistentDataPath, _sFileName);
 
             File.WriteAllText(path, sSerializedObject);
+        }
 
+        public static void ResetConditionFile()
+        {
+            SavedFile savedFile = new SavedFile();
+            savedFile.iCurrentScene = 0;
+            savedFile.xActualConditionMap = new Condition();
+            
+            string sSerializedObject = JsonUtility.ToJson(savedFile);
+            string path = Path.Combine(Application.persistentDataPath, _sFileName);
+
+            File.WriteAllText(path, sSerializedObject);
         }
     }
-
-
-
 }
