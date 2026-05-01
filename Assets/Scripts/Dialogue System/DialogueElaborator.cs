@@ -19,6 +19,7 @@ public class DialogueElaborator : MonoBehaviour
     private int _CurrentMonologueIndex;
     private int _CurrentSentenceIndex;
 
+
     // Use this for initialization
     private void Start()
     {
@@ -66,6 +67,10 @@ public class DialogueElaborator : MonoBehaviour
             {
                 GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_DIALOGUE);
 
+                if (_Dialogue.DialogueMusicBackground != null)
+                {
+                    DialogueSoundManager.PlayOnLoop(_Dialogue.DialogueMusicBackground, _Dialogue.StartingLoopPoint);
+                }
                 _bIsRunning = true;
                 StartMonologue();
             }
@@ -81,7 +86,6 @@ public class DialogueElaborator : MonoBehaviour
         {
 
             GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_NAME, _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
-
             ClearCurrent();
 
             //AddToCurrent(null, null);
@@ -89,6 +93,10 @@ public class DialogueElaborator : MonoBehaviour
             foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
             {
                 AddToCurrent(sentence.SSentence, sentence.SImage);
+                if(sentence.SFXAudio != null)
+                {
+                    DialogueSoundManager.PlayOneShotSound(sentence.SFXAudio);
+                }
             }
 
             DisplayNextSentence();
