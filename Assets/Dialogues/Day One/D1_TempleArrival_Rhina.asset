@@ -22,7 +22,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "<i>[Ho pensato fosse meglio intervenire, prima che la situazione
           sfuggisse di mano]</i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
@@ -30,10 +30,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Sindaca, se permette\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -41,11 +39,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Non vorrei intromettermi, ma penso sia meglio per tutti se utilizziamo
           le nostre energie per risolvere la situazione.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -53,11 +49,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "\xC8 importante collaborare, specialmente in questo momento,
           se vogliamo concludere al pi\xF9 presto\u2013"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -72,6 +66,8 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 0
     _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 0

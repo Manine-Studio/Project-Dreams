@@ -22,7 +22,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Questo sembra essere l\u2019unico accesso al Tempio. Un Portale
           rosso vivido, davvero piacevole a livello estetico, devo dire.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -30,11 +30,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: Mi chiedo quante anime siano entrate e uscite da qui, il giorno
           del furto
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -45,6 +43,12 @@ MonoBehaviour:
     _PostConditions:
       _keys: 08000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 0
+    _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 0

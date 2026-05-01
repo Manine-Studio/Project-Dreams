@@ -22,7 +22,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Mi dispiace che abbiate dovuto assistere a questo increscioso
           scambio, Detective.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -30,11 +30,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#6b676b>Uldon</color>
-      _Sentences:
       - _sSentence: "Ma lo sa come sono i giovani\u2026 Sempre sfrontati e senza
           rispetto, mai disposti ad ammettere le proprie colpe. Posso offrirle qualcosa?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -45,7 +43,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "La ringrazio, sto bene cos\xEC come sto.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -53,12 +51,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[La residenza del Monaco era decisamente frugale,
           niente che facesse presagire una vita di vizi o eccessi. Tolto il necessario
           per vivere, non vidi nient'altro che memorabilia e santini della Dea.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -66,11 +62,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[Mi aveva offerto un cuscino su cui sedermi,
           mentre era andato a preparare del t\xE9.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -78,10 +72,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Lei \xE8 stato l'ultimo ad aver visto il Cuscino, \xE8 corretto?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -93,7 +85,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "S\xEC, esatto. Sono il monaco del Tempio della Dea del Sonno,
           prendermi cura del Cuscino della Dea fa parte dei miei compiti quotidiani.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -104,7 +96,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Si ricorda quando l'ha visto l'ultima volta?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -116,7 +108,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Oh\u2026 I-Immagino sia stato\u2026 Ieri pomeriggio, poco prima
           della chiusura del tempio?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -124,11 +116,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#6b676b>Uldon</color>
-      _Sentences:
       - _sSentence: "No, aspetti\u2026 Sar\xE0 stato quando ieri sera ho effettuato
           la pulizia giornaliera dell'altare!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -139,7 +129,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Non ne \xE8 sicuro?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -150,7 +140,7 @@ MonoBehaviour:
     - _sName: <color=#6b676b>Uldon</color>
       _Sentences:
       - _sSentence: "Beh Detective\u2026 C-Come posso dire\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -164,7 +154,7 @@ MonoBehaviour:
           monaco, che fino a poco prima non aveva esitato ad aggredire una donna
           risoluta come Rhina, sembrava particolarmente alle strette dopo una domanda
           cos\xEC semplice.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -172,11 +162,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[Era tornato poco dopo, portando due tazze
           di t\xE9, deliberatamente ignorando la mia risposta alla sua domanda.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -189,7 +177,7 @@ MonoBehaviour:
       - _sSentence: "Dev'essere lo stress, ecco! Un oggetto sacro per me e per centinaia
           di credenti \xE8 appena stato rubato. Penso sia normale non riuscire a
           ragionare perfettamente in un momento come questo.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -200,7 +188,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Certo\u2026 Cerchiamo di ragionare insieme, allora.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -208,11 +196,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Mi conceda il racconto della sua giornata di ieri, dal momento
           in cui si \xE8 svegliato a quando ha chiuso gli occhi.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -225,7 +211,7 @@ MonoBehaviour:
       - _sSentence: "Vediamo\u2026 Mi sono svegliato presto, come sono solito fare
           ogni giorno. Dopo colazione mi sono preso del tempo per una rapida preghiera
           di fronte al Cuscino come ogni mattina, poi ho aperto il cancello del Tempio\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 0386ad441710a8941bf351edc474eed0, type: 3}
@@ -236,7 +222,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Non ricorda niente di anormale, fino a quel momento, presumo?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6daba94c6fe162c49a6b36c5e43a6d5c, type: 3}
@@ -248,7 +234,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Niente di importante. Anche impegnandomi, non riuscirei a trovare
           qualcosa di diverso dal solito.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 0386ad441710a8941bf351edc474eed0, type: 3}
@@ -259,7 +245,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Capisco\u2026 Proseguiamo, allora. Cos'\xE8 successo dopo?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -272,7 +258,7 @@ MonoBehaviour:
       - _sSentence: "Di nuovo, nulla di strano: ho accolto i fedeli come ogni giorno,
           pregando con loro, raccogliendo le loro offerte e offrendo a mia volta
           cibo e bevande a coloro che le desideravano.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -283,7 +269,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "E qualcuno di loro le sembrava\u2026 Particolarmente sospetto?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -294,7 +280,7 @@ MonoBehaviour:
     - _sName: <color=#6b676b>Uldon</color>
       _Sentences:
       - _sSentence: "Uhm n-no, non direi.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -306,7 +292,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Nessuna conversazione peculiare? Qualcuno che ha attirato la
           sua attenzione per un motivo o per un altro?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -319,7 +305,7 @@ MonoBehaviour:
       - _sSentence: "Le conversazioni peculiari non mancano di certo, specialmente
           con alcuni residenti della citt\xE0\u2026 Ma niente di fuori dall'ordinario,
           anche qui.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 0386ad441710a8941bf351edc474eed0, type: 3}
@@ -330,7 +316,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Presumo che lo stesso valga anche per il resto della giornata.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6daba94c6fe162c49a6b36c5e43a6d5c, type: 3}
@@ -343,7 +329,7 @@ MonoBehaviour:
       - _sSentence: "Esatto. Alle 20 in punto ho salutato gli ultimi fedeli, poi
           ho cenato rapidamente prima di tornare fuori e dare una ripulita, come
           ogni giorno.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 0386ad441710a8941bf351edc474eed0, type: 3}
@@ -355,7 +341,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Ed \xE8 allora, deduco, che ha visto il Cuscino per l'ultima
           volta?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -366,7 +352,7 @@ MonoBehaviour:
     - _sName: <color=#6b676b>Uldon</color>
       _Sentences:
       - _sSentence: "Esattamente.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -378,7 +364,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "\xC8 possibile che qualcuno si sia introdotto qui di nascosto
           durante la notte? Mentre lei dormiva, magari?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -391,7 +377,7 @@ MonoBehaviour:
       - _sSentence: "Non vedo come, Detective. Ci troviamo in cima a una collina,
           ma tutto attorno al tempio c'\xE8 un precipizio. E anche se qualcuno riuscisse
           a risalirlo, l'intero Tempio \xE8 circondato da mura piuttosto alte.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -403,7 +389,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "<i><color=#34689c>[Uldon aveva ragione. Le mura sembravano essere
           difficili da superare, persino per me.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -411,11 +397,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Parliamo invece di lei, ci sono persone con cui ha rapporti\u2026
           Diciamo, non troppo gioviali?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6daba94c6fe162c49a6b36c5e43a6d5c, type: 3}
@@ -428,7 +412,7 @@ MonoBehaviour:
       - _sSentence: "Oh Detective, guardi, qui tutti se la prendono con me. Per\xF2
           se mi sta chiedendo se credo che qualcuno di loro abbia rubato il Cuscino
           della Dea\u2026 No, mi sembra impossibile.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 0386ad441710a8941bf351edc474eed0, type: 3}
@@ -439,7 +423,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Ebbene, quale sarebbe il motivo?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -453,7 +437,7 @@ MonoBehaviour:
           dai dettami della Dea\u2026 Il numero di fedeli diminuisce giorno dopo
           giorno. Queste persone non sono credenti, non hanno motivo di rubare il
           Cuscino!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -461,12 +445,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#6b676b>Uldon</color>
-      _Sentences:
       - _sSentence: "Posso capire che un uomo di fede voglia rubare la nostra reliquia
           per averlo tutto per s\xE9, o un malavitoso che vuole venderlo sul mercato
           nero\u2026 Oh, Santa Dea, tremo solo a pensarci.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -474,11 +456,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#6b676b>Uldon</color>
-      _Sentences:
       - _sSentence: "a rubarlo solo per fare un dispetto a me\u2026 Mi sembra impossibile,
           sono persone che non farebbero mai una sciocchezza del genere.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -489,7 +469,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Non mi sta dando molto con cui lavorare, mio caro monaco\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -501,7 +481,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Non so cosa dirle, Detective! Pi\xF9 ci penso, pi\xF9 mi sembra
           impossibile che qualcuno possa averlo rubato da qui dentro.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -509,11 +489,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#6b676b>Uldon</color>
-      _Sentences:
       - _sSentence: "La Dea vede e provvede. \xC8 stata lei stessa a riprendersi
           il suo Cuscino, glielo dico io!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -525,7 +503,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Spero vivamente che si sbagli, sarebbe complesso da spiegare
           al mio capo.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -533,11 +511,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 286812d7f7bb1d44b9b58a8220695d23, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Le dispiace se do un'occhiata al giardino? Vorrei familiarizzare
           con la scena del crimine.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -550,7 +526,7 @@ MonoBehaviour:
       - _sSentence: "Certo, faccia pure. Questa mattina, dopo aver saputo dell'accaduto,
           Rhina ha dato ordine di non far entrare nessuno. Dovrebbe essere tutto
           come nel momento in cui il nostro Cuscino \xE8 stato rubato."
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
@@ -565,6 +541,8 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 1
     _TargetSceneName: TempioEsterno
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

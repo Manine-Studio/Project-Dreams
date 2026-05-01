@@ -22,7 +22,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "<i><color=#34689c>[Sembrava esserci del trascorso, fra i due.
           L'ho trovato interessante, ho pensato potesse essere utile saperne di pi\xF9\u2026]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
       - _sSentence: "La stessa ragazzina che hai sempre visto come una fallita? La
           stessa che adesso sta facendo risorgere la cittadina che tuo padre ha cercato
           di vendere ai Damin per due spicci?!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "I miei avi hanno protetto questo villaggio per generazioni,
           Rhina! Un singolo\u2014"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
@@ -62,6 +62,8 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 0
     _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 0

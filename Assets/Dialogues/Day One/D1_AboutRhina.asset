@@ -23,7 +23,7 @@ MonoBehaviour:
       - _sSentence: "<i><color=#34689c>[Rhina \xE8 il capovillaggio e sembrava avere
           un rapporto piuttosto conflittuale con Uldon. Era importante saperne di
           pi\xF9.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
     - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Oh, Rhina e io siamo amiche sin da bambine!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -42,12 +42,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Siamo andate a scuola insieme, \xE8 sempre stata una persona
           straordinaria\u2026 Sempre pronta a difendere i pi\xF9 deboli e aiutare
           il prossimo.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -55,12 +53,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Anche se c'\xE8 da ammettere che era spesso una testa calda.
           Un bel po' di volte ha rischiato di finire a menare le mani con qualche
           professore. Credo che sia anche perch\xE9 \xE8 molto forte fisicamente.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -68,11 +64,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Diceva sempre che \"se hai la fortuna di avere dei muscoli cos\xEC,
           \xE8 da stupidi non usarli\".\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -83,7 +77,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "\xC8 sempre stata un'appassionata di fitness?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -95,7 +89,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Oh no, non l'ho mai vista andare in palestra in vita sua! \xC8
           la sua Dote!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -107,7 +101,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Madame Rhina ha una Dote del genere e ha comunque scelto di
           diventare sindaca?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -115,12 +109,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[\xC8 raro che qualcuno scelga un lavoro che
           non coinvolge almeno in parte la propria Dote, molti lo considerano uno
           spreco a tutti gli effetti.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -132,7 +124,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Lo so, anche noi siamo cresciuti convinti che un giorno avrebbe
           scelto un lavoro che le permettesse di sfruttare a pieno la sua forza fisica.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -140,11 +132,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Anche perch\xE9, come le dicevo, \xE8 sempre stata un po'\u2026
           Aggressiva.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -155,7 +145,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Ma poi, presumo, \xE8 cambiato qualcosa.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -167,7 +157,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "In realt\xE0 non saprei dirle se c'\xE8 stato un momento preciso
           in cui Rhina \xE8 diventata diversa. Penso sia stato un cambiamento graduale.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 3541a09f31c3d5b46882ccbf600c2bfa, type: 3}
@@ -175,13 +165,11 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Essere sempre vista come <i>la ragazza forte ma stupida</i>
           \xE8 stato duro per lei. A un certo punto ha semplicemente detto: \"Basta,
           ho deciso che le persone mi rispetteranno per il mio cervello, non per
           i miei muscoli!\"\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 3541a09f31c3d5b46882ccbf600c2bfa, type: 3}
@@ -189,13 +177,11 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Da quel momento in poi si \xE8 impegnata al massimo per diventare
           una persona diversa. Ha lavorato duramente, non solo per ottenere buoni
           voti ed entrare in un'universit\xE0 prestigiosa, ma anche per migliorare
           se stessa!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -203,13 +189,11 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "So che stamattina c'\xE8 stato un po' di attrito fra lei e Uldon,
           e forse avr\xE0 pensato che Rhina abbia esagerato a perdere la pazienza
           cos\xEC\u2026 Ma mi creda, se la conoscesse quanto la conosco io, sarebbe
           sorpreso da quanto si sia trattenuta.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -217,10 +201,8 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: Almeno per i suoi standard.
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -241,6 +223,8 @@ MonoBehaviour:
       _xDialogueSO: {fileID: 11400000, guid: fbfef9c530b5181438cf98ea41b4b5ba, type: 2}
     _HasSceneChange: 0
     _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices:
   - _sLabel: Chiedi di Kerith

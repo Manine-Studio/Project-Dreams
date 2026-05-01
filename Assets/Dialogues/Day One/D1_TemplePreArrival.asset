@@ -22,7 +22,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "<i><color=#34689c>[Una grande folla si era radunata attorno
           al cancello d'ingresso del tempio, sulla cima della collina.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -33,70 +33,62 @@ MonoBehaviour:
     - _sName: Voce dalla Folla
       _Sentences:
       - _sSentence: "Dicono sia stato rubato\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
-    - _sName: Voce dalla Folla
-      _Sentences:
+        - {fileID: 0}
       - _sSentence: "Sul serio? Non posso crederci\u2026 Chi farebbe mai una cosa
           del genere?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
-    - _sName: Voce dalla Folla
-      _Sentences:
+        - {fileID: 0}
       - _sSentence: "Ma chi pu\xF2 essere cos\xEC stolto? La Dea lo maledir\xE0!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-        - {fileID: 21300000, guid: d7fda00a45f4328469a3353a6fd0a9be, type: 3}
+        - {fileID: 0}
     - _sName: ???
       _Sentences:
       - _sSentence: "Incredibile\u2026 Sai cos'\xE8, questa?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 032212dd8ff06644daff5f5b4a943ff2, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 6bee733369f5fe5458312581916ed882, type: 3}
-    - _sName: ???
-      _Sentences:
+        - {fileID: 0}
       - _sSentence: "Oh Dea\u2026 \xC8 una tragedia\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 555dfc2f35114ff4da4898e25e5477d8, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 6bee733369f5fe5458312581916ed882, type: 3}
-    - _sName: ???
-      _Sentences:
+        - {fileID: 0}
       - _sSentence: "No\u2026 \xC8 un'opportunit\xE0!"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 032212dd8ff06644daff5f5b4a943ff2, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: 6bee733369f5fe5458312581916ed882, type: 3}
+        - {fileID: 0}
     _PostConditions:
       _keys: 
       _values: 
@@ -104,6 +96,8 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 1
     _TargetSceneName: TempioEsterno
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

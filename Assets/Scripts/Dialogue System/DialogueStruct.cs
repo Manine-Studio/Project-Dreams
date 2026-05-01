@@ -69,11 +69,13 @@ public class Sentence
     public AudioClip SFXAudio { get => _SFXAudio;}
     public Sprite[] SImage { get => _sImage;}
 
-    public Sentence(string sSentence, Sprite[] sImage)
+    public Sentence(string sSentence, Sprite[] sImage, AudioClip audio)
     {
         _sSentence = sSentence;
         _sImage = sImage;
+        _SFXAudio = audio;
     }
+
 }
 
 [System.Serializable]
