@@ -22,7 +22,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "\u2026Chiedo venia se dovessi sembrare scortese, ma sei assolutamente
           sicuro che io sia la persona giusta per questo caso?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Mi conosci, Bak. Chiederei letteralmente a chiunque altro nel
           Dipartimento, ma\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
       - _sSentence: "\u2026Ma qualcuno lass\xF9 sta tirando i fili, che infausta
           burla cosmica! E questi inizieranno a stringere molto forte attorno al
           vostro collo se non obbediamo alla loro richiesta. \xC8 cos\xEC?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
       - _sSentence: "Dai, non fare cos\xEC! S\xEC, ci sono alcune persone che vorrebbero
           che questo caso si risolvesse il prima possibile, e queste persone POTREBBERO
           essere particolarmente vicine ad altre persone che\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -72,7 +72,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Questo lo davo per scontato, quel che ancora non mi \xE8 stato
           spiegato \xE8 il perch\xE9 dovrei essere proprio <b>IO</b> ad occuparmene.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
       - _sSentence: "Perch\xE9 sei il migliore, Bakon\xE9! Lo so io, lo sai tu e
           a quanto pare lo sanno anche quei fanatici religiosi che fanno lobbismo
           sui nostri politici!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Ugh\u2026 Cos\xEC sia! Consideratelo pure un dono per i posteri!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Per \"posteri\" intendi il tuo capo, nonch\xE9 il tuo pi\xF9
           caro amico?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -120,7 +120,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: Quisquilie, vecchio mio! Venite, discutiamo il briefing davanti
           a un bel bicchierino.
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -135,6 +135,8 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 1
     _TargetSceneName: Piazza
+    _DialogueMusicBackground: {fileID: 8300000, guid: 7ac28ed660f3cdf468323098b1799ee1, type: 3}
+    _LoopStartingPointInSeconds: 4.8
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

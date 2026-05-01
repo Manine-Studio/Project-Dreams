@@ -21,6 +21,8 @@ public class DialogueSoundManager : MonoBehaviour
     private bool _isNextScheduled = false;
     private static DialogueSoundManager _Instance;
 
+    public float SecondsForFading = 1.5f;
+
     // Proprietà pubblica per accedere al manager da altri script
     public static DialogueSoundManager Instance => _Instance;
 
@@ -74,21 +76,39 @@ public class DialogueSoundManager : MonoBehaviour
 
     public static void PlayOnLoop(AudioClip clip, float startingPointLoop)
     {
-        if (_Instance._ActualLooped != null)
-        {
-            //gestisco il fade out + setto la prossima
-            _Instance._FutureLooped = clip;
-            _Instance._FutureLoopedStartingPoint = startingPointLoop;
-        } else
+        // Se non sta suonando nulla, partiamo normalmente
+        if (_Instance._ActualLooped == null)
         {
             _Instance._ActualLooped = clip;
             _Instance._ActualLoopedStartingPoint = startingPointLoop;
+            return;
         }
+
+        // Se sta già suonando qualcosa, facciamo il Crossfade
+        _Instance._FutureLooped = clip;
+        _Instance._FutureLoopedStartingPoint = startingPointLoop;
+
+        AudioSource sorgenteAttuale = _Instance._AudioSourceMusic1.isPlaying ?
+                                      _Instance._AudioSourceMusic1 : _Instance._AudioSourceMusic2;
+        AudioSource sorgenteNuova = (sorgenteAttuale == _Instance._AudioSourceMusic1) ?
+                                     _Instance._AudioSourceMusic2 : _Instance._AudioSourceMusic1;
+
+        _Instance.StartCoroutine(Crossfade(sorgenteAttuale, sorgenteNuova, _Instance.SecondsForFading));
 
     }
 
     public void Update()
     {
+        if (_ActualLooped == null) return;
+
+        // Se è in corso un Crossfade, non fare nulla
+        if (_AudioSourceMusic1.isPlaying && _AudioSourceMusic2.isPlaying && _FutureLooped == null)
+        {
+            // Se entrambe suonano ma non c'è una "future" in coda, 
+            // significa che siamo nel bel mezzo del Crossfade.
+            return;
+        }
+
         _CurrentAudioLength = _ActualLooped != null ? (double)_ActualLooped.samples / _ActualLooped.frequency : 0;
         bool music1IsPlaying = _AudioSourceMusic1.isPlaying;
         bool music2IsPlaying = _AudioSourceMusic2.isPlaying;
@@ -128,41 +148,19 @@ public class DialogueSoundManager : MonoBehaviour
         if (AudioSettings.dspTime >= _dScheduledStartTime - 2.0)
         {
             double durationOfClipToSchedule;
+            futurePlayingSource.Stop();
 
-            // RESET FISICO DELLA SORGENTE (Fondamentale per la terza iterazione)
-            futurePlayingSource.Stop(); // <--- Forza lo stop se fosse rimasta appesa
+            futurePlayingSource.clip = _ActualLooped;
+            futurePlayingSource.volume = 1f;
+            futurePlayingSource.timeSamples = Mathf.FloorToInt(_ActualLoopedStartingPoint * _ActualLooped.frequency);
 
-            if (_FutureLooped != null)
-            {
-                futurePlayingSource.clip = _FutureLooped;
+            futurePlayingSource.SetScheduledStartTime(_dScheduledStartTime - _ActualLoopedStartingPoint);
+            futurePlayingSource.PlayScheduled(_dScheduledStartTime);
 
-                // Impostiamo l'offset anche via samples per sicurezza fisica
-                futurePlayingSource.timeSamples = Mathf.FloorToInt(_FutureLoopedStartingPoint * _FutureLooped.frequency); // <---
-
-                futurePlayingSource.SetScheduledStartTime(_dScheduledStartTime - _FutureLoopedStartingPoint);
-                futurePlayingSource.PlayScheduled(_dScheduledStartTime);
-
-                durationOfClipToSchedule = ((double)_FutureLooped.samples / _FutureLooped.frequency) - _FutureLoopedStartingPoint;
-
-                _ActualLooped = _FutureLooped;
-                _ActualLoopedStartingPoint = _FutureLoopedStartingPoint;
-                _FutureLooped = null;
-            }
-            else
-            {
-                futurePlayingSource.clip = _ActualLooped;
-
-                // <--- RESET MANUALE: Forza la testina di lettura all'offset prima del PlayScheduled
-                futurePlayingSource.timeSamples = Mathf.FloorToInt(_ActualLoopedStartingPoint * _ActualLooped.frequency);
-
-                futurePlayingSource.SetScheduledStartTime(_dScheduledStartTime - _ActualLoopedStartingPoint);
-                futurePlayingSource.PlayScheduled(_dScheduledStartTime);
-
-                durationOfClipToSchedule = ((double)_ActualLooped.samples / _ActualLooped.frequency) - _ActualLoopedStartingPoint;
-            }
+            durationOfClipToSchedule = ((double)_ActualLooped.samples / _ActualLooped.frequency) - _ActualLoopedStartingPoint;
+            
 
             _dScheduledStartTime += durationOfClipToSchedule;
-
             _isNextScheduled = true;
             StartCoroutine(ResetScheduleFlag());
         }
@@ -186,5 +184,43 @@ public class DialogueSoundManager : MonoBehaviour
             _Instance._AudioSourceMusic1.Stop();
             _Instance._AudioSourceMusic2.Stop();
         }
+    }
+
+    private static IEnumerator Crossfade(AudioSource oldSource, AudioSource newSource, float duration)
+    {
+        // 1. Prepariamo la nuova sorgente
+        newSource.clip = _Instance._FutureLooped;
+        newSource.volume = 0;
+        newSource.time = 0; // Parte dall'inizio (intro)
+        newSource.Play();
+
+        float timer = 0;
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float progress = timer / duration;
+
+            // Dissolvenza incrociata
+            oldSource.volume = Mathf.Lerp(1f, 0f, progress);
+            newSource.volume = Mathf.Lerp(0f, 1f, progress);
+
+            yield return null;
+        }
+
+        // 2. Pulizia vecchia sorgente
+        oldSource.Stop();
+        oldSource.volume = 1f; // Reset volume per utilizzi futuri
+
+        // 3. Allineamento variabili per il sistema Ping-Pong
+        _Instance._ActualLooped = _Instance._FutureLooped;
+        _Instance._ActualLoopedStartingPoint = _Instance._FutureLoopedStartingPoint;
+        _Instance._FutureLooped = null;
+
+        // Ricalcoliamo il dspStartTime basandoci su quando è PARTITA la nuova source
+        // Sincronizziamo il prossimo loop alla fine di questa nuova clip
+        double durationNuova = (double)_Instance._ActualLooped.samples / _Instance._ActualLooped.frequency;
+        _Instance._dScheduledStartTime = AudioSettings.dspTime + (durationNuova - newSource.time);
+
+        _Instance._isNextScheduled = false; // Permettiamo all'Update di schedulare il prossimo giro
     }
 }
