@@ -96,7 +96,7 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 1
     _TargetSceneName: TempioEsterno
-    _DialogueMusicBackground: {fileID: 0}
+    _DialogueMusicBackground: {fileID: 8300000, guid: 7ac28ed660f3cdf468323098b1799ee1, type: 3}
     _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []

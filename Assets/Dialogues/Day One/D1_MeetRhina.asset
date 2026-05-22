@@ -23,7 +23,7 @@ MonoBehaviour:
       - _sSentence: "<i><color=#34689c>[Sleeper's Burrow\u2026 Che borgo deliziosamente
           pittoresco. Pareva proprio il genere di luogo in cui nulla di rilevante
           accade mai.]</color></i>\r"
-        _SFXAudio: {fileID: 0}
+        _SFXAudio: {fileID: 8300000, guid: cdcb65028c7be544189b42de320784c8, type: 3}
         _sImage:
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}

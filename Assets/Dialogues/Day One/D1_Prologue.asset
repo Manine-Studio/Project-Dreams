@@ -135,7 +135,7 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 1
     _TargetSceneName: Piazza
-    _DialogueMusicBackground: {fileID: 8300000, guid: 7ac28ed660f3cdf468323098b1799ee1, type: 3}
+    _DialogueMusicBackground: {fileID: 0}
     _LoopStartingPointInSeconds: 4.797
   hasChoices: 0
   Choices: []

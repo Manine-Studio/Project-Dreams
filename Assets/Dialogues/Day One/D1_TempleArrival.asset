@@ -18,95 +18,238 @@ MonoBehaviour:
       _values: 
     _DialogueCSV: {fileID: 4900000, guid: 84070235a19255a49b72bcc4bacfe7d6, type: 3}
     _DialogueParts:
-    - _sName: <color=#b83db8>Eleanor</color>
-      _Sentences:
-      - _sSentence: "Mamma! Ecco l'acqua! Vuoi anche tu una caramellina? Lo zio Ker
-          ne ha rubate alcune per me dalla ciotola del Signor Uldon!\r"
-        _SFXAudio: {fileID: 0}
-        _sImage:
-        - {fileID: 0}
-        - {fileID: 21300000, guid: e877739ae9c07cf47a7b1f9600342979, type: 3}
-        - {fileID: 0}
-        - {fileID: 21300000, guid: a90647033d929fd428c4aa5c76f44627, type: 3}
-        - {fileID: 0}
-        - {fileID: 0}
-    - _sName: <color=#27d690>Kerith</color>
-      _Sentences:
-      - _sSentence: "Ma\u2026 Avevi promesso di non dirlo a nessuno\u2026\r"
-        _SFXAudio: {fileID: 0}
-        _sImage:
-        - {fileID: 0}
-        - {fileID: 21300000, guid: 8cd382befb09da84bae6231e4f88b679, type: 3}
-        - {fileID: 0}
-        - {fileID: 21300000, guid: 6e3b74b2481e1c2428a703b2837329f7, type: 3}
-        - {fileID: 0}
-        - {fileID: 0}
-      - _sSentence: "Oh e-e comunque non le ho rubate, Signor Detective, glielo assicuro!
-          Le ho portate io stesso a Uldon, sono sicuro che sar\xE0 disposto a testimoniare
-          a mio favore, se\u2026\r"
-        _SFXAudio: {fileID: 0}
-        _sImage:
-        - {fileID: 0}
-        - {fileID: 21300000, guid: 8cd382befb09da84bae6231e4f88b679, type: 3}
-        - {fileID: 0}
-        - {fileID: 21300000, guid: 6e3b74b2481e1c2428a703b2837329f7, type: 3}
-        - {fileID: 0}
-        - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "Non si preoccupi, Dottore. Ho l'impressione che ci siano cose
-          pi\xF9 importanti a cui pensare in questo momento.\r"
-        _SFXAudio: {fileID: 0}
-        _sImage:
-        - {fileID: 0}
-        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
-        - {fileID: 0}
-        - {fileID: 21300000, guid: a90647033d929fd428c4aa5c76f44627, type: 3}
-        - {fileID: 0}
-        - {fileID: 0}
-      - _sSentence: "Signori, signore e fanciulle, se non vi dispiace vorrei scambiare
-          qualche parola in privato con il supervisore del Tempio.\r"
+      - _sSentence: "<i><color=#34689c>[C'era un gran baccano, era chiaro come la
+          gente del posto fosse particolarmente sconvolta dall'accaduto. Alcuni pi\xF9
+          di altri.]</color></i>\r"
         _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
-        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: ???
+      _Sentences:
+      - _sSentence: "\xC8 scomparso, Kerith! Sparito nel nulla! Oh, che la Dea abbia
+          piet\xE0 di me, per l'amor del cielo\u2026\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 5e33ae8bec25315418f33ab1dd84b9e0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 66518c072cad36846a95a41d6c52d75c, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "Calmati, Uldon\u2026 Ecco, stringi questo, ti aiuter\xE0 a rilassare
+          i nervi\u2026\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 635bf6c7278bd2c439b5b379321ed127, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ef45f4e96759189439f3d192169e2e2e, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "Quindici generazioni\u2026 Quindici generazioni di monaci! Mio
+          padre, il padre di mio padre e suo padre ancora prima di lui\u2026 Come
+          far\xF2 ora Kerith? Come?!\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 5e33ae8bec25315418f33ab1dd84b9e0, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 66518c072cad36846a95a41d6c52d75c, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+      - _sSentence: "Lo ritroveremo, Uldon. Non preoccuparti\u2026\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 635bf6c7278bd2c439b5b379321ed127, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ef45f4e96759189439f3d192169e2e2e, type: 3}
         - {fileID: 0}
         - {fileID: 0}
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
-      - _sSentence: "Certo, Detective. Si prenda tutto il tempo che le serve, se
-          dovesse avere ancora bisogno di noi pu\xF2 trovarci in citt\xE0.\r"
+      - _sSentence: "Detective, le presento Uldon e Kerith. Uldon \xE8 il monaco
+          che si occupava del Cuscino della Dea prima della sua scomparsa; vive qui
+          al Tempio ed \xE8 stato il primo a notare la sua assenza.\r"
         _SFXAudio: {fileID: 0}
         _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
+        - {fileID: 0}
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
+      - _sSentence: "Kerith \xE8 il nostro medico di fiducia. \xC8 un caro amico,
+          stava aiutando Uldon con i suoi\u2026 Malori.\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-        - {fileID: 21300000, guid: a90647033d929fd428c4aa5c76f44627, type: 3}
+        - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
-      - _sSentence: "<i><color=#34689c>[Mentre si allontanavano fra la folla ricordo
-          di aver visto Kerith avvicinarsi a Rhina per parlarle, preoccupato.]</color></i>\r"
+      - _sSentence: "Signori. Avrei preferito incontrarvi in circostanze pi\xF9 fortunate,
+          ma \xE8 un piacere fare la vostra conoscenza. Detective Bakon\xE9, per
+          servirvi.\r"
         _SFXAudio: {fileID: 0}
         _sImage:
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
+        - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
+        - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
+    - _sName: <color=#27d690>Kerith</color>
+      _Sentences:
+      - _sSentence: "Buongiorno, Detective\u2026 Sono Kerith, se ha biso\u2013\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
+        - {fileID: 21300000, guid: 6e3b74b2481e1c2428a703b2837329f7, type: 3}
         - {fileID: 0}
+        - {fileID: 21300000, guid: ef45f4e96759189439f3d192169e2e2e, type: 3}
         - {fileID: 0}
     - _sName: <color=#6b676b>Uldon</color>
       _Sentences:
-      - _sSentence: "Venga, Detective. Mi segua dentro, potremo parlare con pi\xF9
-          calma."
+      - _sSentence: "<b>Detective!</b> Mi dica che l'ha ritrovato, la prego!\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 66518c072cad36846a95a41d6c52d75c, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: a90647033d929fd428c4aa5c76f44627, type: 3}
+        - {fileID: 0}
+    - _sName: <color=#c71a0e>Rhina</color>
+      _Sentences:
+      - _sSentence: "Calma, Uldon. Il Detective \xE8 appena arrivato. Se bastassero
+          pochi minuti a ritrovare il Cuscino ci avremmo pensato noi stamattina,
+          non credi?\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ef45f4e96759189439f3d192169e2e2e, type: 3}
+        - {fileID: 0}
+    - _sName: <color=#6b676b>Uldon</color>
+      _Sentences:
+      - _sSentence: "Silenzio, Rhina! Non mi aspetto che tu capisca quanto disperata
+          sia la situazione. Non ti rendi conto di come mi sento in questo momento?
+          La mia intera vita dipende dal Sacro Cuscino!\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 3f4d02db42c54774689eb7171511ed93, type: 3}
+        - {fileID: 0}
+    - _sName: <color=#c71a0e>Rhina</color>
+      _Sentences:
+      - _sSentence: "\u2026\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ea85a70ce2edfed468ccc217e5a6aa0b, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 2937b4a9c9714c642aead35c14073d7c, type: 3}
+        - {fileID: 0}
+      - _sSentence: "Eleanor, tesoro, posso chiederti di andare a recuperare un bicchiere
+          d'acqua? La mamma ha un po' sete, fatti accompagnare dallo zio Ker, per
+          favore.\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 5cb4e79e72631fd4ea1530e64725de06, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 2937b4a9c9714c642aead35c14073d7c, type: 3}
+        - {fileID: 0}
+    - _sName: <color=#27d690>Kerith</color>
+      _Sentences:
+      - _sSentence: "Vieni, Eleanor. Vediamo se riusciamo a trovare anche una caramellina
+          per te, okay? Non dirlo alla mamma, per\xF2!\r"
         _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+    - _sName: <color=#c71a0e>Rhina</color>
+      _Sentences:
+      - _sSentence: "Fate attenzione, voi due!\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 5cb4e79e72631fd4ea1530e64725de06, type: 3}
+        - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 2937b4a9c9714c642aead35c14073d7c, type: 3}
+        - {fileID: 0}
+      - _sSentence: "Uldon, che tu lo capisca o no questa situazione non giova neanche
+          a me. Sto facendo tutto ci\xF2 che \xE8 in mio potere per risolvere la
+          questione il prima possibile, e continuer\xF2 a farlo.\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ea85a70ce2edfed468ccc217e5a6aa0b, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 2937b4a9c9714c642aead35c14073d7c, type: 3}
+        - {fileID: 0}
+      - _sSentence: "Non mi interessa cosa pensi di me come Sindaca o come persona,
+          ma non osare MAI PI\xD9 mancarmi di rispetto davanti a mia figlia.\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: ea85a70ce2edfed468ccc217e5a6aa0b, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 2937b4a9c9714c642aead35c14073d7c, type: 3}
+        - {fileID: 0}
+    - _sName: <color=#6b676b>Uldon</color>
+      _Sentences:
+      - _sSentence: "\u2026\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 4bd499855be3d024789b4d2e67754f10, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+      - _sSentence: "Non cambi mai, Rhina.\r"
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
+        - {fileID: 0}
+      - _sSentence: Gli anni passano, ma tu rimani sempre la stessa ragazzina aggressiva
+          e irrispettosa.
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
+        - {fileID: 0}
+        - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
         - {fileID: 21300000, guid: 94ca040048fa73c46a40d3b4f5c7355b, type: 3}
         - {fileID: 0}
