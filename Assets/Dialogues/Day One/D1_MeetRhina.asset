@@ -464,8 +464,8 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 1
     _TargetSceneName: TempioIngresso
-    _DialogueMusicBackground: {fileID: 8300000, guid: 9513fcfecc2dede45af2fe962a08a86d, type: 3}
-    _LoopStartingPointInSeconds: 12.028
+    _DialogueMusicBackground: {fileID: 8300000, guid: cdcb65028c7be544189b42de320784c8, type: 3}
+    _LoopStartingPointInSeconds: 11
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

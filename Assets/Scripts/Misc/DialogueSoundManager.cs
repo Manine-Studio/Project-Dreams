@@ -21,6 +21,8 @@ public class DialogueSoundManager : MonoBehaviour
     private bool _isNextScheduled = false;
     private static DialogueSoundManager _Instance;
 
+    private bool _isCrossFadingActive = false;
+
     public float SecondsForFading = 1.5f;
 
     // Proprietà pubblica per accedere al manager da altri script
@@ -46,60 +48,10 @@ public class DialogueSoundManager : MonoBehaviour
         SetupAudioSources();
     }
 
-    private void SetupAudioSources()
-    {
-        AudioSource[] sources = GetComponents<AudioSource>();
-        bool founded = false;
-        foreach (var s in sources)
-        {
-            if (s.outputAudioMixerGroup.name == "Music")
-            {
-                if (founded)
-                {
-
-                    _AudioSourceMusic2 = s;
-                } else
-                {
-                    founded = true;
-                    _AudioSourceMusic1 = s;
-                }
-        }
-            else if (s.outputAudioMixerGroup.name == "SFX")
-                _AudioSourceSFX = s;
-        }
-    }
-
-    public static void PlayOneShotSound(AudioClip clip)
-    {
-        _Instance._AudioSourceSFX.PlayOneShot(clip);
-    }
-
-    public static void PlayOnLoop(AudioClip clip, float startingPointLoop)
-    {
-        // Se non sta suonando nulla, partiamo normalmente
-        if (_Instance._ActualLooped == null)
-        {
-            _Instance._ActualLooped = clip;
-            _Instance._ActualLoopedStartingPoint = startingPointLoop;
-            return;
-        }
-
-        // Se sta già suonando qualcosa, facciamo il Crossfade
-        _Instance._FutureLooped = clip;
-        _Instance._FutureLoopedStartingPoint = startingPointLoop;
-
-        AudioSource sorgenteAttuale = _Instance._AudioSourceMusic1.isPlaying ?
-                                      _Instance._AudioSourceMusic1 : _Instance._AudioSourceMusic2;
-        AudioSource sorgenteNuova = (sorgenteAttuale == _Instance._AudioSourceMusic1) ?
-                                     _Instance._AudioSourceMusic2 : _Instance._AudioSourceMusic1;
-
-        _Instance.StartCoroutine(Crossfade(sorgenteAttuale, sorgenteNuova, _Instance.SecondsForFading));
-
-    }
 
     public void Update()
     {
-        if (_ActualLooped == null) return;
+        if (_ActualLooped == null || this != _Instance) return;
 
         // Se è in corso un Crossfade, non fare nulla
         if (_AudioSourceMusic1.isPlaying && _AudioSourceMusic2.isPlaying && _FutureLooped == null)
@@ -139,6 +91,61 @@ public class DialogueSoundManager : MonoBehaviour
 
     }
 
+    private void SetupAudioSources()
+    {
+        // Recuperiamo TUTTI gli AudioSource attaccati a questo oggetto
+        AudioSource[] sources = GetComponents<AudioSource>();
+
+        if (sources.Length < 3)
+        {
+            Debug.LogError("ERRORE CRITICO: Servono ALMENO 2 AudioSource sull'oggetto AudioManager per gestire il crossfade!");
+            return;
+        }
+
+        _AudioSourceSFX = sources[0];
+
+        // Assegnazione esplicita
+        _AudioSourceMusic1 = sources[1];
+        _AudioSourceMusic2 = sources[2];
+
+        // Pulizia forzata
+        _AudioSourceMusic1.loop = false;
+        _AudioSourceMusic2.loop = false;
+        _AudioSourceMusic1.playOnAwake = false;
+        _AudioSourceMusic2.playOnAwake = false;
+    }
+
+    public static void PlayOneShotSound(AudioClip clip)
+    {
+        _Instance._AudioSourceSFX.PlayOneShot(clip);
+    }
+
+    public static void PlayOnLoop(AudioClip clip, float startingPointLoop)
+    {
+        // Se non sta suonando nulla, partiamo normalmente
+        if (_Instance._ActualLooped == null)
+        {
+            _Instance._ActualLooped = clip;
+            _Instance._ActualLoopedStartingPoint = startingPointLoop;
+            return;
+        }
+        if(clip == _Instance._ActualLooped)
+        {
+            return;
+        }
+
+        // Se sta già suonando qualcosa, facciamo il Crossfade
+        _Instance._FutureLooped = clip;
+        _Instance._FutureLoopedStartingPoint = startingPointLoop;
+
+        AudioSource sorgenteAttuale = _Instance._AudioSourceMusic1.isPlaying ?
+                                      _Instance._AudioSourceMusic1 : _Instance._AudioSourceMusic2;
+        AudioSource sorgenteNuova = (sorgenteAttuale == _Instance._AudioSourceMusic1) ?
+                                     _Instance._AudioSourceMusic2 : _Instance._AudioSourceMusic1;
+        _Instance._isCrossFadingActive = true;
+        _Instance.StartCoroutine(Crossfade(sorgenteAttuale, sorgenteNuova, _Instance.SecondsForFading));
+
+    }
     private void SetFutureLoopPlaying(AudioSource futurePlayingSource, AudioSource currentSourcePlaying)
     {
         // Se abbiamo già programmato il prossimo colpo, non fare nulla!
@@ -209,6 +216,7 @@ public class DialogueSoundManager : MonoBehaviour
 
         // 2. Pulizia vecchia sorgente
         oldSource.Stop();
+        oldSource.clip = null;
         oldSource.volume = 1f; // Reset volume per utilizzi futuri
 
         // 3. Allineamento variabili per il sistema Ping-Pong
@@ -222,5 +230,6 @@ public class DialogueSoundManager : MonoBehaviour
         _Instance._dScheduledStartTime = AudioSettings.dspTime + (durationNuova - newSource.time);
 
         _Instance._isNextScheduled = false; // Permettiamo all'Update di schedulare il prossimo giro
+        _Instance._isCrossFadingActive = true;
     }
 }
