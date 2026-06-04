@@ -271,8 +271,8 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 1
     _TargetSceneName: Cena
-    _DialogueMusicBackground: {fileID: 0}
-    _LoopStartingPointInSeconds: 0
+    _DialogueMusicBackground: {fileID: 8300000, guid: 452b5b9e8dba5014eb60e7fe55397340, type: 3}
+    _LoopStartingPointInSeconds: 11
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

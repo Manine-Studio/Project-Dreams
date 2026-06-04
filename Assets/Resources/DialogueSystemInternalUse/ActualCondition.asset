@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ActualCondition
   m_EditorClassIdentifier: 
   MConditions:
-    _keys: 
-    _values: 
+    _keys: 00000000040000000b000000
+    _values: 000000000200000001000000

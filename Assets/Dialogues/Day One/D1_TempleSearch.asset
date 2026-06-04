@@ -37,7 +37,7 @@ MonoBehaviour:
     _DialogueChoices: []
     _HasSceneChange: 0
     _TargetSceneName: 
-    _DialogueMusicBackground: {fileID: 8300000, guid: d74d98665c1302f49801889da67ef9f3, type: 3}
+    _DialogueMusicBackground: {fileID: 8300000, guid: aa92abd9cbab5eb4c93fda92140deb4b, type: 3}
     _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []

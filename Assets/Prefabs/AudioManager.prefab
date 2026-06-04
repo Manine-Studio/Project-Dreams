@@ -335,4 +335,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b974c39c4d9d74e4cb6c170caac5e42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SecondsForFading: 3
+  SecondsForFading: 1.5
