@@ -24,6 +24,9 @@ public class Dialogue
     //Boolean needed to show and set the name of the scene in which the dialogue will change at the end
     [SerializeField] private bool _HasSceneChange;
     [SerializeField] private String _TargetSceneName;
+    //this clip will be looped as the background music
+    [SerializeField] private AudioClip _DialogueMusicBackground;
+    [SerializeField] private float _LoopStartingPointInSeconds;
 
     public List<Monologue> DialogueParts { get => _DialogueParts; } 
     public bool HasChoices { get => _HasChoices;  set => _HasChoices = value; }
@@ -33,6 +36,9 @@ public class Dialogue
     public TextAsset DialogueCSV { get => _DialogueCSV; set => _DialogueCSV = value; }
     public bool HasSceneChange { get => _HasSceneChange; set => _HasSceneChange = value; }
     public String TargetSceneName { get => _TargetSceneName; set => _TargetSceneName = value; }
+
+    public AudioClip DialogueMusicBackground { get => _DialogueMusicBackground; set => _DialogueMusicBackground = value; }
+    public float StartingLoopPoint { get => _LoopStartingPointInSeconds; set => _LoopStartingPointInSeconds = value; }
 }
 
 [System.Serializable]
@@ -56,18 +62,20 @@ public class Monologue
 public class Sentence
 {
     [SerializeField] private string _sSentence;
-    [SerializeField] private AudioClip _sAudio;
+    [SerializeField] private AudioClip _SFXAudio;
     [SerializeField] public Sprite[] _sImage = new Sprite[6];
 
     public string SSentence { get => _sSentence;}
-    public AudioClip SAudio { get => _sAudio;}
+    public AudioClip SFXAudio { get => _SFXAudio;}
     public Sprite[] SImage { get => _sImage;}
 
-    public Sentence(string sSentence, Sprite[] sImage)
+    public Sentence(string sSentence, Sprite[] sImage, AudioClip audio)
     {
         _sSentence = sSentence;
         _sImage = sImage;
+        _SFXAudio = audio;
     }
+
 }
 
 [System.Serializable]

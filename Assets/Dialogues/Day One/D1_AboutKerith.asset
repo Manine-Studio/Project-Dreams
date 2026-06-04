@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: e7f6c90db815b6e4ab577a507f357bdf, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -23,7 +23,7 @@ MonoBehaviour:
       - _sSentence: "<i><color=#34689c>[Kerith, il giovane medico, mi era parso sin
           da subito molto legato sia a Rhina che a Uldon. Poteva essere una figura
           chiave in questa storia.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Ha gi\xE0 conosciuto Kerith? \xC8 un cos\xEC bravo ragazzo,
           vero?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -47,7 +47,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Temo che la nostra conoscenza sia ancora troppo superficiale
           per poter giudicare, ma sembrava effettivamente molto preoccupato per l'accaduto.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
@@ -60,7 +60,7 @@ MonoBehaviour:
       - _sSentence: "Ci conosciamo sin da quando eravamo bambini, sono abbastanza
           sicura che fosse pi\xF9 preoccupato per Uldon e Rhina piuttosto che per
           il Cuscino!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -71,7 +71,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Non \xE8 un individuo religioso, deduco?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -82,7 +82,7 @@ MonoBehaviour:
     - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Lo era, prima dell'<color=red>incidente</color>\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -93,7 +93,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "L'<color=red>incidente</color>?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -104,7 +104,7 @@ MonoBehaviour:
     - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Beh, qualche anno fa\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -112,11 +112,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "No, lasci perdere. \xC8 una faccenda personale, non sarebbe
           giusto sbandierare ai quattro venti la sua storia senza il suo permesso.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -129,7 +127,7 @@ MonoBehaviour:
       - _sSentence: "<i><color=#34689c>[Sin da subito fui incuriosito: Lynn non sembrava
           certo il tipo di persona da farsi remore per un paio di gossip, il suo
           essere cos\xEC restia era piuttosto eloquente.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -137,11 +135,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[Nonostante ci\xF2, ritenni d'uopo evitare
           ulteriori indagini sull'argomento, almeno per quella sera.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -149,11 +145,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 7143d44bf53b43b46a6e411870dd4164, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Non si preoccupi, \xE8 naturale preoccuparsi dei propri amici.
           Se non pensa sia il caso di parlarne, non voglio forzarla.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -165,7 +159,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "La ringrazio Detective. Spero possa capire, nonostante siano
           passati anni \xE8 ancora un argomento pungente per Kerith.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
@@ -173,11 +167,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Pu\xF2 provare a parlarne con lui, magari \xE8 disposto a raccontarle
           l'accaduto.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
@@ -185,10 +177,8 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Non dica che sono stata io a menzionare la cosa, per\xF2!"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da7fe8b086b9bc84884329cd99fbed41, type: 3}
@@ -199,6 +189,18 @@ MonoBehaviour:
     _PostConditions:
       _keys: 05000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices:
+    - _sLabel: Chiedi di Kerith
+      _xDialogueSO: {fileID: 11400000}
+    - _sLabel: Chiedi di Rhina
+      _xDialogueSO: {fileID: 11400000, guid: 2b8d6399838385d46a91127b32580cc2, type: 2}
+    - _sLabel: Chiedi di Uldon
+      _xDialogueSO: {fileID: 11400000, guid: fbfef9c530b5181438cf98ea41b4b5ba, type: 2}
+    _HasSceneChange: 0
+    _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices:
   - _sLabel: Chiedi di Kerith

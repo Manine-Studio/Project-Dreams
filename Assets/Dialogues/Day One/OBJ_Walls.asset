@@ -21,7 +21,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Le mura circondano l'intero Tempio.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -29,11 +29,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "A occhio, sono alte almeno tre metri. Difficile scavalcare senza
           attrezzatura specifica.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -41,10 +39,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Non sono presenti crepe, sembrano molto ben tenute.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -52,10 +48,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Forse\u2026 Un passaggio segreto\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -63,10 +57,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -74,10 +66,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "No. Immagino dovr\xF2 impegnarmi pi\xF9 di cos\xEC."
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -88,6 +78,12 @@ MonoBehaviour:
     _PostConditions:
       _keys: 0a000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 0
+    _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 0

@@ -22,7 +22,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "L\u2019altare su cui giaceva il Cuscino, presumo. Che meravigliosa
           opera, \xE8 davvero stupefacente.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -30,10 +30,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Sar\xE0 meglio dare un\u2019occhiata pi\xF9 da vicino\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -41,10 +39,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -52,11 +48,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Sorprendentemente pulito, per essere un oggetto tenuto in un
           giardino. \xC8 chiaro che viene curato maniacalmente."
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -67,6 +61,12 @@ MonoBehaviour:
     _PostConditions:
       _keys: 09000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 0
+    _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 0

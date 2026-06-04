@@ -5,11 +5,9 @@ using UnityEngine;
 
 namespace com.spacepuppyeditor.Collections
 {
-
     [CustomPropertyDrawer(typeof(DrawableDictionary), true)]
     public class DictionaryPropertyDrawer : PropertyDrawer
     {
-
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
             if (property.isExpanded)

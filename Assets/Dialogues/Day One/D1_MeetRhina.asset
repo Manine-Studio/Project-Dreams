@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: fb677ea0f30ec5247b503339726e101a, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -23,7 +23,7 @@ MonoBehaviour:
       - _sSentence: "<i><color=#34689c>[Sleeper's Burrow\u2026 Che borgo deliziosamente
           pittoresco. Pareva proprio il genere di luogo in cui nulla di rilevante
           accade mai.]</color></i>\r"
-        _sAudio: {fileID: 8300000, guid: 9513fcfecc2dede45af2fe962a08a86d, type: 3}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Benvenuto a Sleeper's Burrow. Lei dev\u2019essere il detective
           di cui mi avevano comunicato l\u2019arrivo per questo pomeriggio.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
@@ -48,7 +48,7 @@ MonoBehaviour:
       - _sSentence: "E lei dev\u2019essere Rhina, la Sindaca di questo luogo incantevole,
           lieto di far la vostra conoscenza. Detective Bakon\xE9 al vostro servizio,
           mia signora.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Il piacere \xE8 tutto mio. S\xEC, sono Rhina Bythus, e questa
           signorinella molto timida \xE8 mia figlia, Eleanor.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
@@ -68,12 +68,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Dai, Eleanor, su, saluta il detective! \xC8 qui per aiutarci
           con il nostro piccolo problema; risolver\xE0 il caso in men che non si
           dica!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
@@ -85,7 +83,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "<i><color=#34689c>[La piccola si era avvicinata lentamente,
           ancora incerta del fatto che fossi degno di fiducia.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
@@ -97,7 +95,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Ciao signor Detective\u2026 Io sono Eleanor, e non ho rubato
           niente\u2026 Giurin giurello!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
@@ -109,7 +107,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "<i><color=#34689c>[Neanche conclusa la frase, Eleanor era corsa
           a nascondersi dietro la mamma]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 5538ac7fae4ec1f4db9f87f6b9910c49, type: 3}
         - {fileID: 0}
@@ -121,7 +119,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Oh, tesoro, tranquilla, nessuno pensa che tu sia la colpevole,
           vero, signor Detective?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: da309b61e8eb7d64e877a8afcfc663bd, type: 3}
         - {fileID: 0}
@@ -133,7 +131,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Puoi stare serena, mia cara Eleanor! Mi metter\xF2 immediatamente
           all\u2019opera per risolvere il caso e dimostrare la tua innocenza!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 5538ac7fae4ec1f4db9f87f6b9910c49, type: 3}
         - {fileID: 0}
@@ -146,7 +144,7 @@ MonoBehaviour:
       - _sSentence: "Spero non le crei problemi se viene con noi. Di solito la lascio
           a giocare durante gli incontri formali\u2026 Ma dopo l\u2019accaduto, non
           me la sono sentita di lasciarla da sola.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
@@ -158,7 +156,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Non si preoccupi, madame Rhina. La fanciulla \xE8 pi\xF9 che
           benvenuta, se lo desidera. Che ne dite, ci dirigiamo sulla scena del misfatto?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
@@ -169,7 +167,7 @@ MonoBehaviour:
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
       - _sSentence: "Certo, mi segua.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -177,12 +175,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Come forse sapr\xE0, Sleeper\u2019s Burrow \xE8 una piccola
           cittadina nell\u2019entroterra. Non abbiamo grandi attrazioni turistiche,
           ma da secoli \xE8 un punto di passaggio per chi si sposta in queste zone.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -190,11 +186,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Tempo fa, quando era sconsigliato girare da queste parti soli
           di notte, i viandanti si fermavano qui alla locanda per pernottare.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -202,11 +196,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Questa tradizione \xE8 durata per decenni, durante i quali sempre
           pi\xF9 viaggiatori hanno incontrato nei loro sogni la Dea del Sonno.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -214,13 +206,11 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Con il tempo, le persone hanno iniziato a riconoscere questi
           sogni come benedizioni. Poco a poco, il passaparola ha portato sempre pi\xF9
           gente che si \xE8 insediata qui, creando la cittadina nota oggi come Sleeper's
           Burrow.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -228,12 +218,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: beb0dab37c09aa3489305fd90d4c88bc, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "La leggenda narra che la Dea, soddisfatta per l\u2019affetto
           crescente dei suoi fedeli, abbia consacrato il luogo come suo santuario,
           donando loro un artefatto magico: il Cuscino della Dea.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -241,13 +229,11 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Da allora, il Cuscino \xE8 stato conservato nel Tempio che si
           trova in cima alla collina, sotto la sorveglianza di generazioni di Monaci
           devoti alla Dea e incaricati di accogliere i fedeli che ogni giorno si
           riuniscono davanti al suo Altare.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -259,7 +245,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Molto affascinante\u2026 Desumo che questo genere di storie
           sia parte integrante dei requisiti per diventare Sindaco di Sleeper's Burrow?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 8300000, guid: 1b0907f48a5e3d44cb0710b0dc3d0f31, type: 3}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -273,7 +259,7 @@ MonoBehaviour:
           del programma scolastico. Sono nata e cresciuta qui, Detective. Dimenticare
           \u2014 o peggio ancora ignorare \u2013 questa storia \xE8 il modo pi\xF9
           veloce per perdere le elezioni\u2026 E il rispetto degli anziani.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -284,7 +270,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Comprensibile. Una tradizione con radici profonde, senza dubbio.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -295,7 +281,7 @@ MonoBehaviour:
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
       - _sSentence: "Immagino non siano informazioni nuove per lei.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -307,7 +293,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Alcune mi erano note, difatti. Facevano parte del briefing,
           come potr\xE0 immaginare. Ma mi dica, madame Rhina\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -315,10 +301,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Secondo lei, quanto \xE8 importante questo Cuscino?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -326,11 +310,9 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[Rhina si ferm\xF2 un attimo a riflettere
           sulle mie parole.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -343,7 +325,7 @@ MonoBehaviour:
       - _sSentence: "Se \xE8 interessato alla mia fede, detective, la risposta \xE8
           che non sono particolarmente legata n\xE9 al mondo onirico n\xE9 al mondo
           spirituale.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: ea85a70ce2edfed468ccc217e5a6aa0b, type: 3}
         - {fileID: 0}
@@ -351,12 +333,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Se invece sta cercando di capire se posso avere a che fare con
           la scomparsa del Cuscino, posso garantirle che questa storia non far\xE0
           altro che crearmi problemi.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: ea85a70ce2edfed468ccc217e5a6aa0b, type: 3}
         - {fileID: 0}
@@ -364,12 +344,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "In entrambi i casi, preferisco le domande chiare e dirette.
           Se vuole sapere qualcosa, sono pronta a darle tutte le informazioni di
           cui ha bisogno.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -382,7 +360,7 @@ MonoBehaviour:
       - _sSentence: "Le chiedo umilmente scusa, non era mia intenzione risultare
           invadente. Ma, come spero caspisca, il mio mestiere non si limita meramente
           ad osservare orme e indizi con la lente d\u2019ingrandimento.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -390,12 +368,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Conoscere le persone, le loro storie, il loro modo di ragionare\u2026
           Direi che sono elementi altrettanto fondamentali se si vuole arrivare alla
           verit\xE0 e a risolvere davvero un caso.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -406,7 +382,7 @@ MonoBehaviour:
     - _sName: <color=#c71a0e>Rhina</color>
       _Sentences:
       - _sSentence: "\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -414,10 +390,8 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "\u2026 Ha ragione. Mi perdoni, \xE8 stata una giornata complicata.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -428,7 +402,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Comprendo perfettamente, mia cara.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -441,7 +415,7 @@ MonoBehaviour:
       - _sSentence: "Per essere chiara: la scomparsa del Cuscino non \xE8 solo una
           questione religiosa. \xC8 anche un disastro economico. Il turismo legato
           alla fede \xE8 ci\xF2 che tiene in piedi questa cittadina.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -449,12 +423,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Come pu\xF2 intuire, entrambi i problemi non faranno che peggiorare
           la mia posizione come Sindaca. Quindi le sarei grata se potesse risolvere
           il caso il prima possibile.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -462,12 +434,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
-    - _sName: <color=#c71a0e>Rhina</color>
-      _Sentences:
       - _sSentence: "Non mi interessa sapere chi, come, quando o perch\xE9. Voglio
           solo che quel dannato Cuscino torni sul suo altare quanto prima e che ci
           resti almeno fino a quando non sar\xE0 pi\xF9 un mio problema.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: ea85a70ce2edfed468ccc217e5a6aa0b, type: 3}
         - {fileID: 0}
@@ -479,7 +449,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Uhm\u2026 Chiaro. Far\xF2 tutto il possibile per ristabilire
           l\u2019ordine al pi\xF9 presto. Ha la mia parola, mia cara."
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 0fca24f27a7892946af3a287ce4b73ad, type: 3}
         - {fileID: 0}
@@ -490,6 +460,12 @@ MonoBehaviour:
     _PostConditions:
       _keys: 
       _values: 
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 1
+    _TargetSceneName: TempioIngresso
+    _DialogueMusicBackground: {fileID: 8300000, guid: cdcb65028c7be544189b42de320784c8, type: 3}
+    _LoopStartingPointInSeconds: 11
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

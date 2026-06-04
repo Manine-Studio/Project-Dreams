@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 0300000004000000
-      _values: 0100000001000000
+      _keys: 04000000
+      _values: 01000000
     _DialogueCSV: {fileID: 4900000, guid: 02bd07e892a115e4fb6298fada5e2c7d, type: 3}
     _DialogueParts:
     - _sName: <color=#b83db8>Eleanor</color>
       _Sentences:
       - _sSentence: "Mamma! Ecco l'acqua! Vuoi anche tu una caramellina? Lo zio Ker
           ne ha rubate alcune per me dalla ciotola del Signor Uldon!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: e877739ae9c07cf47a7b1f9600342979, type: 3}
@@ -33,7 +33,7 @@ MonoBehaviour:
     - _sName: <color=#27d690>Kerith</color>
       _Sentences:
       - _sSentence: "Ma\u2026 Avevi promesso di non dirlo a nessuno\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8cd382befb09da84bae6231e4f88b679, type: 3}
@@ -41,12 +41,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6e3b74b2481e1c2428a703b2837329f7, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#27d690>Kerith</color>
-      _Sentences:
       - _sSentence: "Oh e-e comunque non le ho rubate, Signor Detective, glielo assicuro!
           Le ho portate io stesso a Uldon, sono sicuro che sar\xE0 disposto a testimoniare
           a mio favore, se\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8cd382befb09da84bae6231e4f88b679, type: 3}
@@ -58,7 +56,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Non si preoccupi, Dottore. Ho l'impressione che ci siano cose
           pi\xF9 importanti a cui pensare in questo momento.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: da59ace3bb8ca1d449cfd4ce10afc64c, type: 3}
@@ -66,11 +64,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: a90647033d929fd428c4aa5c76f44627, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Signori, signore e fanciulle, se non vi dispiace vorrei scambiare
           qualche parola in privato con il supervisore del Tempio.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -82,7 +78,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Certo, Detective. Si prenda tutto il tempo che le serve, se
           dovesse avere ancora bisogno di noi pu\xF2 trovarci in citt\xE0.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 21300000, guid: 923ec003d26e5544499dbf7672e2857e, type: 3}
         - {fileID: 0}
@@ -94,7 +90,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "<i><color=#34689c>[Mentre si allontanavano fra la folla ricordo
           di aver visto Kerith avvicinarsi a Rhina per parlarle, preoccupato.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -106,7 +102,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Venga, Detective. Mi segua dentro, potremo parlare con pi\xF9
           calma."
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -117,6 +113,12 @@ MonoBehaviour:
     _PostConditions:
       _keys: 04000000
       _values: 02000000
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 1
+    _TargetSceneName: TempioInterno
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

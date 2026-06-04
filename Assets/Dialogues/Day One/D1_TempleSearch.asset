@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303b5f35688ab40459c560b5d4b34fd3, type: 3}
+  m_Name: D1_TempleSearch
+  m_EditorClassIdentifier: 
+  Dialogue:
+    _PreConditions:
+      _keys: 0b000000
+      _values: 01000000
+    _DialogueCSV: {fileID: 4900000, guid: 7371e53a5ba229842bceb2d4b692e022, type: 3}
+    _DialogueParts:
+    - _sName: "<color=#34689c>Bakon\xE9</color>"
+      _Sentences:
+      - _sSentence: <i><color=#34689c>[Dedicai qualche minuto a studiare a dovere
+          la scena del crimine.]</color></i>
+        _SFXAudio: {fileID: 0}
+        _sImage:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+    _PostConditions:
+      _keys: 
+      _values: 
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 0
+    _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 8300000, guid: aa92abd9cbab5eb4c93fda92140deb4b, type: 3}
+    _LoopStartingPointInSeconds: 0
+  hasChoices: 0
+  Choices: []
+  hasSceneChange: 0
+  targetSceneName: 

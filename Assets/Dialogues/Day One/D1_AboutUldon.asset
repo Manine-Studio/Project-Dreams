@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 03000000
-      _values: 01000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: a74fc93fd92686243bedccbc5afef679, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
@@ -23,7 +23,7 @@ MonoBehaviour:
       - _sSentence: "<i><color=#34689c>[Uldon, il monaco, era la persona pi\xF9 vicina
           al Cuscino della Dea. Speravo che saperne di pi\xF9 su di lui mi avrebbe
           aiutato con le indagini.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
     - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Povero Uldon\u2026 Spero stia bene.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -42,11 +42,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "La scomparsa del Cuscino della Dea \xE8 stato un brutto colpo
           per tutti, ma per lui deve essere stato tragico.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -54,10 +52,8 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Non so se Rhina le ha raccontato della famiglia di Uldon\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -68,7 +64,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "No, temo non abbia avuto il tempo.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -80,7 +76,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "La famiglia di Uldon \xE8 composta da monaci, da sempre dediti
           alla Dea e alla protezione del Cuscino sacro.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -88,11 +84,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Qualche anno addietro, poco dopo l'inizio della guerra, abbiamo
           scoperto che il padre di Uldon era in combutta con i Damin.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -100,12 +94,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Aveva promesso la cittadina come luogo sicuro per i soldati
           di passaggio, offrendo loro protezione in cambio di una grossa quantit\xE0
           di denaro.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -117,7 +109,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Presumo che il patto non fosse stato condiviso con il resto
           degli abitanti, prima dell'accordo?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -128,7 +120,7 @@ MonoBehaviour:
     - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Neanche i soldi promessi, se \xE8 per quello!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -140,7 +132,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Immagino che non sia pi\xF9 una figura particolarmente apprezzata
           dalla comunit\xE0.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
@@ -152,7 +144,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Certamente, \xE8 stato bandito immediatamente e non si \xE8
           pi\xF9 fatto vedere.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -160,12 +152,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Uldon ha sempre considerato il padre come un punto di riferimento,
           ma quando ha scoperto ci\xF2 che \xE8 successo \xE8 stato fra i suoi pi\xF9
           ferventi detrattori.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -173,11 +163,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Ha partecipato al processo fornendo tutte le prove che ha trovato,
           \xE8 soprattutto grazie a lui che abbiamo scoperto la verit\xE0 alla fine.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -185,12 +173,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Ero ancora una ragazzina quando \xE8 successo, ma credo sia
           stato il momento pi\xF9 caotico che ho mai visto in questa cittadina \u2014
           eccetto forse per il terremoto di qualche anno fa.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -203,7 +189,7 @@ MonoBehaviour:
       - _sSentence: "<i><color=#34689c>[Ricordo ancora le notizie di qualche anno
           prima. Un violento terremoto aveva colpito la zona e distrutto decine di
           edifici.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -211,11 +197,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: e1a06d667d6d1ca4885d7570f3e4d4cd, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[Fra quello e la guerra, \xE8 evidente che
           Sleeper's Burrow abbia visto giorni migliori.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -223,11 +207,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: e1a06d667d6d1ca4885d7570f3e4d4cd, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Quindi il padre di Uldon, alla fine, \xE8 riuscito a scappare
           col malloppo? O siete stati in grado di recuperare il bottino?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -240,7 +222,7 @@ MonoBehaviour:
       - _sSentence: "Nessuno sa che fine abbiano fatto quei soldi. Quello che sappiamo
           per certo \xE8 che il padre di Uldon li aveva ottenuti dai Damin, ma dopo
           essere stato esiliato ha vissuto nella miseria e in solitudine.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -248,11 +230,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Quindi quei soldi sono ancora da qualche parte, anche se dopo
           tutti questi anni abbiamo rinunciato alla ricerca.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -260,11 +240,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Il che \xE8 un peccato. Chiss\xE0 quante cose potremmo fare
           per la cittadina se li ritrovassimo!"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -275,6 +253,18 @@ MonoBehaviour:
     _PostConditions:
       _keys: 07000000
       _values: 01000000
+    _HasChoices: 0
+    _DialogueChoices:
+    - _sLabel: Chiedi di Kerith
+      _xDialogueSO: {fileID: 11400000, guid: 5fb9bcf717fcffe4cb4ebb7897d8a87a, type: 2}
+    - _sLabel: Chiedi di Rhina
+      _xDialogueSO: {fileID: 11400000, guid: 2b8d6399838385d46a91127b32580cc2, type: 2}
+    - _sLabel: Chiedi di Uldon
+      _xDialogueSO: {fileID: 11400000}
+    _HasSceneChange: 0
+    _TargetSceneName: 
+    _DialogueMusicBackground: {fileID: 0}
+    _LoopStartingPointInSeconds: 0
   hasChoices: 0
   Choices:
   - _sLabel: Chiedi di Kerith

@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(DialogueSO))]
-public class DialogueSOEditor : Editor
+public class DialogueSOEditor : UnityEditor.Editor
 {
     public override void OnInspectorGUI()
     {

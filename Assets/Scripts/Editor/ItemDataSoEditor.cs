@@ -6,7 +6,7 @@ using UnityEngine;
 namespace InteractionSystem
 {
     [CustomEditor(typeof(ItemDataSO)), CanEditMultipleObjects]
-    public class ItemDataSoEditor : Editor
+    public class ItemDataSoEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {

@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     _PreConditions:
-      _keys: 030000000c000000
-      _values: 0100000000000000
+      _keys: 
+      _values: 
     _DialogueCSV: {fileID: 4900000, guid: 949ada2a58329e547abba2cdc0a33629, type: 3}
     _DialogueParts:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "<i><color=#34689c>[La taverna era un luogo dalle fondamenta
           antiche, ancora riconoscibili nonostante i recenti rinnovamenti estetici.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -30,12 +30,10 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "<i><color=#34689c>[Mi era stato indicato come luogo in cui avrei
           passato le mie notti in attesa della conclusione del caso \u2013 nonch\xE9
           l'unica locanda della citt\xE0.]</color></i>\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 0}
@@ -46,7 +44,7 @@ MonoBehaviour:
     - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Lei \xE8 il Detective Bakon\xE9, giusto?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -57,7 +55,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Sono davvero cos\xEC facile da riconoscere?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -70,7 +68,7 @@ MonoBehaviour:
       - _sSentence: "L'ho vista questa mattina al Tempio, in compagnia di Rhina\u2026
           Non hanno fatto passare nessun altro oltre a lei, e mi era stato detto
           di aspettarla questa sera.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -78,11 +76,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Piacere di conoscerla, Detective. Sono Lynn, la proprietaria
           della locanda di Sleeper's Burrow.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 06e30ade1229af74c8cda1c4da50c7c3, type: 3}
@@ -94,7 +90,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Il piacere \xE8 tutto mio, Lynn. Detective Bakon\xE9, al suo
           servizio.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -102,11 +98,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: e1a06d667d6d1ca4885d7570f3e4d4cd, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "In effetti non ho visto altri ospiti qui intorno, mi sembra
           di capire che non avr\xF2 molta compagnia, almeno per oggi.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -119,7 +113,7 @@ MonoBehaviour:
       - _sSentence: "Temo che la sua unica compagnia sar\xF2 io. La maggior parte
           degli altri ospiti hanno deciso di annullare le loro prenotazioni, una
           volta scoperto il furto\u2026\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -127,11 +121,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Mi dica Detective, com'\xE8 la situazione? C'\xE8 qualche speranza
           di ritrovare il Cuscino della Dea?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -143,7 +135,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Non si preoccupi, mia cara. Se pu\xF2 essere recuperato, mi
           assicurer\xF2 di ritrovarlo in men che non si dica.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: d2a9117d83598204795419257101db38, type: 3}
@@ -151,11 +143,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: da309b61e8eb7d64e877a8afcfc663bd, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: "<color=#34689c>Bakon\xE9</color>"
-      _Sentences:
       - _sSentence: "Mi assicurer\xF2 che la sua graziosa taverna possa tornare in
           affari quanto prima!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 3e84d37329670354f878d9e242e710a9, type: 3}
@@ -167,7 +157,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "La ringrazio Detective! Ma mi creda, per quanto ci tenga alla
           mia attivit\xE0 sono pi\xF9 preoccupata per la nostra reliquia sacra.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 3e84d37329670354f878d9e242e710a9, type: 3}
@@ -179,7 +169,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "\xC8 addirittura pi\xF9 preoccupata per il Cuscino che per la
           sua taverna?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -191,7 +181,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "Non fraintenda, Detective. Questa taverna \xE8 la cosa a cui
           pi\xF9 tengo al mondo.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -199,11 +189,9 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Ma il Cuscino della Dea \xE8 sacro. Non solo fa parte della
           nostra cultura da sempre, ma \xE8 l'unica reliquia che Lei ci ha lasciato!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -211,10 +199,8 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6c0bc5823ddca6340bcb09df0c462206, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Lei non \xE8 un credente, vero signor Bakon\xE9?\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 1c9589b0397ab2846af79d6ac370f71f, type: 3}
@@ -225,7 +211,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "No, non posso dire di essere particolarmente avvezzo alla fede.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: ecb8a83ee15fcc140ace7de4ea7f6925, type: 3}
@@ -236,7 +222,7 @@ MonoBehaviour:
     - _sName: <color=#e8dd10>Lynn</color>
       _Sentences:
       - _sSentence: "Si vede!\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -244,12 +230,10 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 6ee5925e095f560458483569e1b50096, type: 3}
         - {fileID: 0}
         - {fileID: 0}
-    - _sName: <color=#e8dd10>Lynn</color>
-      _Sentences:
       - _sSentence: "Non se la prenda, ma solo se avesse affidato la sua intera vita
           a una divinit\xE0 potrebbe capire cosa vuol dire per noi perdere il nostro
           amato cuscino.\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -260,7 +244,7 @@ MonoBehaviour:
     - _sName: "<color=#34689c>Bakon\xE9</color>"
       _Sentences:
       - _sSentence: "Sa cosa, signora Lynn? Penso proprio che lei abbia ragione\r"
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 8bd86f3fdde132c439707a4ff5b4d923, type: 3}
@@ -272,7 +256,7 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: "La ringrazio, Detective! Anche se, nonostante la mia et\xE0,
           devo ammettere di essere ancora nubile! <i>\"Signorina\"</i> andr\xE0 benissimo."
-        _sAudio: {fileID: 0}
+        _SFXAudio: {fileID: 0}
         _sImage:
         - {fileID: 0}
         - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
@@ -283,6 +267,12 @@ MonoBehaviour:
     _PostConditions:
       _keys: 
       _values: 
+    _HasChoices: 0
+    _DialogueChoices: []
+    _HasSceneChange: 1
+    _TargetSceneName: Cena
+    _DialogueMusicBackground: {fileID: 8300000, guid: 452b5b9e8dba5014eb60e7fe55397340, type: 3}
+    _LoopStartingPointInSeconds: 11
   hasChoices: 0
   Choices: []
   hasSceneChange: 1

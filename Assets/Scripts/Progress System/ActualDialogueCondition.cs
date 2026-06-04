@@ -5,5 +5,10 @@ namespace Progress_System
     public class ActualDialogueCondition : ScriptableObject
     {
         public Condition MConditions;
+
+        private void OnValidate()
+        {
+            MConditions = ConditionsUtils.GetConditions();
+        }
     }
 }
