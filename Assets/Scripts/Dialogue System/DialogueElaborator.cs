@@ -108,6 +108,10 @@ public class DialogueElaborator : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
+        if(TypingEffect.Instance != null && !TypingEffect.Instance.IsCurrentSentenceFinished) {  
+            TypingEffect.Instance.TypeFully();
+            return;
+        }
         if (_sCurrentText != null && _Dialogue != null && _Dialogue.DialogueParts != null && _Dialogue.DialogueParts.Count > 0)
         {
             //If i reached the last sentence of the current monologue

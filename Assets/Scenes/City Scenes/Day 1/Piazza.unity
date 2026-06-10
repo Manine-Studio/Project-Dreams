@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3810555071995028588, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
+      propertyPath: _SecondsDelayBetweenCharacters
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4425579581573812140, guid: 82e250e91cc1616438c3354a71f7d653, type: 3}
       propertyPath: m_Pivot.x
       value: 0

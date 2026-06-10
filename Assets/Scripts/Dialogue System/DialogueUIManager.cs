@@ -49,6 +49,7 @@ public class DialogueUIManager : MonoBehaviour
     public void ChangeSentence(object[] param)
     {
         _Sentence.text = (string)param[0];
+        TypingEffect.Instance.StartTyping();
     }
 
     /// <summary>

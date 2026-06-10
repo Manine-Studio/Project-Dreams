@@ -109,6 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681365931561275262}
   - component: {fileID: 6394435787631314656}
+  - component: {fileID: 3810555071995028588}
   m_Layer: 5
   m_Name: DialogueUIManager
   m_TagString: Untagged
@@ -156,6 +157,20 @@ MonoBehaviour:
   _ContinueBtn: {fileID: 2796601912528450903}
   _ChoicesBox: {fileID: 8090476972092337208}
   _ChoicePrefab: {fileID: 1598939149574507943, guid: 6a04eaca212242049b772d840a88816d, type: 3}
+--- !u!114 &3810555071995028588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437244244495743709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538effddbee36a54da01ddf9922e32de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SecondsDelayBetweenCharacters: 0.1
+  _Sentence: {fileID: 5665517919470391547}
 --- !u!1 &875673749838803560
 GameObject:
   m_ObjectHideFlags: 0
