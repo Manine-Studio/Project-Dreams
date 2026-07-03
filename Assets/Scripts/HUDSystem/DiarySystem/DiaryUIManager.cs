@@ -25,6 +25,7 @@ namespace HUDSystem.DiarySystem
         //private bool _bHasLoaded;
 
         private ObjectTypeEnum _xCurrentUIType = ObjectTypeEnum.Item;
+        private bool DiaryOpen = false;
 
 
         private void OnEnable()
@@ -48,30 +49,36 @@ namespace HUDSystem.DiarySystem
             //    return;
             //}
 
-            switch ((int)_xCurrentUIType)
+            //switch ((int)_xCurrentUIType)
+            //{
+            //    case 1:
+            //        LoadUI(ref _xItemsList);
+            //        break;
+
+            //    case 2:
+            //        LoadUI(ref _xCharactersList);
+            //        break;
+
+            //    case 3:
+            //        LoadUI(ref _xLocationsList);
+            //        break;
+
+            //    default:
+            //        Debug.LogError($"how did this even happen? error in openUI no OBJECT_TYPE");
+            //        break;
+            //}
+            if (DiaryOpen) { CloseUI(); }
+            else
             {
-                case 1:
-                    LoadUI(ref _xItemsList);
-                    break;
-
-                case 2:
-                    LoadUI(ref _xCharactersList);
-                    break;
-
-                case 3:
-                    LoadUI(ref _xLocationsList);
-                    break;
-
-                default:
-                    Debug.LogError($"how did this even happen? error in openUI no OBJECT_TYPE");
-                    break;
+                DiaryUiPannel.SetActive(true);
+            DiaryOpen = true;
             }
-
-            DiaryUiPannel.SetActive(true);
+                
         }
 
         public void CloseUI()
         {
+            DiaryOpen = false;
             DiaryUiPannel.SetActive(false);
         }
 
