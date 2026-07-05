@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc8dcd108aebc04479d88cef7c680895
+guid: c68cf117bc11f4f468604d40135a7aab
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Yrsa
+  - Cardo
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

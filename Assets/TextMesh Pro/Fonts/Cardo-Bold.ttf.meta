@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e1e3975190e51f94e827785cfb42aa7c
+guid: 8bdeb223189a94543a6bbc1044b5475e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Fredericka the Great
+  - Cardo
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
