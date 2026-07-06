@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.9302, y: -36.5507}
+  m_AnchoredPosition: {x: -29, y: -26}
   m_SizeDelta: {x: 14.573, y: 8.1963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3426812959941832341
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3314bece94197544dab34edb62768110, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e48fe16c183fe5c4ba320f15b65651a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8621910463683243985}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Location1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7997981840200604744}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Location2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 1208778221747267301}
   - component: {fileID: 1663851951966098928}
   - component: {fileID: 5365575293317234406}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MapCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

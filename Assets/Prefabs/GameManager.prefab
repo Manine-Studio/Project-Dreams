@@ -99,6 +99,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnterSceneManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8986438682054932875, guid: d8a74bdc53fedba489e4ffedbcde46ca, type: 3}
+      propertyPath: _xDefaultDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c5056d07e199cd419ce67b88de67543, type: 2}
+    - target: {fileID: 8986438682054932875, guid: d8a74bdc53fedba489e4ffedbcde46ca, type: 3}
+      propertyPath: _xDialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8986438682054932875, guid: d8a74bdc53fedba489e4ffedbcde46ca, type: 3}
+      propertyPath: _xDialogues.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c5056d07e199cd419ce67b88de67543, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
