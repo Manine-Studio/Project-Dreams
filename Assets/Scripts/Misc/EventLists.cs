@@ -13,7 +13,7 @@
         public const string CHANGE_NAME = "CHANGE_NAME";
         
         /// <summary>
-        /// params type: List<Sprite[]>
+        /// params type: List<Sprite[]>, Animationclip[]
         /// </summary>
         public const string CHANGE_IMAGE = "CHANGE_IMAGE";
         
@@ -46,6 +46,11 @@
         /// params type: none
         /// </summary>
         public const string CHECK_POST_INTERACTION = "CHECK_POST_INTERACTION";
+          
+        /// <summary>
+        /// params type: none
+        /// </summary>
+        public const string RESET_CHARACTER = "RESET_CHARACTER"; 
     }
 
     public static class InteractEventList

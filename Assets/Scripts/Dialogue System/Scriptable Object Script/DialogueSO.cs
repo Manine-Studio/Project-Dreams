@@ -27,7 +27,7 @@ public class DialogueSO : ScriptableObject
         Dialogue.DialogueParts.Clear();
         Dialogue.DialogueCSV = null;
     }
-    
+
     /// <summary>
     /// Ensures that data in the Dialogue object remains consistent and initializes necessary fields.
     /// </summary>
@@ -90,7 +90,7 @@ public class DialogueSO : ScriptableObject
         {
             string[] parts = lines[i].Split('_');
 
-            if (parts.Length != 11)
+            if (parts.Length != 17)
             {
                 Debug.LogError("Number of fields incorrect at line: " + i);
                 return;
@@ -99,14 +99,25 @@ public class DialogueSO : ScriptableObject
             Line line = new Line();
 
             line.PG = new string[6];
+            line.Anims = new string[6];
 
             line.OSTName = parts[(int)Field.OSTName];
             line.OSTSecondStartingLoop = parts[(int)Field.OSTStartLoop];
             line.Audio = parts[(int)Field.SFX];
 
-            for (int x = 0; x < 6; x++)
+            int pgStart = (int)Field.PGs;
+
+            int z = 0;
+
+            for (int x = 0; x < 12; x++)
             {
-                line.PG[x] = parts[3 + x];
+                int j = Mathf.FloorToInt(x/2f);
+                
+                if (x == 0 || x % 2 == 0)
+                    line.PG[j] = parts[pgStart + x];
+
+                else
+                    line.Anims[j] = parts[pgStart + x];
             }
 
             line.PGName = parts[(int)Field.PGName];
@@ -128,22 +139,24 @@ public class DialogueSO : ScriptableObject
             string name = line.PGName;
             int j = i + 1;
             List<Sentence> strSentences = new List<Sentence>();
-            Sentence strSentence = new Sentence(line.Sentence, TextToSprite(line.PG), TextToAudioClip(line.Audio, false));
+            Sentence strSentence = new Sentence(line.Sentence, TextToSprite(line.PG), TextToAudioClip(line.Audio, false), TextToAnimation(line.Anims));
             strSentences.Add(strSentence);
             if (!musicFound)
             {
                 String OSTName = line.OSTName;
-                if (StringCsvValorized(OSTName)){
+                if (StringCsvValorized(OSTName))
+                {
                     float seconds = float.Parse(line.OSTSecondStartingLoop, NumberStyles.AllowDecimalPoint, CultureInfo.GetCultureInfo("en-US"));
                     Dialogue.DialogueMusicBackground = TextToAudioClip(OSTName, true);
                     Dialogue.StartingLoopPoint = seconds;
                     musicFound = true;
                 }
             }
+
             while (j < ListLines.Count)
             {
-                if (StringCsvValorized(ListLines[j].PGName )) break;
-                strSentence = new Sentence(ListLines[j].Sentence, TextToSprite(ListLines[j].PG), TextToAudioClip(line.Audio,false));
+                if (StringCsvValorized(ListLines[j].PGName)) break;
+                strSentence = new Sentence(ListLines[j].Sentence, TextToSprite(ListLines[j].PG), TextToAudioClip(line.Audio, false), TextToAnimation(line.Anims));
                 strSentences.Add(strSentence);
                 j++;
             }
@@ -153,6 +166,32 @@ public class DialogueSO : ScriptableObject
             Monologue monologue = new Monologue(name, strSentences);
             Dialogue.DialogueParts.Add(monologue);
         }
+    }
+
+    private AnimationClip[] TextToAnimation(string[] lineAnims)
+    {
+        AnimationClip[] animations = new AnimationClip[6];
+
+        for (int i = 0; i < animations.Length; i++)
+        {
+            if (!StringCsvValorized(lineAnims[i])) continue;
+
+
+            string animPath = "2D/Character Animations";
+
+            string[] animationPath = lineAnims[i].Split('-'); // Splits each animation
+
+            foreach (string animPathPart in animationPath)
+            {
+                animPath += "/";
+                animPath += animPathPart;
+            }
+
+            AnimationClip anim = Resources.Load<AnimationClip>(animPath); // 2D/Character Animations/*CharacterName||ObjectName*/*AnimationName*
+            animations[i] = anim;
+        }
+
+        return animations;
     }
 
     /// <summary>
@@ -181,6 +220,7 @@ public class DialogueSO : ScriptableObject
 
             xSprite[i] = sprite;
         }
+
         return xSprite;
     }
 
@@ -195,6 +235,7 @@ public class DialogueSO : ScriptableObject
         public string OSTSecondStartingLoop;
         public string Audio;
         public string[] PG;
+        public string[] Anims;
         public string PGName;
         public string Sentence;
     }
@@ -204,17 +245,12 @@ public class DialogueSO : ScriptableObject
     /// </summary>
     private enum Field
     {
-        OSTName,
-        OSTStartLoop,
-        SFX,
-        PG1,
-        PG2,
-        PG3,
-        PG4,
-        PG5,
-        PG6,
-        PGName,
-        Sentence
+        OSTName = 0,
+        OSTStartLoop = 1,
+        SFX = 2,
+        PGs = 3,
+        PGName = 15,
+        Sentence = 16
     }
 
     private bool StringCsvValorized(string str)
@@ -235,8 +271,7 @@ public class DialogueSO : ScriptableObject
 
             return Resources.Load(strAudioPath) as AudioClip;
         }
+
         return null;
     }
-
-   
 }

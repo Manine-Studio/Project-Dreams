@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Misc;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
@@ -28,7 +29,7 @@ public class DialogueTrigger : DialogueTriggerBase
 
         Dialogue defaultDialogue = null;
 
-        if (dialogueList.Count == 0 && _xDefaultDialogue.Dialogue != null)
+        if (dialogueList.Count == 0 && !_xDefaultDialogue.IsUnityNull() && _xDefaultDialogue.Dialogue != null)
         {
 
             defaultDialogue = _xDefaultDialogue.Dialogue;

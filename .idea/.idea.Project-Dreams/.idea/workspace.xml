@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcc42b64-c3a0-4632-8ff4-bce19250f051" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestInteractable.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestInteractable.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueTriggers/PostInteractionTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueTriggers/PostInteractionTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Dreams/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Dreams/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Dreams/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Dreams/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DialogueSystem/DialogueCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DialogueSystem/DialogueCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueStruct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueStruct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueTriggers/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueTriggers/DialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueUIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/Effects/TypingEffect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/Effects/TypingEffect.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/Scriptable Object Script/DialogueSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue System/Scriptable Object Script/DialogueSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUDSystem/DiarySystem/Deprecated/CollectibleItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUDSystem/DiarySystem/Deprecated/CollectibleItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUDSystem/DiarySystem/Deprecated/ToolTipManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUDSystem/DiarySystem/Deprecated/ToolTipManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Misc/EventLists.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Misc/EventLists.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3b24cc7fa9794ed8ab04312c53e6dedd172c00/ff/c8901315/PlayableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/974dfea2b0344965ae82decbbad6014010000/a6/c5540ae6/AudioSource.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -31,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/Programming/Post-Interaction-Trigger&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/Programming/DialogueAnimation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe" />
@@ -52,6 +66,10 @@
       <option name="WORKING_DIRECTORY" value="C:\Users\Gabriel\Documents\AProjects\Unity projects\Project-Dreams" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
@@ -60,6 +78,10 @@
       <option name="WORKING_DIRECTORY" value="C:\Users\Gabriel\Documents\AProjects\Unity projects\Project-Dreams" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -73,19 +95,26 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19768">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="19768" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
   </component>
@@ -98,6 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760796520786</updated>
       <workItem from="1760796522841" duration="596000" />
+      <workItem from="1791114035943" duration="14933000" />
     </task>
     <servers />
   </component>
@@ -131,44 +161,101 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs</url>
-          <line>109</line>
-          <properties documentPath="C:\Users\Gabriel\Documents\AProjects\Unity projects\Project-Dreams\Assets\Scripts\Dialogue System\DialogueElaborator.cs" containingFunctionPresentation="Method 'DisplayNextSentence'">
-            <startOffsets>
-              <option value="3685" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3779" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs</url>
-          <line>108</line>
-          <properties documentPath="C:\Users\Gabriel\Documents\AProjects\Unity projects\Project-Dreams\Assets\Scripts\Dialogue System\DialogueElaborator.cs" containingFunctionPresentation="Method 'DisplayNextSentence'">
-            <startOffsets>
-              <option value="3650" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3664" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Interaction System/InteractableObject.cs</url>
           <line>50</line>
-          <properties documentPath="C:\Users\Gabriel\Documents\AProjects\Unity projects\Project-Dreams\Assets\Scripts\Interaction System\InteractableObject.cs" containingFunctionPresentation="Method 'ApplayPostConditions'">
-            <startOffsets>
-              <option value="1730" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1779" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Gabriel\Documents\AProjects\Unity projects\Project-Dreams\Assets\Scripts\Interaction System\InteractableObject.cs" containingFunctionPresentation="Method 'ApplayPostConditions'" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueUIManager.cs</url>
+          <line>67</line>
+          <properties documentPath="C:\Users\alexy\Documents\SchoolProjects\Unity\Project-Dreams\Assets\Scripts\Dialogue System\DialogueUIManager.cs" containingFunctionPresentation="Method 'ChangeImage'">
+            <startOffsets>
+              <option value="2783" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2784" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs</url>
+          <line>167</line>
+          <properties documentPath="C:\Users\alexy\Documents\SchoolProjects\Unity\Project-Dreams\Assets\Scripts\Dialogue System\DialogueElaborator.cs" containingFunctionPresentation="Method 'TypeSentence'">
+            <startOffsets>
+              <option value="5669" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5670" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs</url>
+          <line>232</line>
+          <properties documentPath="C:\Users\alexy\Documents\SchoolProjects\Unity\Project-Dreams\Assets\Scripts\Dialogue System\DialogueElaborator.cs" containingFunctionPresentation="Method 'GetFromCurrent'">
+            <startOffsets>
+              <option value="8122" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8149" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs</url>
+          <line>221</line>
+          <properties documentPath="C:\Users\alexy\Documents\SchoolProjects\Unity\Project-Dreams\Assets\Scripts\Dialogue System\DialogueElaborator.cs" containingFunctionPresentation="Method 'AddToCurrent'">
+            <startOffsets>
+              <option value="7740" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7741" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/DialogueElaborator.cs</url>
+          <line>96</line>
+          <properties documentPath="C:\Users\alexy\Documents\SchoolProjects\Unity\Project-Dreams\Assets\Scripts\Dialogue System\DialogueElaborator.cs" containingFunctionPresentation="Method 'StartMonologue'">
+            <startOffsets>
+              <option value="2988" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3060" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue System/CharacterSlot.cs</url>
+          <line>75</line>
+          <properties documentPath="C:\Users\alexy\Documents\SchoolProjects\Unity\Project-Dreams\Assets\Scripts\Dialogue System\CharacterSlot.cs" containingFunctionPresentation="Method 'PlayAnimation'">
+            <startOffsets>
+              <option value="2757" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2758" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="7" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

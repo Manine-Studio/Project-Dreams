@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
+using Dialogue_System;
 using Misc;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueUIManager : MonoBehaviour
@@ -15,8 +14,8 @@ public class DialogueUIManager : MonoBehaviour
     [SerializeField] private GameObject _NameTextBox;
     [SerializeField] private TextMeshProUGUI _Name;
     [SerializeField] private GameObject _ListOfCharacters;
-    private Image[] _Image = new Image[6];
-    [SerializeField] private Button _ContinueBtn; 
+    private CharacterSlot[] _Characters = new CharacterSlot[6];
+    [SerializeField] private Button _ContinueBtn;
     [SerializeField] private GameObject _ChoicesBox;
     [SerializeField] private GameObject _ChoicePrefab;
 
@@ -36,9 +35,9 @@ public class DialogueUIManager : MonoBehaviour
         HideDialogue(null);
 
         // Populate _Image array with character portraits
-        for (int i = 0; i < _Image.Length; i++)
+        for (int i = 0; i < _Characters.Length; i++)
         {
-            _Image[i] = _ListOfCharacters.transform.GetChild(i).gameObject.GetComponent<Image>();
+            _Characters[i] = _ListOfCharacters.transform.GetChild(i).gameObject.GetComponent<CharacterSlot>();
         }
     }
 
@@ -67,18 +66,20 @@ public class DialogueUIManager : MonoBehaviour
     /// <param name="param">Array where the first element is a list of Sprite arrays.</param>
     public void ChangeImage(object[] param)
     {
-        List<Sprite[]> list = (List<Sprite[]>)param[0];
-        Sprite[] images = list[0];
+        // List<Sprite[]> list = (List<Sprite[]>);
+        Sprite[] images = (Sprite[])param[0];
+        AnimationClip[] animations = (AnimationClip[])param[1];
 
-        for (int i = 0; i < _Image.Length; i++)
+        for (int i = 0; i < _Characters.Length; i++)
         {
             if (images[i] != null)
             {
-                _Image[i].gameObject.SetActive(true);
-                _Image[i].sprite = images[i];
+                _Characters[i].ImageHolder.sprite = images[i];
+                _Characters[i].ImageHolder.enabled = true;
+                _Characters[i].PlayAnimation(animations[i]);
             }
             else
-                _Image[i].gameObject.SetActive(false);
+                _Characters[i].ImageHolder.enabled = false;
         }
     }
 
@@ -101,7 +102,7 @@ public class DialogueUIManager : MonoBehaviour
             }
         }
     }
-    
+
     /// <summary>
     /// Hides all dialogue-related UI elements.
     /// </summary>
@@ -116,7 +117,7 @@ public class DialogueUIManager : MonoBehaviour
         _Name.text = "";
         _ListOfCharacters.gameObject.SetActive(false);
         _ChoicesBox.SetActive(false);
-        
+
         // if (param == null || param.Length <= 0) return;
         //
         // Dialogue dialogue = (Dialogue)param[0];

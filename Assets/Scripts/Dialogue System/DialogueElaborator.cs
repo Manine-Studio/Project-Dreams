@@ -16,6 +16,10 @@ public class DialogueElaborator : MonoBehaviour
     private Dialogue _Dialogue;
     private List<string> _sCurrentText;
     private List<Sprite[]> _xCurrentImage;
+    private AnimationClip[] _xCurrentAnim = new AnimationClip [6];
+
+    private List<Sentence> _xSentences;
+
     private int _CurrentMonologueIndex;
     private int _CurrentSentenceIndex;
 
@@ -25,6 +29,7 @@ public class DialogueElaborator : MonoBehaviour
     {
         _sCurrentText = new List<string>();
         _xCurrentImage = new List<Sprite[]>();
+        _xSentences = new();
 
         GameManager.Instance.XDialogueEventBus.Register(DialogueEventList.START_DIALOGUE_ELAB, StartDialogue);
     }
@@ -45,7 +50,6 @@ public class DialogueElaborator : MonoBehaviour
 
         if (!_bIsRunning)
         {
-
             if (dialogueList != null && dialogueList.Count > 0)
             {
                 //checking which dialogue from the list is the one who respects the preconditions
@@ -63,6 +67,7 @@ public class DialogueElaborator : MonoBehaviour
             {
                 _Dialogue = defaultDialogue;
             }
+
             if (_Dialogue != null)
             {
                 GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_DIALOGUE);
@@ -71,6 +76,7 @@ public class DialogueElaborator : MonoBehaviour
                 {
                     DialogueSoundManager.PlayOnLoop(_Dialogue.DialogueMusicBackground, _Dialogue.StartingLoopPoint);
                 }
+
                 _bIsRunning = true;
                 StartMonologue();
             }
@@ -84,22 +90,22 @@ public class DialogueElaborator : MonoBehaviour
     {
         if (_Dialogue != null)
         {
-
             GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_NAME, _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
-            ClearCurrent();
+            //ClearCurrent();
 
-            //AddToCurrent(null, null);
+            _xSentences.Clear();
+            _xSentences = _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences;
 
-            foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
-            {
-                AddToCurrent(sentence.SSentence, sentence.SImage);
-                if(sentence.SFXAudio != null)
-                {
-                    DialogueSoundManager.PlayOneShotSound(sentence.SFXAudio);
-                }
-            }
+            // foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
+            // {
+            //     AddToCurrent(sentence.SSentence, sentence.SImage, sentence.XAnimations);
+            //     if (sentence.SFXAudio != null)
+            //     {
+            //         DialogueSoundManager.PlayOneShotSound(sentence.SFXAudio);
+            //     }
+            // }
 
-            DisplayNextSentence();
+            DisplayNextSentence(); // in this case it's the first sentence
         }
     }
 
@@ -108,44 +114,49 @@ public class DialogueElaborator : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        if(TypingEffect.Instance != null && !TypingEffect.Instance.IsCurrentSentenceFinished) {  
+        if (TypingEffect.Instance != null && !TypingEffect.Instance.IsCurrentSentenceFinished)
+        {
             TypingEffect.Instance.TypeFully();
             return;
         }
-        if (_sCurrentText != null && _Dialogue != null && _Dialogue.DialogueParts != null && _Dialogue.DialogueParts.Count > 0)
+
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.RESET_CHARACTER); // resets the transform of the characters
+
+        if (_sCurrentText == null || _Dialogue == null || _Dialogue.DialogueParts == null || _Dialogue.DialogueParts.Count == 0)
+            return;
+
+        // if (_sCurrentText != null && _Dialogue != null && _Dialogue.DialogueParts != null && _Dialogue.DialogueParts.Count > 0) do the rest of the code
+
+        //If i reached the last sentence 
+        if (_CurrentSentenceIndex == _xSentences.Count)
         {
-            //If i reached the last sentence of the current monologue
-            if (_CurrentSentenceIndex == _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences.Count)
+            // if the current monologue wasn't the last, start the next monologue
+            if (_CurrentMonologueIndex < _Dialogue.DialogueParts.Count - 1)
             {
-                // if the current monologue wasn't the last,  start the next monologue
-                if (_CurrentMonologueIndex < _Dialogue.DialogueParts.Count - 1)
+                _CurrentMonologueIndex++;
+                StartMonologue();
+            }
+            else // if it was the last
+            {
+                if (_Dialogue.HasChoices)
                 {
-                    _CurrentMonologueIndex++;
-                    StartMonologue();
+                    List<List<Choice>> listDialogues = new List<List<Choice>>();
+                    listDialogues.Add(_Dialogue.DialogueChoices);
+                    EndDialogue();
+                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_CHOICE, listDialogues);
                 }
                 else
                 {
-                    if (_Dialogue.HasChoices)
-                    {
-                        System.Collections.Generic.List<List<Choice>> listDialogues = new List<List<Choice>>();
-                        listDialogues.Add(_Dialogue.DialogueChoices);
-                        EndDialogue();
-                        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.START_CHOICE, listDialogues);
-                    }
-                    else
-                    {
-                        EndDialogue();
-                        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHECK_POST_INTERACTION);
-                    }
+                    EndDialogue();
+                    GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHECK_POST_INTERACTION);
                 }
-                return;
             }
 
-            TypeSentence();
-            _CurrentSentenceIndex++;
+            return;
         }
 
-
+        TypeSentence();
+        _CurrentSentenceIndex++;
     }
 
     /// <summary>
@@ -155,15 +166,22 @@ public class DialogueElaborator : MonoBehaviour
     /// <returns></returns>
     private void TypeSentence()
     {
-        string sentence = "";
-        Sprite[] image = null;
-        GetFromCurrent(out sentence, out image);
-        List<Sprite[]> list = new List<Sprite[]>();
-        list.Add(image);
+        string sentence =_xSentences[_CurrentSentenceIndex].SSentence;
+        Sprite[] images = _xSentences[_CurrentSentenceIndex].SImage;
+        AnimationClip[] animations = _xSentences[_CurrentSentenceIndex].AAnimations;
 
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", "");
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_SENTENCE", sentence);
-        GameManager.Instance.XDialogueEventBus.TriggerEvent("CHANGE_IMAGE", list);
+        // List<Sprite[]> list = new List<Sprite[]>();
+        // list.Add(images);
+
+        //GetFromCurrent(out sentence, out image, out animations);
+
+        if (_xSentences[_CurrentSentenceIndex].SFXAudio != null)
+            DialogueSoundManager.PlayOneShotSound(_xSentences[_CurrentSentenceIndex].SFXAudio);
+
+
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, "");
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, sentence);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_IMAGE, images, animations);
     }
 
     /// <summary>
@@ -180,36 +198,40 @@ public class DialogueElaborator : MonoBehaviour
         GameManager.Instance.XInteractableEventBus.TriggerEvent(InteractEventList.REFRESH_INTERACTABLE_PRE_CONDITION);
 
         GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.END_DIALOGUE);
-        
+
         _bIsRunning = false;
         if (_Dialogue != null && _Dialogue.HasSceneChange && !string.IsNullOrEmpty(_Dialogue.TargetSceneName))
         {
             SceneManager.LoadScene(_Dialogue.TargetSceneName);
         }
+
         _Dialogue = null;
     }
 
     #region current
 
-    private void ClearCurrent()
-    {
-        _sCurrentText.Clear();
-        _CurrentSentenceIndex = 0;
-        _xCurrentImage.Clear();
-    }
-
-    private void AddToCurrent(string sentence, Sprite[] image)
-    {
-        _sCurrentText.Add(sentence);
-        _xCurrentImage.Add(image);
-    }
-
-
-    private void GetFromCurrent(out string text, out Sprite[] sprite)
-    {
-        text = _sCurrentText[_CurrentSentenceIndex];
-        sprite = _xCurrentImage[_CurrentSentenceIndex];
-    }
+    // private void ClearCurrent()
+    // {
+    //     _sCurrentText.Clear();
+    //     _CurrentSentenceIndex = 0;
+    //     _xCurrentImage.Clear();
+    //     _xCurrentAnim = new AnimationClip [6];
+    // }
+    //
+    // private void AddToCurrent(string sentence, Sprite[] image,AnimationClip[] animations)
+    // {
+    //     _sCurrentText.Add(sentence);
+    //     _xCurrentImage.Add(image);
+    //     _xCurrentAnim = animations;
+    // }
+    //
+    //
+    // private void GetFromCurrent(out string text, out Sprite[] sprite, out AnimationClip[] animations)
+    // {
+    //     text = _sCurrentText[_CurrentSentenceIndex];
+    //     sprite = _xCurrentImage[_CurrentSentenceIndex];
+    //     animations = _xCurrentAnim;
+    // }
 
     #endregion
 }

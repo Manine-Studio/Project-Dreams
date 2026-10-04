@@ -64,16 +64,19 @@ public class Sentence
     [SerializeField] private string _sSentence;
     [SerializeField] private AudioClip _SFXAudio;
     [SerializeField] public Sprite[] _sImage = new Sprite[6];
+    [SerializeField] private AnimationClip[] XAnimations = new AnimationClip[6];
 
     public string SSentence { get => _sSentence;}
     public AudioClip SFXAudio { get => _SFXAudio;}
     public Sprite[] SImage { get => _sImage;}
+    public AnimationClip[] AAnimations { get => XAnimations;}
 
-    public Sentence(string sSentence, Sprite[] sImage, AudioClip audio)
+    public Sentence(string sSentence, Sprite[] sImage, AudioClip audio, AnimationClip[] animations)
     {
         _sSentence = sSentence;
         _sImage = sImage;
         _SFXAudio = audio;
+        XAnimations = animations;
     }
 
 }
