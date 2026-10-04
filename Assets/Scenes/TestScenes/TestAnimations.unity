@@ -1149,6 +1149,98 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9154780213289767055, guid: 6f665bceba6ebb4439b2a54f6c0e37be, type: 3}
   m_PrefabInstance: {fileID: 1095356601}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1128056671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1610449557933918473, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_Name
+      value: OBJ-Altar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322727155454518010, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024549206968382165, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: _xDefaultDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 66c82a91053e11f4da8ae2e4018e85d0, type: 2}
+    - target: {fileID: 4053714715150184745, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: _xPostConditions._keys.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053714715150184745, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      propertyPath: _xPostConditions._values.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1610449557933918473, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1128056673}
+  m_SourcePrefab: {fileID: 100100000, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+--- !u!1 &1128056672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1610449557933918473, guid: 7a5e9795da53ed44591c9683860e516e, type: 3}
+  m_PrefabInstance: {fileID: 1128056671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1128056673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128056672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50705abc097bca40b91c61cdbcef63f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDoneKey: OBJ-Altar_TempioEsterno
+  IsImportant: 1
+  isCharachter: 0
 --- !u!1 &1407291942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4111285793226585607, guid: def7b2a776198184e81ba2d45cf08cbe, type: 3}
@@ -2122,6 +2214,7 @@ SceneRoots:
   - {fileID: 250634081}
   - {fileID: 714098345}
   - {fileID: 2964944911633610496}
+  - {fileID: 1128056671}
   - {fileID: 1543143011}
   - {fileID: 560179662}
   - {fileID: 1642394142}

@@ -14,9 +14,6 @@ public class DialogueElaborator : MonoBehaviour
     private bool _bIsRunning = false;
 
     private Dialogue _Dialogue;
-    private List<string> _sCurrentText;
-    private List<Sprite[]> _xCurrentImage;
-    private AnimationClip[] _xCurrentAnim = new AnimationClip [6];
 
     private List<Sentence> _xSentences;
 
@@ -27,8 +24,6 @@ public class DialogueElaborator : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-        _sCurrentText = new List<string>();
-        _xCurrentImage = new List<Sprite[]>();
         _xSentences = new();
 
         GameManager.Instance.XDialogueEventBus.Register(DialogueEventList.START_DIALOGUE_ELAB, StartDialogue);
@@ -92,18 +87,9 @@ public class DialogueElaborator : MonoBehaviour
         {
             GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_NAME, _Dialogue.DialogueParts[_CurrentMonologueIndex].SName);
             //ClearCurrent();
-
-            _xSentences.Clear();
+            // _xSentences.Clear();
             _xSentences = _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences;
-
-            // foreach (Sentence sentence in _Dialogue.DialogueParts[_CurrentMonologueIndex].Sentences)
-            // {
-            //     AddToCurrent(sentence.SSentence, sentence.SImage, sentence.XAnimations);
-            //     if (sentence.SFXAudio != null)
-            //     {
-            //         DialogueSoundManager.PlayOneShotSound(sentence.SFXAudio);
-            //     }
-            // }
+            
 
             DisplayNextSentence(); // in this case it's the first sentence
         }
@@ -122,7 +108,7 @@ public class DialogueElaborator : MonoBehaviour
 
         GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.RESET_CHARACTER); // resets the transform of the characters
 
-        if (_sCurrentText == null || _Dialogue == null || _Dialogue.DialogueParts == null || _Dialogue.DialogueParts.Count == 0)
+        if (_Dialogue == null || _Dialogue.DialogueParts == null || _Dialogue.DialogueParts.Count == 0)
             return;
 
         // if (_sCurrentText != null && _Dialogue != null && _Dialogue.DialogueParts != null && _Dialogue.DialogueParts.Count > 0) do the rest of the code
@@ -133,6 +119,7 @@ public class DialogueElaborator : MonoBehaviour
             // if the current monologue wasn't the last, start the next monologue
             if (_CurrentMonologueIndex < _Dialogue.DialogueParts.Count - 1)
             {
+                _CurrentSentenceIndex = 0;
                 _CurrentMonologueIndex++;
                 StartMonologue();
             }
@@ -166,9 +153,9 @@ public class DialogueElaborator : MonoBehaviour
     /// <returns></returns>
     private void TypeSentence()
     {
-        string sentence =_xSentences[_CurrentSentenceIndex].SSentence;
-        Sprite[] images = _xSentences[_CurrentSentenceIndex].SImage;
-        AnimationClip[] animations = _xSentences[_CurrentSentenceIndex].AAnimations;
+        string sentence = _xSentences[_CurrentSentenceIndex].SSentence;
+        Sprite[] images = _xSentences[_CurrentSentenceIndex]._XSpriteAnimMap.XSprites;
+        AnimationClip[] animations = _xSentences[_CurrentSentenceIndex]._XSpriteAnimMap.XAnimations;
 
         // List<Sprite[]> list = new List<Sprite[]>();
         // list.Add(images);
@@ -207,31 +194,4 @@ public class DialogueElaborator : MonoBehaviour
 
         _Dialogue = null;
     }
-
-    #region current
-
-    // private void ClearCurrent()
-    // {
-    //     _sCurrentText.Clear();
-    //     _CurrentSentenceIndex = 0;
-    //     _xCurrentImage.Clear();
-    //     _xCurrentAnim = new AnimationClip [6];
-    // }
-    //
-    // private void AddToCurrent(string sentence, Sprite[] image,AnimationClip[] animations)
-    // {
-    //     _sCurrentText.Add(sentence);
-    //     _xCurrentImage.Add(image);
-    //     _xCurrentAnim = animations;
-    // }
-    //
-    //
-    // private void GetFromCurrent(out string text, out Sprite[] sprite, out AnimationClip[] animations)
-    // {
-    //     text = _sCurrentText[_CurrentSentenceIndex];
-    //     sprite = _xCurrentImage[_CurrentSentenceIndex];
-    //     animations = _xCurrentAnim;
-    // }
-
-    #endregion
 }

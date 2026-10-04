@@ -44,18 +44,18 @@ public class DialogueSO : ScriptableObject
         Dialogue.HasSceneChange = hasSceneChange;
         Dialogue.TargetSceneName = targetSceneName;
 
-        // Ensure that each Sentence's `_sImage` array has exactly 6 elements.
-        foreach (var part in Dialogue.DialogueParts)
-        {
-            foreach (var sentence in part.Sentences)
-            {
-                if (sentence.SImage.Length != 6)
-                {
-                    Debug.LogWarning("Don't change the 'ints' field's array size!");
-                    Array.Resize(ref sentence._sImage, 6);
-                }
-            }
-        }
+        // // Ensure that each Sentence's `_sImage` array has exactly 6 elements.
+        // foreach (var part in Dialogue.DialogueParts)
+        // {
+        //     foreach (var sentence in part.Sentences)
+        //     {
+        //         if (sentence.SImage.Length != 6)
+        //         {
+        //             Debug.LogWarning("Don't change the 'ints' field's array size!");
+        //             Array.Resize(ref sentence._sImage, 6);
+        //         }
+        //     }
+        // }
     }
 
     /// <summary>

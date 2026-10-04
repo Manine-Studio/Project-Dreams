@@ -22,20 +22,21 @@ MonoBehaviour:
       _Sentences:
       - _sSentence: aaa
         _SFXAudio: {fileID: 0}
-        _sImage:
-        - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        XAnimations:
-        - {fileID: 7400000, guid: 869572dda6536cc48be0292cd4762e4a, type: 2}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
+        _xSpriteAnimMap:
+          XSprites:
+          - {fileID: 21300000, guid: 36f5cad0796b28d4ba374c034bd52852, type: 3}
+          - {fileID: 0}
+          - {fileID: 0}
+          - {fileID: 0}
+          - {fileID: 0}
+          - {fileID: 0}
+          XAnimations:
+          - {fileID: 7400000, guid: 869572dda6536cc48be0292cd4762e4a, type: 2}
+          - {fileID: 0}
+          - {fileID: 0}
+          - {fileID: 0}
+          - {fileID: 0}
+          - {fileID: 0}
     _PostConditions:
       _keys: 05000000
       _values: 01000000
