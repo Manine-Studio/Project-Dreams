@@ -154,8 +154,9 @@ public class DialogueElaborator : MonoBehaviour
     private void TypeSentence()
     {
         string sentence = _xSentences[_CurrentSentenceIndex].SSentence;
-        Sprite[] images = _xSentences[_CurrentSentenceIndex]._XSpriteAnimMap.XSprites;
-        AnimationClip[] animations = _xSentences[_CurrentSentenceIndex]._XSpriteAnimMap.XAnimations;
+        
+        // Sprite[] images = _xSentences[_CurrentSentenceIndex]._XSpriteAnimMap.XSprites;
+        // AnimationClip[] animations = _xSentences[_CurrentSentenceIndex]._XSpriteAnimMap.XAnimations;
 
         // List<Sprite[]> list = new List<Sprite[]>();
         // list.Add(images);
@@ -168,7 +169,7 @@ public class DialogueElaborator : MonoBehaviour
 
         GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, "");
         GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_SENTENCE, sentence);
-        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_IMAGE, images, animations);
+        GameManager.Instance.XDialogueEventBus.TriggerEvent(DialogueEventList.CHANGE_IMAGE, _xSentences[_CurrentSentenceIndex]._XSpriteAnimMap);
     }
 
     /// <summary>

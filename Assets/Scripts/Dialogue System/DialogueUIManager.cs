@@ -67,16 +67,15 @@ public class DialogueUIManager : MonoBehaviour
     public void ChangeImage(object[] param)
     {
         // List<Sprite[]> list = (List<Sprite[]>);
-        Sprite[] images = (Sprite[])param[0];
-        AnimationClip[] animations = (AnimationClip[])param[1];
-
+        SpriteAnimPair[] imageAnimPair =  (SpriteAnimPair[])param[0]; 
+      
         for (int i = 0; i < _Characters.Length; i++)
         {
-            if (images[i] != null)
+            if (imageAnimPair[i].XSprites != null)
             {
-                _Characters[i].XImageHolder.sprite = images[i];
+                _Characters[i].XImageHolder.sprite = imageAnimPair[i].XSprites;
                 _Characters[i].XImageHolder.enabled = true;
-                _Characters[i].PlayAnimation(animations[i]);
+                _Characters[i].PlayAnimation(imageAnimPair[i].XAnimations);
             }
             else
                 _Characters[i].XImageHolder.enabled = false;

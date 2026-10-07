@@ -24,7 +24,7 @@ namespace Dialogue_System
 
         private void Awake()
         {
-            _xImageHolder ??= GetComponent<Image>(); // if null set 
+            _xImageHolder ??= GetComponentInChildren<Image>(); // if null set 
             _xAnimatorHolder ??= GetComponent<Animator>(); // if null set
 
             _xGraph = PlayableGraph.Create($"{gameObject.name}'s Graph"); // pulling out dark magic to make this work

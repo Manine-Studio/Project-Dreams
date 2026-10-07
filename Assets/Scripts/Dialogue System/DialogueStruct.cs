@@ -65,17 +65,21 @@ public class Sentence
     [SerializeField] private AudioClip _SFXAudio;
     
     
-    [SerializeField] private SpriteAnimPair _xSpriteAnimMap;
+    [SerializeField] public SpriteAnimPair[] _XSpriteAnimMap = new SpriteAnimPair [6];
 
     public string SSentence { get => _sSentence;}
     public AudioClip SFXAudio { get => _SFXAudio;}
-    public SpriteAnimPair _XSpriteAnimMap {get => _xSpriteAnimMap;}
+   
 
     public Sentence(string sSentence, Sprite[] sImage, AudioClip audio, AnimationClip[] animations)
     {
         _sSentence = sSentence;
         _SFXAudio = audio;
-        _xSpriteAnimMap = new(sImage,animations);
+        for (int i = 0; i < 6; i++)
+        {
+            _XSpriteAnimMap[i] = new(sImage[i],animations[i]);
+        }
+        
     }
 
 }
@@ -84,10 +88,10 @@ public class Sentence
 
 public struct SpriteAnimPair
 {
-    [SerializeField] public Sprite[] XSprites;
-    [SerializeField] public AnimationClip[] XAnimations;
+    [SerializeField] public Sprite XSprites;
+    [SerializeField] public AnimationClip XAnimations;
     
-    public SpriteAnimPair(Sprite[] sprite, AnimationClip[] anim)
+    public SpriteAnimPair(Sprite sprite, AnimationClip anim)
     {
         XSprites = sprite;
         XAnimations = anim;
