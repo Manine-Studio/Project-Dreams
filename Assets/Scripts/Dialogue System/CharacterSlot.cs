@@ -12,34 +12,34 @@ namespace Dialogue_System
     [RequireComponent(typeof(Animator))]
     public class CharacterSlot : MonoBehaviour
     {
-        public Image ImageHolder;
-        public Animator AnimatorHolder;
-        private PlayableGraph _graph;
-        private AnimationMixerPlayable _mixerPlayable;
-        private AnimatorOverrideController _animatorOverrider;
-        private AnimationClipPlayable _clipPlayable;
-
-        private Vector3 _startPosition;
+        private Image _xImageHolder;
+        private Animator _xAnimatorHolder;
+        private PlayableGraph _xGraph;
+        private AnimationMixerPlayable _xMixerPlayable;
+        private AnimatorOverrideController _xAnimatorOverrider;
+        private AnimationClipPlayable _xClipPlayable;
+        private Vector3 _vStartPosition;
+        
+        public Image XImageHolder { get => _xImageHolder; }
 
         private void Awake()
         {
-            ImageHolder ??= GetComponent<Image>(); // if null set 
-            AnimatorHolder ??= GetComponent<Animator>(); // if null set
+            _xImageHolder ??= GetComponent<Image>(); // if null set 
+            _xAnimatorHolder ??= GetComponent<Animator>(); // if null set
 
-            _graph = PlayableGraph.Create($"{gameObject.name}'s Graph"); // pulling out dark magic to make this work
-            AnimationPlayableOutput playableOutput = AnimationPlayableOutput.Create(_graph, "Anim output", AnimatorHolder);
+            _xGraph = PlayableGraph.Create($"{gameObject.name}'s Graph"); // pulling out dark magic to make this work
+            AnimationPlayableOutput playableOutput = AnimationPlayableOutput.Create(_xGraph, "Anim output", _xAnimatorHolder);
 
-            _mixerPlayable = AnimationMixerPlayable.Create(_graph, 1);
-            Debug.Log(_mixerPlayable.GetInputCount());
-            playableOutput.SetSourcePlayable(_mixerPlayable);
+            _xMixerPlayable = AnimationMixerPlayable.Create(_xGraph, 1);
+            Debug.Log(_xMixerPlayable.GetInputCount());
+            playableOutput.SetSourcePlayable(_xMixerPlayable);
 
-            AnimatorHolder.runtimeAnimatorController = null;
+            _xAnimatorHolder.runtimeAnimatorController = null;
         }
 
         private void Start()
         {
-            
-            _startPosition = ImageHolder.transform.localPosition;
+            _vStartPosition = _xImageHolder.transform.localPosition;
         }
 
         private void OnEnable()
@@ -58,12 +58,12 @@ namespace Dialogue_System
         /// <param name="obj">nothin</param>
         private void ResetCharacter(object[] obj)
         {
-            ImageHolder.transform.rotation = Quaternion.identity;
-            ImageHolder.transform.localPosition = _startPosition;
+            _xImageHolder.transform.rotation = Quaternion.identity;
+            _xImageHolder.transform.localPosition = _vStartPosition;
 
 
-            if (_mixerPlayable.GetInputCount() > 0)
-                _mixerPlayable.DisconnectInput(0);
+            if (_xMixerPlayable.GetInputCount() > 0)
+                _xMixerPlayable.DisconnectInput(0);
         }
 
         /// <summary>
@@ -77,15 +77,15 @@ namespace Dialogue_System
             if (animation == null)
                 return;
             
-            if (_mixerPlayable.GetInputCount() > 0)
-                _mixerPlayable.DisconnectInput(0); // doing it again cause you never know
+            if (_xMixerPlayable.GetInputCount() > 0)
+                _xMixerPlayable.DisconnectInput(0); // doing it again cause you never know
 
 
-            _clipPlayable = AnimationClipPlayable.Create(_graph, animation);
-            _mixerPlayable.ConnectInput(0, _clipPlayable, 0);
-            _mixerPlayable.SetInputWeight(0, 1);
+            _xClipPlayable = AnimationClipPlayable.Create(_xGraph, animation);
+            _xMixerPlayable.ConnectInput(0, _xClipPlayable, 0);
+            _xMixerPlayable.SetInputWeight(0, 1);
 
-            _graph.Play();
+            _xGraph.Play();
         }
 
         /// <summary>
@@ -93,16 +93,16 @@ namespace Dialogue_System
         /// </summary>
         private void OnDestroy()
         {
-            if (_graph.IsValid())
-                _graph.Destroy();
+            if (_xGraph.IsValid())
+                _xGraph.Destroy();
 
             // to be honest idk if i need to do this 2
 
-            if (_mixerPlayable.IsValid())
-                _mixerPlayable.Destroy();
+            if (_xMixerPlayable.IsValid())
+                _xMixerPlayable.Destroy();
 
-            if (_clipPlayable.IsValid())
-                _clipPlayable.Destroy();
+            if (_xClipPlayable.IsValid())
+                _xClipPlayable.Destroy();
         }
     }
 }

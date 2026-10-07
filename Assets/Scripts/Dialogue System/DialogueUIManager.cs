@@ -74,12 +74,12 @@ public class DialogueUIManager : MonoBehaviour
         {
             if (images[i] != null)
             {
-                _Characters[i].ImageHolder.sprite = images[i];
-                _Characters[i].ImageHolder.enabled = true;
+                _Characters[i].XImageHolder.sprite = images[i];
+                _Characters[i].XImageHolder.enabled = true;
                 _Characters[i].PlayAnimation(animations[i]);
             }
             else
-                _Characters[i].ImageHolder.enabled = false;
+                _Characters[i].XImageHolder.enabled = false;
         }
     }
 
