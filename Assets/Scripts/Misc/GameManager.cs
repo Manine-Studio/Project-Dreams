@@ -12,9 +12,12 @@ public class GameManager : Singleton<GameManager>
     private EventManager _xDialogueEventBus;
     private EventManager _xInteractableEventBus;
     private EventManager _xMapEventBus;
+    private EventManager _xShapeshiftEventBus;
     public EventManager XDialogueEventBus { get => _xDialogueEventBus; }
     public EventManager XInteractableEventBus { get => _xInteractableEventBus; }
     public EventManager XMapEventBus { get => _xMapEventBus; }
+    
+    public EventManager XShapeshiftEventBus { get => _xShapeshiftEventBus; }
 
     protected override void Awake()
     {

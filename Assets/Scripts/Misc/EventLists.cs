@@ -94,4 +94,9 @@
         /// </summary>
         public const string CHECK_LOCATION = "CHECK_LOCATION";
     }
+
+    public static class ShapeshiftEventList
+    {
+        public const string ON_SHAPE_CHANGED = "ON_SHAPE_CHANGED";
+    }
 }
