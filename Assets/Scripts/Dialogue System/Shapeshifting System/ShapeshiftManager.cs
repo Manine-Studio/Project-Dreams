@@ -17,6 +17,7 @@ namespace Dialogue_System.ShapeshiftingSystem
         }
     }
 
+    [System.Serializable]
     public enum Shape
     {
         BAKONE,
